@@ -12,10 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,76 +23,49 @@ class Ui_GameLauncherClass
 {
 public:
     QWidget *centralWidget;
-    QGridLayout *gridLayout;
-    QVBoxLayout *verticalLayout;
-    QHBoxLayout *horizontalLayout;
+    QLabel *label;
+    QWidget *widget;
+    QGridLayout *gridLayout_2;
     QPushButton *pushButton;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_6;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
 
     void setupUi(QMainWindow *GameLauncherClass)
     {
         if (GameLauncherClass->objectName().isEmpty())
             GameLauncherClass->setObjectName(QString::fromUtf8("GameLauncherClass"));
-        GameLauncherClass->resize(1032, 765);
+        GameLauncherClass->setEnabled(true);
+        GameLauncherClass->resize(1062, 788);
         centralWidget = new QWidget(GameLauncherClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        gridLayout = new QGridLayout(centralWidget);
-        gridLayout->setSpacing(6);
-        gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-
-        gridLayout->addLayout(verticalLayout, 0, 0, 1, 1);
-
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        centralWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(88, 88, 88)"));
+        label = new QLabel(centralWidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(30, 20, 116, 42));
         QFont font;
-        font.setFamily(QString::fromUtf8("Noto Sans KR Light"));
-        pushButton->setFont(font);
+        font.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
+        font.setPointSize(26);
+        font.setBold(true);
+        font.setWeight(75);
+        label->setFont(font);
+        label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(30, 80, 1001, 681));
+        gridLayout_2 = new QGridLayout(widget);
+        gridLayout_2->setSpacing(6);
+        gridLayout_2->setContentsMargins(11, 11, 11, 11);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setContentsMargins(0, 0, 0, 0);
+        pushButton = new QPushButton(widget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        QFont font1;
+        font1.setKerning(true);
+        pushButton->setFont(font1);
+        pushButton->setStyleSheet(QString::fromUtf8("color: rgb(70, 70, 70);\n"
+"border-color: rgba(255, 255, 255, 0);\n"
+"background-color: rgb(70, 70, 70);\n"
+"width: 30px"));
 
-        horizontalLayout->addWidget(pushButton);
-
-        pushButton_4 = new QPushButton(centralWidget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setFont(font);
-
-        horizontalLayout->addWidget(pushButton_4);
-
-        pushButton_5 = new QPushButton(centralWidget);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setFont(font);
-
-        horizontalLayout->addWidget(pushButton_5);
-
-        pushButton_6 = new QPushButton(centralWidget);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
-        pushButton_6->setFont(font);
-
-        horizontalLayout->addWidget(pushButton_6);
-
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setFont(font);
-
-        horizontalLayout->addWidget(pushButton_2);
-
-        pushButton_3 = new QPushButton(centralWidget);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setFont(font);
-
-        horizontalLayout->addWidget(pushButton_3);
-
-
-        gridLayout->addLayout(horizontalLayout, 1, 0, 1, 1);
+        gridLayout_2->addWidget(pushButton, 0, 0, 1, 1);
 
         GameLauncherClass->setCentralWidget(centralWidget);
 
@@ -105,12 +77,8 @@ public:
     void retranslateUi(QMainWindow *GameLauncherClass)
     {
         GameLauncherClass->setWindowTitle(QApplication::translate("GameLauncherClass", "GameLauncher", nullptr));
-        pushButton->setText(QApplication::translate("GameLauncherClass", "\353\235\274\354\235\264\353\270\214\353\237\254\353\246\254", nullptr));
-        pushButton_4->setText(QApplication::translate("GameLauncherClass", "\353\235\274\354\235\264\353\270\214\353\237\254\353\246\254", nullptr));
-        pushButton_5->setText(QApplication::translate("GameLauncherClass", "\353\235\274\354\235\264\353\270\214\353\237\254\353\246\254", nullptr));
-        pushButton_6->setText(QApplication::translate("GameLauncherClass", "\353\235\274\354\235\264\353\270\214\353\237\254\353\246\254", nullptr));
-        pushButton_2->setText(QApplication::translate("GameLauncherClass", "\353\235\274\354\235\264\353\270\214\353\237\254\353\246\254", nullptr));
-        pushButton_3->setText(QApplication::translate("GameLauncherClass", "\353\235\274\354\235\264\353\270\214\353\237\254\353\246\254", nullptr));
+        label->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
+        pushButton->setText(QApplication::translate("GameLauncherClass", "\352\262\214\354\236\2041", nullptr));
     } // retranslateUi
 
 };

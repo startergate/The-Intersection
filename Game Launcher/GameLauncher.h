@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
-#include "ui_GameLauncher.h"
+#include "GeneratedFiles/ui_GameLauncher.h"
 
 class GameLauncher : public QMainWindow
 {
