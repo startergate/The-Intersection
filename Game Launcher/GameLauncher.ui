@@ -44,7 +44,7 @@
      <string>Library</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -62,13 +62,13 @@
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(70, 70, 70);
+        <string notr="true">color: white;
 border-color: rgba(255, 255, 255, 0);
 background-color: rgb(70, 70, 70);
 width: 30px</string>
        </property>
        <property name="text">
-        <string>게임1</string>
+        <string>125643</string>
        </property>
       </widget>
      </item>
