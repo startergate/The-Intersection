@@ -17,61 +17,10 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 #include <QtWidgets/QStyle>
+#include <FlowLayout.h>
+#include <list>
 
 QT_BEGIN_NAMESPACE
-
-class FlowLayout : public QLayout
-{
-public:
-	explicit FlowLayout(QWidget *parent, int margin = -1, int hSpacing = -1, int vSpacing = -1);
-	explicit FlowLayout(int margin = -1, int hSpacing = -1, int vSpacing = -1);
-	~FlowLayout();
-
-	void addItem(QLayoutItem *item) override;
-	int horizontalSpacing() const;
-	int verticalSpacing() const;
-	Qt::Orientations expandingDirections() const override;
-	bool hasHeightForWidth() const override;
-	int heightForWidth(int) const override;
-	int count() const override;
-	QLayoutItem *itemAt(int index) const override;
-	QSize minimumSize() const override;
-	void setGeometry(const QRect &rect) override;
-	QSize sizeHint() const override;
-	QLayoutItem *takeAt(int index) override;
-
-private:
-	int doLayout(const QRect &rect, bool testOnly) const;
-	int smartSpacing(QStyle::PixelMetric pm) const;
-
-	QList<QLayoutItem *> itemList;
-	int m_hSpace;
-	int m_vSpace;
-};
-
-FlowLayout::FlowLayout(QWidget *parent, int margin, int hSpacing, int vSpacing)
-	: QLayout(parent), m_hSpace(hSpacing), m_vSpace(vSpacing)
-{
-	setContentsMargins(margin, margin, margin, margin);
-}
-
-FlowLayout::FlowLayout(int margin, int hSpacing, int vSpacing)
-	: m_hSpace(hSpacing), m_vSpace(vSpacing)
-{
-	setContentsMargins(margin, margin, margin, margin);
-}
-
-FlowLayout::~FlowLayout()
-{
-	QLayoutItem *item;
-	while ((item = takeAt(0)))
-		delete item;
-}
-
-void FlowLayout::addItem(QLayoutItem *item)
-{
-	itemList.append(item);
-}
 
 class Ui_GameLauncherClass
 {
@@ -79,7 +28,7 @@ public:
     QWidget *centralWidget;
     QLabel *label;
     QWidget *widget;
-    QGridLayout *gridLayout_2;
+	FlowLayout *AppLibrary;
     QPushButton *pushButton;
 
     void setupUi(QMainWindow *GameLauncherClass)
@@ -104,23 +53,41 @@ public:
         widget = new QWidget(centralWidget);
         widget->setObjectName(QString::fromUtf8("widget"));
         widget->setGeometry(QRect(30, 80, 1001, 681));
-        gridLayout_2 = new QGridLayout(widget);
-        gridLayout_2->setSpacing(6);
-        gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        gridLayout_2->setContentsMargins(0, 0, 0, 0);
+		AppLibrary = new FlowLayout(10);
+		AppLibrary->setSpacing(30);
+		//AppLibrary->setMargin(10);
+		//AppLibrary->setContentsMargins(11, 11, 11, 11);
+		AppLibrary->setObjectName(QString::fromUtf8("Library"));
+		//AppLibrary->setContentsMargins(0, 0, 0, 0);
         pushButton = new QPushButton(widget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         QFont font1;
         font1.setKerning(true);
         pushButton->setFont(font1);
-        pushButton->setStyleSheet(QString::fromUtf8("color: rgb(70, 70, 70);\n"
-"border-color: rgba(255, 255, 255, 0);\n"
-"background-color: rgb(70, 70, 70);\n"
-"width: 30px"));
+		pushButton->setStyleSheet(QString::fromUtf8("color: rgb(70, 70, 70);\n"
+			"border-color: rgba(255, 255, 255, 0);\n"
+			"background-color: rgb(70, 70, 70);\n"
+			"width: 30px"));
 
-        gridLayout_2->addWidget(pushButton, 0, 0, 1, 1);
+		AppLibrary->addWidget(pushButton);
 
+		/*std::list<QPushButton*> PushButtons;
+		auto listbegin = PushButtons.begin();
+		for (int i = 0; i < 15; i++)
+		{
+			QPushButton* btn = new QPushButton(widget);
+			btn->setObjectName(QString::fromUtf8("pushButton"));
+			QFont font1;
+			font1.setKerning(true);
+			btn->setFont(font1);
+			btn->setStyleSheet(QString::fromUtf8("color: rgb(70, 70, 70);\n"
+				"border-color: rgba(255, 255, 255, 0);\n"
+				"background-color: rgb(70, 70, 70);\n"
+				"width: 30px"
+				"margin: 3px"));
+			PushButtons.push_back(btn);
+			AppLibrary->addWidget();
+		}*/
         GameLauncherClass->setCentralWidget(centralWidget);
 
         retranslateUi(GameLauncherClass);
