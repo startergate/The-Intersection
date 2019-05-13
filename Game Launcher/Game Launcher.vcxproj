@@ -113,6 +113,7 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AppLibrary.cpp" />
     <ClCompile Include="FlowLayout.cpp" />
     <ClCompile Include="GameLauncher.cpp" />
     <ClCompile Include="main.cpp" />
@@ -128,7 +129,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FlowLayout.h" />
-    <ClInclude Include="GeneratedFiles\ui_GameLauncher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

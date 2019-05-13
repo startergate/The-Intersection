@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'GameLauncher.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.3
+** Created by: Qt User Interface Compiler version 5.9.7
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,8 +10,11 @@
 #define UI_GAMELAUNCHER_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -33,38 +36,38 @@ public:
     void setupUi(QMainWindow *GameLauncherClass)
     {
         if (GameLauncherClass->objectName().isEmpty())
-            GameLauncherClass->setObjectName(QString::fromUtf8("GameLauncherClass"));
+            GameLauncherClass->setObjectName(QStringLiteral("GameLauncherClass"));
         GameLauncherClass->setEnabled(true);
         GameLauncherClass->resize(1024, 670);
         centralWidget = new QWidget(GameLauncherClass);
-        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        centralWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(88, 88, 88)"));
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        centralWidget->setStyleSheet(QStringLiteral("background-color: rgb(88, 88, 88)"));
         gridLayout = new QGridLayout(centralWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
         scrollArea = new QScrollArea(centralWidget);
-        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
+        scrollArea->setObjectName(QStringLiteral("scrollArea"));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1004, 582));
         pushButton = new QPushButton(scrollAreaWidgetContents);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(10, 10, 75, 71));
         scrollArea->setWidget(scrollAreaWidgetContents);
 
         gridLayout->addWidget(scrollArea, 1, 0, 1, 1);
 
         label = new QLabel(centralWidget);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
         QFont font;
-        font.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
+        font.setFamily(QStringLiteral("Avenir LT Std 65 Medium"));
         font.setPointSize(26);
         font.setBold(true);
         font.setWeight(75);
         label->setFont(font);
-        label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+        label->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
 
         gridLayout->addWidget(label, 0, 0, 1, 1);
@@ -78,9 +81,9 @@ public:
 
     void retranslateUi(QMainWindow *GameLauncherClass)
     {
-        GameLauncherClass->setWindowTitle(QApplication::translate("GameLauncherClass", "GameLauncher", nullptr));
-        pushButton->setText(QApplication::translate("GameLauncherClass", "PushButton", nullptr));
-        label->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
+        GameLauncherClass->setWindowTitle(QApplication::translate("GameLauncherClass", "GameLauncher", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("GameLauncherClass", "PushButton", Q_NULLPTR));
+        label->setText(QApplication::translate("GameLauncherClass", "Library", Q_NULLPTR));
     } // retranslateUi
 
 };

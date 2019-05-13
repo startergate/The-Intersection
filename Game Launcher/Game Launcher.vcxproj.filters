@@ -8,6 +8,9 @@
     <ClCompile Include="FlowLayout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AppLibrary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resource Files">
@@ -47,9 +50,6 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_GameLauncher.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FlowLayout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
