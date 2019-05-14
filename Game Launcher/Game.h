@@ -1,7 +1,7 @@
 #pragma once
 
-class Game {
-	Game() {
+#include <QtWidgets>
 
-	}
+class GameButton : public QPushButton {
+	
 };

@@ -113,7 +113,10 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AppLibrary.cpp" />
+    <ClCompile Include="AppLibrary.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="FlowLayout.cpp" />
     <ClCompile Include="GameLauncher.cpp" />
     <ClCompile Include="main.cpp" />
@@ -129,7 +132,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FlowLayout.h" />
-    <ClInclude Include="Game.h" />
+    <ClInclude Include="Game.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

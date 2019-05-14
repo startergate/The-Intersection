@@ -45,13 +45,19 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         scrollArea = new QScrollArea(centralWidget);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
+        scrollArea->setStyleSheet(QString::fromUtf8("border: 0;"));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1004, 582));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1006, 584));
         pushButton = new QPushButton(scrollAreaWidgetContents);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(10, 10, 75, 71));
+        pushButton->setGeometry(QRect(7, 7, 50, 50));
+        pushButton->setStyleSheet(QString::fromUtf8("border: 1px solid grey;\n"
+"border-radius: 10px;\n"
+"background-image: url(\"GameThumbnail/10.jpg\");\n"
+"background-repeat: no-repeat;\n"
+"background-position: center;"));
         scrollArea->setWidget(scrollAreaWidgetContents);
 
         gridLayout->addWidget(scrollArea, 1, 0, 1, 1);
@@ -79,7 +85,13 @@ public:
     void retranslateUi(QMainWindow *GameLauncherClass)
     {
         GameLauncherClass->setWindowTitle(QApplication::translate("GameLauncherClass", "GameLauncher", nullptr));
-        pushButton->setText(QApplication::translate("GameLauncherClass", "PushButton", nullptr));
+#ifndef QT_NO_WHATSTHIS
+        scrollArea->setWhatsThis(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
+#endif // QT_NO_WHATSTHIS
+#ifndef QT_NO_ACCESSIBILITY
+        pushButton->setAccessibleName(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
+#endif // QT_NO_ACCESSIBILITY
+        pushButton->setText(QString());
         label->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
     } // retranslateUi
 

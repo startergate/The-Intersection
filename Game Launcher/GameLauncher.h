@@ -9,7 +9,12 @@ class GameLauncher : public QMainWindow
 
 public:
 	GameLauncher(QWidget *parent = Q_NULLPTR);
-
+public slots:
+	void buttonClicked(int game);
 private:
 	Ui::GameLauncherClass ui;
 };
+
+void GameLauncher::buttonClicked(int game) {
+
+}
