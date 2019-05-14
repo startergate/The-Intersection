@@ -27,7 +27,8 @@ public:
     QGridLayout *gridLayout;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
-    QPushButton *pushButton;
+    QPushButton *game10;
+    QPushButton *game20;
     QLabel *label;
 
     void setupUi(QMainWindow *GameLauncherClass)
@@ -50,12 +51,20 @@ public:
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1006, 584));
-        pushButton = new QPushButton(scrollAreaWidgetContents);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(7, 7, 50, 50));
-        pushButton->setStyleSheet(QString::fromUtf8("border: 1px solid grey;\n"
+        game10 = new QPushButton(scrollAreaWidgetContents);
+        game10->setObjectName(QString::fromUtf8("game10"));
+        game10->setGeometry(QRect(10, 10, 50, 50));
+        game10->setStyleSheet(QString::fromUtf8("border: 1px solid grey;\n"
 "border-radius: 10px;\n"
 "background-image: url(\"GameThumbnail/10.jpg\");\n"
+"background-repeat: no-repeat;\n"
+"background-position: center;"));
+        game20 = new QPushButton(scrollAreaWidgetContents);
+        game20->setObjectName(QString::fromUtf8("game20"));
+        game20->setGeometry(QRect(70, 10, 50, 50));
+        game20->setStyleSheet(QString::fromUtf8("border: 1px solid grey;\n"
+"border-radius: 10px;\n"
+"background-image: url(\"GameThumbnail/570.jpg\");\n"
 "background-repeat: no-repeat;\n"
 "background-position: center;"));
         scrollArea->setWidget(scrollAreaWidgetContents);
@@ -89,9 +98,19 @@ public:
         scrollArea->setWhatsThis(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
 #endif // QT_NO_WHATSTHIS
 #ifndef QT_NO_ACCESSIBILITY
-        pushButton->setAccessibleName(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
+        game10->setAccessibleName(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
 #endif // QT_NO_ACCESSIBILITY
-        pushButton->setText(QString());
+#ifndef QT_NO_ACCESSIBILITY
+        game10->setAccessibleDescription(QApplication::translate("GameLauncherClass", "10", nullptr));
+#endif // QT_NO_ACCESSIBILITY
+        game10->setText(QString());
+#ifndef QT_NO_ACCESSIBILITY
+        game20->setAccessibleName(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
+#endif // QT_NO_ACCESSIBILITY
+#ifndef QT_NO_ACCESSIBILITY
+        game20->setAccessibleDescription(QApplication::translate("GameLauncherClass", "20", nullptr));
+#endif // QT_NO_ACCESSIBILITY
+        game20->setText(QString());
         label->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
     } // retranslateUi
 

@@ -41,11 +41,11 @@
          <height>584</height>
         </rect>
        </property>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="game10">
         <property name="geometry">
          <rect>
-          <x>7</x>
-          <y>7</y>
+          <x>10</x>
+          <y>10</y>
           <width>50</width>
           <height>50</height>
          </rect>
@@ -53,10 +53,39 @@
         <property name="accessibleName">
          <string>Counter-Strike</string>
         </property>
+        <property name="accessibleDescription">
+         <string>10</string>
+        </property>
         <property name="styleSheet">
          <string notr="true">border: 1px solid grey;
 border-radius: 10px;
 background-image: url(&quot;GameThumbnail/10.jpg&quot;);
+background-repeat: no-repeat;
+background-position: center;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="game20">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="accessibleName">
+         <string>Counter-Strike</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>20</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid grey;
+border-radius: 10px;
+background-image: url(&quot;GameThumbnail/570.jpg&quot;);
 background-repeat: no-repeat;
 background-position: center;</string>
         </property>
@@ -94,4 +123,7 @@ margin: 10px;</string>
   <include location="GameLauncher.qrc"/>
  </resources>
  <connections/>
+ <slots>
+  <slot>moveToAppScreen(int)</slot>
+ </slots>
 </ui>
