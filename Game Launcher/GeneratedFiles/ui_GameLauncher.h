@@ -16,6 +16,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,11 +26,15 @@ class Ui_GameLauncherClass
 public:
     QWidget *centralWidget;
     QGridLayout *gridLayout;
-    QScrollArea *scrollArea;
+    QStackedWidget *stackedWidget;
+    QWidget *page;
+    QLabel *library;
+    QScrollArea *libraryApps;
     QWidget *scrollAreaWidgetContents;
     QPushButton *game10;
     QPushButton *game20;
-    QLabel *label;
+    QWidget *page_2;
+    QLabel *gameInfoName;
 
     void setupUi(QMainWindow *GameLauncherClass)
     {
@@ -44,13 +49,29 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        scrollArea = new QScrollArea(centralWidget);
-        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setStyleSheet(QString::fromUtf8("border: 0;"));
-        scrollArea->setWidgetResizable(true);
+        stackedWidget = new QStackedWidget(centralWidget);
+        stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
+        page = new QWidget();
+        page->setObjectName(QString::fromUtf8("page"));
+        library = new QLabel(page);
+        library->setObjectName(QString::fromUtf8("library"));
+        library->setGeometry(QRect(0, 10, 1006, 62));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
+        font.setPointSize(26);
+        font.setBold(true);
+        font.setWeight(75);
+        library->setFont(font);
+        library->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"margin: 10px;"));
+        libraryApps = new QScrollArea(page);
+        libraryApps->setObjectName(QString::fromUtf8("libraryApps"));
+        libraryApps->setGeometry(QRect(0, 80, 1006, 323));
+        libraryApps->setStyleSheet(QString::fromUtf8("border: 0;"));
+        libraryApps->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1006, 584));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1006, 323));
         game10 = new QPushButton(scrollAreaWidgetContents);
         game10->setObjectName(QString::fromUtf8("game10"));
         game10->setGeometry(QRect(10, 10, 50, 50));
@@ -67,26 +88,26 @@ public:
 "background-image: url(\"GameThumbnail/570.jpg\");\n"
 "background-repeat: no-repeat;\n"
 "background-position: center;"));
-        scrollArea->setWidget(scrollAreaWidgetContents);
-
-        gridLayout->addWidget(scrollArea, 1, 0, 1, 1);
-
-        label = new QLabel(centralWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-        QFont font;
-        font.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
-        font.setPointSize(26);
-        font.setBold(true);
-        font.setWeight(75);
-        label->setFont(font);
-        label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+        libraryApps->setWidget(scrollAreaWidgetContents);
+        stackedWidget->addWidget(page);
+        page_2 = new QWidget();
+        page_2->setObjectName(QString::fromUtf8("page_2"));
+        gameInfoName = new QLabel(page_2);
+        gameInfoName->setObjectName(QString::fromUtf8("gameInfoName"));
+        gameInfoName->setGeometry(QRect(0, 10, 1006, 62));
+        gameInfoName->setFont(font);
+        gameInfoName->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
+        stackedWidget->addWidget(page_2);
 
-        gridLayout->addWidget(label, 0, 0, 1, 1);
+        gridLayout->addWidget(stackedWidget, 0, 0, 1, 1);
 
         GameLauncherClass->setCentralWidget(centralWidget);
 
         retranslateUi(GameLauncherClass);
+
+        stackedWidget->setCurrentIndex(1);
+
 
         QMetaObject::connectSlotsByName(GameLauncherClass);
     } // setupUi
@@ -94,8 +115,9 @@ public:
     void retranslateUi(QMainWindow *GameLauncherClass)
     {
         GameLauncherClass->setWindowTitle(QApplication::translate("GameLauncherClass", "GameLauncher", nullptr));
+        library->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
 #ifndef QT_NO_WHATSTHIS
-        scrollArea->setWhatsThis(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
+        libraryApps->setWhatsThis(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
 #endif // QT_NO_WHATSTHIS
 #ifndef QT_NO_ACCESSIBILITY
         game10->setAccessibleName(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
@@ -111,7 +133,7 @@ public:
         game20->setAccessibleDescription(QApplication::translate("GameLauncherClass", "20", nullptr));
 #endif // QT_NO_ACCESSIBILITY
         game20->setText(QString());
-        label->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
+        gameInfoName->setText(QApplication::translate("GameLauncherClass", "GAME_NAME", nullptr));
     } // retranslateUi
 
 };

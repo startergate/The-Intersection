@@ -14,7 +14,3 @@ public slots:
 private:
 	Ui::GameLauncherClass ui;
 };
-
-void GameLauncher::buttonClicked(int game) {
-
-}
