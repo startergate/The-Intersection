@@ -10,5 +10,5 @@ GameLauncher::GameLauncher(QWidget *parent)
 }
 
 void GameLauncher::buttonClicked(int gameid) {
-
+	
 }
