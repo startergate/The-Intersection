@@ -11,9 +11,10 @@ class ClickableLabel : public QLabel {
 public:
 	explicit ClickableLabel(QWidget* parent = Q_NULLPTR, Qt::WindowFlags f = Qt::WindowFlags());
 	~ClickableLabel();
+	int target;
 
 signals:
-	void clicked();
+	void clicked(int);
 	void changeStackedWidgetIndex(int);
 
 protected:

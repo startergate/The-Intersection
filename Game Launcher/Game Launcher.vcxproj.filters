@@ -11,6 +11,12 @@
     <ClCompile Include="AppLibrary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ClickableQLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resource Files">
@@ -36,6 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="GameLauncher.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ClickableQLabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="GameButton.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

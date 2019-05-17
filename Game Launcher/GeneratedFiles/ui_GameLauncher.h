@@ -11,13 +11,16 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QWidget>
+#include "ClickableQLabel.h"
+#include "GameButton.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,41 +28,45 @@ class Ui_GameLauncherClass
 {
 public:
     QWidget *centralWidget;
-    QGridLayout *gridLayout;
     QStackedWidget *stackedWidget;
     QWidget *libraryTab;
     QLabel *libraryLibraryTitle;
     QScrollArea *libraryApps;
     QWidget *scrollAreaWidgetContents;
-    QPushButton *game10;
+    GameButton *game10;
     QPushButton *game20;
-    QLabel *libraryLauncherTitle;
+    ClickableLabel *libraryLauncherTitle;
     QWidget *gameInfoTab;
     QLabel *gameInfoName;
     QWidget *launcherTab;
-    QLabel *launcherLibraryTitle;
+    ClickableLabel *launcherLibraryTitle;
     QLabel *launcherlauncherTitle;
+    QWidget *loginTab;
+    QFrame *frame;
+    QPushButton *loginBtn;
+    QLineEdit *pwEnter;
+    QLabel *pwDesc;
+    QLabel *idDesc;
+    QLineEdit *idEnter;
+    QLabel *loginText;
 
     void setupUi(QMainWindow *GameLauncherClass)
     {
         if (GameLauncherClass->objectName().isEmpty())
             GameLauncherClass->setObjectName(QString::fromUtf8("GameLauncherClass"));
         GameLauncherClass->setEnabled(true);
-        GameLauncherClass->resize(1024, 670);
+        GameLauncherClass->resize(1035, 810);
         centralWidget = new QWidget(GameLauncherClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         centralWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(88, 88, 88)"));
-        gridLayout = new QGridLayout(centralWidget);
-        gridLayout->setSpacing(6);
-        gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         stackedWidget = new QStackedWidget(centralWidget);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
+        stackedWidget->setGeometry(QRect(9, 9, 1017, 792));
         libraryTab = new QWidget();
         libraryTab->setObjectName(QString::fromUtf8("libraryTab"));
         libraryLibraryTitle = new QLabel(libraryTab);
         libraryLibraryTitle->setObjectName(QString::fromUtf8("libraryLibraryTitle"));
-        libraryLibraryTitle->setGeometry(QRect(0, 10, 151, 62));
+        libraryLibraryTitle->setGeometry(QRect(0, 0, 151, 62));
         QFont font;
         font.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
         font.setPointSize(26);
@@ -76,7 +83,7 @@ public:
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1006, 323));
-        game10 = new QPushButton(scrollAreaWidgetContents);
+        game10 = new GameButton(scrollAreaWidgetContents);
         game10->setObjectName(QString::fromUtf8("game10"));
         game10->setGeometry(QRect(10, 10, 169, 101));
         QFont font1;
@@ -98,9 +105,9 @@ public:
 "background-repeat: no-repeat;\n"
 "background-position: center; color: white; padding-top: 70px;"));
         libraryApps->setWidget(scrollAreaWidgetContents);
-        libraryLauncherTitle = new QLabel(libraryTab);
+        libraryLauncherTitle = new ClickableLabel(libraryTab);
         libraryLauncherTitle->setObjectName(QString::fromUtf8("libraryLauncherTitle"));
-        libraryLauncherTitle->setGeometry(QRect(140, 10, 181, 62));
+        libraryLauncherTitle->setGeometry(QRect(140, 0, 181, 62));
         QFont font2;
         font2.setFamily(QString::fromUtf8("Avenir LT 35 Light"));
         font2.setPointSize(26);
@@ -121,15 +128,15 @@ public:
         stackedWidget->addWidget(gameInfoTab);
         launcherTab = new QWidget();
         launcherTab->setObjectName(QString::fromUtf8("launcherTab"));
-        launcherLibraryTitle = new QLabel(launcherTab);
+        launcherLibraryTitle = new ClickableLabel(launcherTab);
         launcherLibraryTitle->setObjectName(QString::fromUtf8("launcherLibraryTitle"));
-        launcherLibraryTitle->setGeometry(QRect(0, 10, 151, 62));
+        launcherLibraryTitle->setGeometry(QRect(0, 0, 151, 62));
         launcherLibraryTitle->setFont(font2);
         launcherLibraryTitle->setStyleSheet(QString::fromUtf8("color: rgb(128, 128, 128);\n"
 "margin: 10px;"));
         launcherlauncherTitle = new QLabel(launcherTab);
         launcherlauncherTitle->setObjectName(QString::fromUtf8("launcherlauncherTitle"));
-        launcherlauncherTitle->setGeometry(QRect(140, 10, 181, 62));
+        launcherlauncherTitle->setGeometry(QRect(140, 0, 181, 62));
         QFont font3;
         font3.setFamily(QString::fromUtf8("Avenir LT 65 Medium"));
         font3.setPointSize(26);
@@ -139,14 +146,66 @@ public:
         launcherlauncherTitle->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
         stackedWidget->addWidget(launcherTab);
-
-        gridLayout->addWidget(stackedWidget, 0, 0, 1, 1);
-
+        loginTab = new QWidget();
+        loginTab->setObjectName(QString::fromUtf8("loginTab"));
+        loginTab->setLayoutDirection(Qt::LeftToRight);
+        loginTab->setStyleSheet(QString::fromUtf8(""));
+        frame = new QFrame(loginTab);
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setGeometry(QRect(330, 260, 351, 251));
+        loginBtn = new QPushButton(frame);
+        loginBtn->setObjectName(QString::fromUtf8("loginBtn"));
+        loginBtn->setGeometry(QRect(120, 170, 121, 51));
+        QFont font4;
+        font4.setFamily(QString::fromUtf8("Avenir LT 45 Book"));
+        font4.setPointSize(15);
+        loginBtn->setFont(font4);
+        loginBtn->setStyleSheet(QString::fromUtf8("background-color: white;border: 1px solid grey;border-radius: 10px"));
+        pwEnter = new QLineEdit(frame);
+        pwEnter->setObjectName(QString::fromUtf8("pwEnter"));
+        pwEnter->setGeometry(QRect(110, 120, 170, 30));
+        QFont font5;
+        font5.setFamily(QString::fromUtf8("Aleo"));
+        font5.setPointSize(15);
+        pwEnter->setFont(font5);
+        pwEnter->setStyleSheet(QString::fromUtf8("background-color: white;color:black;"));
+        pwDesc = new QLabel(frame);
+        pwDesc->setObjectName(QString::fromUtf8("pwDesc"));
+        pwDesc->setGeometry(QRect(70, 120, 30, 24));
+        QFont font6;
+        font6.setFamily(QString::fromUtf8("Avenir LT 35 Light"));
+        font6.setPointSize(15);
+        pwDesc->setFont(font6);
+        pwDesc->setStyleSheet(QString::fromUtf8("color:white"));
+        pwDesc->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        idDesc = new QLabel(frame);
+        idDesc->setObjectName(QString::fromUtf8("idDesc"));
+        idDesc->setGeometry(QRect(80, 90, 20, 24));
+        idDesc->setFont(font6);
+        idDesc->setStyleSheet(QString::fromUtf8("color:white"));
+        idDesc->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        idEnter = new QLineEdit(frame);
+        idEnter->setObjectName(QString::fromUtf8("idEnter"));
+        idEnter->setGeometry(QRect(110, 90, 170, 30));
+        idEnter->setFont(font5);
+        idEnter->setStyleSheet(QString::fromUtf8("background-color: white;color:black;"));
+        loginText = new QLabel(frame);
+        loginText->setObjectName(QString::fromUtf8("loginText"));
+        loginText->setGeometry(QRect(120, 10, 112, 52));
+        QFont font7;
+        font7.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
+        font7.setPointSize(32);
+        loginText->setFont(font7);
+        loginText->setStyleSheet(QString::fromUtf8("color: white"));
+        loginText->setAlignment(Qt::AlignCenter);
+        stackedWidget->addWidget(loginTab);
         GameLauncherClass->setCentralWidget(centralWidget);
 
         retranslateUi(GameLauncherClass);
+        QObject::connect(libraryLauncherTitle, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
+        QObject::connect(launcherLibraryTitle, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(GameLauncherClass);
@@ -177,6 +236,14 @@ public:
         gameInfoName->setText(QApplication::translate("GameLauncherClass", "GAME_NAME", nullptr));
         launcherLibraryTitle->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
         launcherlauncherTitle->setText(QApplication::translate("GameLauncherClass", "Launcher", nullptr));
+        loginBtn->setText(QApplication::translate("GameLauncherClass", "Login", nullptr));
+        pwEnter->setInputMask(QString());
+        pwEnter->setText(QApplication::translate("GameLauncherClass", "\354\213\234\353\260\234\354\236\220\354\202\264", nullptr));
+        pwDesc->setText(QApplication::translate("GameLauncherClass", "PW", nullptr));
+        idDesc->setText(QApplication::translate("GameLauncherClass", "ID", nullptr));
+        idEnter->setInputMask(QString());
+        idEnter->setText(QApplication::translate("GameLauncherClass", "\354\213\234\353\260\234\354\236\220\354\202\264", nullptr));
+        loginText->setText(QApplication::translate("GameLauncherClass", "Login", nullptr));
     } // retranslateUi
 
 };
