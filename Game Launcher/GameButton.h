@@ -7,13 +7,15 @@ class GameButton : public QPushButton {
 	Q_OBJECT
 
 public:
-	explicit GameButton(QWidget* parent = Q_NULLPTR, Qt::WindowFlags f = Qt::WindowFlags(), int gameid = 10);
+	explicit GameButton(QWidget* parent = Q_NULLPTR, Qt::WindowFlags f = Qt::WindowFlags());
 	~GameButton();
 
 	int gameid;
 
+	void setGameid(int gameid);
+
 signals:
-	void clicked(int);
+	void changeStackedWidgetIndex(int);
 
 protected:
 	void mousePressEvent(QMouseEvent* event);

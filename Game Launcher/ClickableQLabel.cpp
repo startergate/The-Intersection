@@ -10,5 +10,5 @@ ClickableLabel::~ClickableLabel() {}
 
 void ClickableLabel::mousePressEvent(QMouseEvent* event) {
 	OutputDebugString(L" ´­¸² \n");
-	emit clicked(this->target);
+	emit changeStackedWidgetIndex(this->target);
 }
