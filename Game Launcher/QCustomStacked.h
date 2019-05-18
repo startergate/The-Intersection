@@ -3,6 +3,7 @@
 #ifndef QCUSTOMSTACKED_H
 #define QCUSTOMSTACKED_H
 #include <QStackedWidget>
+#include <QLabel>
 
 class QCustomStacked : public QStackedWidget {
 	Q_OBJECT
@@ -12,7 +13,7 @@ public:
 	~QCustomStacked();
 
 public slots:
-	void setGameLayer(int gameid);
+	void setGamePage(int gameid);
 };
 
 #endif
