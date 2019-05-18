@@ -50,6 +50,9 @@
     <QtMoc Include="GameButton.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="QCustomStacked.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="GameLauncher.ui">
@@ -66,9 +69,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="QCustomStacked.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
