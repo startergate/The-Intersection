@@ -17,6 +17,9 @@
     <ClCompile Include="GameButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QCustomStacked.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resource Files">

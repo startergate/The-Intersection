@@ -3,7 +3,9 @@
     "10": {
       "name": "Counter-Strike",
       "isInstalled": "false",
-
+      "addedTime": 1530489600,
+      "playedTime": 0,
+      "platform": "steam",
     }
   }
 }
