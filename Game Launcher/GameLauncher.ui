@@ -20,7 +20,7 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(88, 88, 88)</string>
    </property>
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QCustomStacked" name="stackedWidget">
     <property name="geometry">
      <rect>
       <x>9</x>
@@ -30,7 +30,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="libraryTab">
      <widget class="QLabel" name="libraryLibraryTitle">
@@ -182,7 +182,7 @@ margin: 10px;</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
+        <y>0</y>
         <width>1006</width>
         <height>62</height>
        </rect>
@@ -429,7 +429,7 @@ margin: 10px;</string>
   <customwidget>
    <class>GameButton</class>
    <extends>QPushButton</extends>
-   <header>GameButton.h</header>
+   <header location="global">GameButton.h</header>
    <slots>
     <signal>changeStackedWidgetIndex(int)</signal>
    </slots>
@@ -437,7 +437,13 @@ margin: 10px;</string>
   <customwidget>
    <class>ClickableLabel</class>
    <extends>QLabel</extends>
-   <header>ClickableQLabel.h</header>
+   <header location="global">ClickableQLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomStacked</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">QCustomStacked.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
@@ -489,6 +495,22 @@ margin: 10px;</string>
     <hint type="destinationlabel">
      <x>160</x>
      <y>609</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>game10</sender>
+   <signal>changeStackedWidgetIndex(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setGamePage(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>485</y>
     </hint>
    </hints>
   </connection>

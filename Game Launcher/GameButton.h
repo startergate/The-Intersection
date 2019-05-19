@@ -16,6 +16,7 @@ public:
 
 signals:
 	void changeStackedWidgetIndex(int);
+	void changeGameWidget(int);
 
 protected:
 	void mousePressEvent(QMouseEvent* event);

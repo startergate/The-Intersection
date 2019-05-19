@@ -1,6 +1,13 @@
 #include "QCustomStacked.h"
 
+QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent) {};
+
+QCustomStacked::~QCustomStacked() {};
+
 void QCustomStacked::setGamePage(int gameid) {
 	auto* gamePage = this->widget(1);
-	gamePage->findChild<QLabel>("gameInfoName").setText();
-}
+	
+	auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
+	gameText->setText("Counter-Strike");
+
+};

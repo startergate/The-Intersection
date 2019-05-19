@@ -9,6 +9,9 @@
 #ifndef UI_GAMELAUNCHER_H
 #define UI_GAMELAUNCHER_H
 
+#include <ClickableQLabel.h>
+#include <GameButton.h>
+#include <QCustomStacked.h>
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
@@ -17,10 +20,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
-#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QWidget>
-#include "ClickableQLabel.h"
-#include "GameButton.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -28,7 +28,7 @@ class Ui_GameLauncherClass
 {
 public:
     QWidget *centralWidget;
-    QStackedWidget *stackedWidget;
+    QCustomStacked *stackedWidget;
     QWidget *libraryTab;
     QLabel *libraryLibraryTitle;
     QScrollArea *libraryApps;
@@ -59,7 +59,7 @@ public:
         centralWidget = new QWidget(GameLauncherClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         centralWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(88, 88, 88)"));
-        stackedWidget = new QStackedWidget(centralWidget);
+        stackedWidget = new QCustomStacked(centralWidget);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
         stackedWidget->setGeometry(QRect(9, 9, 1017, 792));
         libraryTab = new QWidget();
@@ -121,7 +121,7 @@ public:
         gameInfoTab->setObjectName(QString::fromUtf8("gameInfoTab"));
         gameInfoName = new QLabel(gameInfoTab);
         gameInfoName->setObjectName(QString::fromUtf8("gameInfoName"));
-        gameInfoName->setGeometry(QRect(0, 10, 1006, 62));
+        gameInfoName->setGeometry(QRect(0, 0, 1006, 62));
         gameInfoName->setFont(font);
         gameInfoName->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
@@ -205,8 +205,9 @@ public:
         QObject::connect(libraryLauncherTitle, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
         QObject::connect(launcherLibraryTitle, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
         QObject::connect(game10, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
+        QObject::connect(game10, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setGamePage(int)));
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(GameLauncherClass);

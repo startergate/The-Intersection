@@ -5,6 +5,7 @@
 
 class Game {
 public:
+	Game() = default;
 	Game(int gameid) {
 		this->gameid = gameid;
 	}
@@ -16,13 +17,17 @@ protected:
 
 class SteamGame : public Game {
 public:
-	SteamGame(int gameid) {
+	SteamGame(int gameid, int steamid) {
 		Game(gameid);
 
 	}
 	~SteamGame() = 0;
-	void execute() {
-		system("explorer steam://run/" << std::to_string(gameid) << "/");
+	virtual void execute() {
+		std::string executeable = "explorer steam://run/";
+		executeable += std::to_string(steamid);
+		executeable.append("/");
+		const char * c = executeable.c_str();
+		system(c);
 	}
 private:
 	int steamid;
