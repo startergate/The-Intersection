@@ -7,6 +7,7 @@
 #include <QStackedWidget>
 #include <QLabel>
 #include <fstream>
+#include "rapidjson/document.h"
 
 class QCustomStacked : public QStackedWidget {
 	Q_OBJECT
