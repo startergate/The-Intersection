@@ -6,6 +6,9 @@
       "addedTime": 1530489600,
       "playedTime": 0,
       "platform": "steam",
+      "additional": {
+        "steamid": 10
+      }
     }
   }
 }
