@@ -1,4 +1,5 @@
 #include "QCustomStacked.h"
+#include <typeinfo>
 
 QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent) {};
 
@@ -8,17 +9,16 @@ void QCustomStacked::setGamePage(int gameid) {
 	std::string json;
 	//delete game;
 	auto* gamePage = this->widget(1);
-	std::ifstream jsondata("people.json");
-	OutputDebugString(L" We are fine 1 \n");
+	std::ifstream jsondata("data/game.json");
 
 	rapidjson::IStreamWrapper jsons(jsondata);
 	rapidjson::Document data;
-	OutputDebugString(L" We are fine 2 \n");
 
 	data.ParseStream(jsons);
-	game = new SteamGame(gameid, data["additional"]["steamid"].GetInt());
+	char str[10];
 	auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
-	gameText->setText(data["title"].GetString());
+	gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].GetString());
+	game = new SteamGame(gameid, data["games"][itoa(gameid, str, 10)]["additional"]["steamid"].GetInt());
 
 };
 

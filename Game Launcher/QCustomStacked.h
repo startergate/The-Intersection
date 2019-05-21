@@ -9,6 +9,9 @@
 #include <fstream>
 #include <rapidjson/document.h>
 #include <rapidjson/istreamwrapper.h>
+#include <sstream>
+#include <string>
+
 
 class QCustomStacked : public QStackedWidget {
 	Q_OBJECT
