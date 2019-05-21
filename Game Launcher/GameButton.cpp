@@ -12,8 +12,8 @@ void GameButton::mousePressEvent(QMouseEvent* event) {
 	OutputDebugString(L" 게임버튼 눌림 \n");
 	setGameid(10);
 	char id[3];
-	sprintf(id, "%d", this->gameid);
-	OutputDebugStringA(id);
+	//sprintf(id, "%d", this->gameid);
+	//OutputDebugStringA(id);
 	emit changeStackedWidgetIndex(1);
 	emit changeGameWidget(this->gameid);
 }

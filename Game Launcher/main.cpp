@@ -2,8 +2,6 @@
 #include "Game.h"
 #include <QtWidgets/QApplication>
 
-Game* selectedGame = new Game();
-
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);

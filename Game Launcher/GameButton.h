@@ -1,4 +1,5 @@
 #pragma once
+
 #ifndef GAMEBUTTON_H
 #define GAMEBUTTON_H
 #include <QtWidgets>

@@ -30,7 +30,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="libraryTab">
      <widget class="QLabel" name="libraryLibraryTitle">
@@ -201,6 +201,27 @@ margin: 10px;</string>
       </property>
       <property name="text">
        <string>GAME_NAME</string>
+      </property>
+     </widget>
+     <widget class="PlayButton" name="gameStartButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Avenir LT 55 Roman</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>▶ Play</string>
       </property>
      </widget>
     </widget>
@@ -432,6 +453,7 @@ margin: 10px;</string>
    <header location="global">GameButton.h</header>
    <slots>
     <signal>changeStackedWidgetIndex(int)</signal>
+    <signal>changeGameWidget(int)</signal>
    </slots>
   </customwidget>
   <customwidget>
@@ -444,6 +466,18 @@ margin: 10px;</string>
    <extends>QStackedWidget</extends>
    <header location="global">QCustomStacked.h</header>
    <container>1</container>
+   <slots>
+    <slot>setGamePage(int)</slot>
+    <slot>startGame()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>PlayButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">PlayButton.h</header>
+   <slots>
+    <signal>gameStart()</signal>
+   </slots>
   </customwidget>
  </customwidgets>
  <resources>
@@ -500,17 +534,33 @@ margin: 10px;</string>
   </connection>
   <connection>
    <sender>game10</sender>
-   <signal>changeStackedWidgetIndex(int)</signal>
+   <signal>changeGameWidget(int)</signal>
    <receiver>stackedWidget</receiver>
    <slot>setGamePage(int)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>132</x>
-     <y>176</y>
+     <y>147</y>
     </hint>
     <hint type="destinationlabel">
-     <x>138</x>
-     <y>485</y>
+     <x>79</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gameStartButton</sender>
+   <signal>gameStart()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>startGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>276</y>
     </hint>
    </hints>
   </connection>
