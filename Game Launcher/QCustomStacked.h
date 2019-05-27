@@ -3,6 +3,7 @@
 #ifndef QCUSTOMSTACKED_H
 #define QCUSTOMSTACKED_H
 #include <Game.h>
+#include <FlowLayout.h>
 #include <QtWidgets>
 #include <QStackedWidget>
 #include <QLabel>
@@ -20,10 +21,13 @@ public:
 	explicit QCustomStacked(QWidget* parent = Q_NULLPTR);
 	~QCustomStacked();
 	
-	SteamGame* game = new SteamGame(10, 10);
+	Game* game = new SteamGame(10, 10);
+
+	void loadGameLibrary();
 
 public slots:
 	void setGamePage(int gameid);
+	void setGameLibrary();
 	void startGame();
 };
 

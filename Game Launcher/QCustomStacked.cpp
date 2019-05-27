@@ -25,3 +25,11 @@ void QCustomStacked::setGamePage(int gameid) {
 void QCustomStacked::startGame() {
 	this->game->execute();
 }
+
+void QCustomStacked::setGameLibrary() {
+	this->loadGameLibrary();
+}
+
+void QCustomStacked::loadGameLibrary() {
+
+}
