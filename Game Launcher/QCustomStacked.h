@@ -29,6 +29,9 @@ public slots:
 	void setGamePage(int gameid);
 	void setGameLibrary();
 	void startGame();
+
+private:
+	FlowLayout* library;
 };
 
 #endif

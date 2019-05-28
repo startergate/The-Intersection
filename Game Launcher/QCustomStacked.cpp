@@ -31,5 +31,6 @@ void QCustomStacked::setGameLibrary() {
 }
 
 void QCustomStacked::loadGameLibrary() {
-
+	library = new FlowLayout;
+	//library->addItem();
 }

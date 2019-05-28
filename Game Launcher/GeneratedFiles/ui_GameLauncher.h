@@ -219,7 +219,7 @@ public:
         QObject::connect(game10, SIGNAL(changeGameWidget(int)), stackedWidget, SLOT(setGamePage(int)));
         QObject::connect(gameStartButton, SIGNAL(gameStart()), stackedWidget, SLOT(startGame()));
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(GameLauncherClass);
