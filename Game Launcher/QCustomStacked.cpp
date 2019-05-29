@@ -1,7 +1,11 @@
 #include "QCustomStacked.h"
-#include <typeinfo>
 
-QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent) {};
+QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent) {
+	font.setFamily(QString::fromUtf8("Noto Sans KR Light"));
+	font.setPointSize(11);
+	library = new FlowLayout;
+	library->setParent(target);
+};
 
 QCustomStacked::~QCustomStacked() {};
 
@@ -31,6 +35,11 @@ void QCustomStacked::setGameLibrary() {
 }
 
 void QCustomStacked::loadGameLibrary() {
-	library = new FlowLayout;
+	QList<GameButton*> buttons = library->findChildren<GameButton*>();
+	for (size_t i = 0; i < buttons.length(); i++)
+	{
+		library->removeWidget(buttons[i]);
+	}
+
 	//library->addItem();
 }

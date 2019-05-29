@@ -4,6 +4,9 @@
 #define QCUSTOMSTACKED_H
 #include <Game.h>
 #include <FlowLayout.h>
+#include <GameButton.h>
+#include <QString>
+#include <QList>
 #include <QtWidgets>
 #include <QStackedWidget>
 #include <QLabel>
@@ -22,7 +25,7 @@ public:
 	~QCustomStacked();
 	
 	Game* game = new SteamGame(10, 10);
-
+	QWidget* target;
 	void loadGameLibrary();
 
 public slots:
@@ -32,6 +35,13 @@ public slots:
 
 private:
 	FlowLayout* library;
+	QFont font;
+	QString buttonStyleSheet = QString::fromUtf8("border: 1px solid grey;\n"
+		"border-radius: 10px;\n"
+		"background-image: url(\"GameThumbnail/10.jpg\");\n"
+		"background-repeat: no-repeat;\n"
+		"background-position: center; color: white; padding-top: 70px;");
+
 };
 
 #endif
