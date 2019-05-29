@@ -40,6 +40,7 @@ void QCustomStacked::loadGameLibrary() {
 	{
 		library->removeWidget(buttons[i]);
 	}
+	
 
 	//library->addItem();
 }
