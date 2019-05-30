@@ -1,7 +1,9 @@
 #include <fstream>
 #include <rapidjson/document.h>
 #include <rapidjson/istreamwrapper.h>
-#include <curl>
+#include <curl/curl.h>
+#include <string>
+#include <memory>
 
 class LoadJson {
 public:
