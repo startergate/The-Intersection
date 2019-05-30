@@ -5,6 +5,7 @@
 #include <Game.h>
 #include <FlowLayout.h>
 #include <GameButton.h>
+#include <LoadJson.h>
 #include <QString>
 #include <QList>
 #include <QtWidgets>

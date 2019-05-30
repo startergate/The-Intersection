@@ -9,16 +9,11 @@ QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent) {
 
 QCustomStacked::~QCustomStacked() {};
 
+
 void QCustomStacked::setGamePage(int gameid) {
-	std::string json;
-	//delete game;
+	delete game;
 	auto* gamePage = this->widget(1);
-	std::ifstream jsondata("data/game.json");
-
-	rapidjson::IStreamWrapper jsons(jsondata);
-	rapidjson::Document data;
-
-	data.ParseStream(jsons);
+	rapidjson::Document data = LoadJson::LoadLibrary();
 	char str[10];
 	auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
 	gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].GetString());
@@ -40,6 +35,7 @@ void QCustomStacked::loadGameLibrary() {
 	{
 		library->removeWidget(buttons[i]);
 	}
+
 	
 
 	//library->addItem();
