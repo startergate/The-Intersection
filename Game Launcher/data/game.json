@@ -1,6 +1,7 @@
 {
   "games": {
     "10": {
+      "tiid": "10",
       "name": "Counter-Strike",
       "isInstalled": "false",
       "addedTime": 1530489600,

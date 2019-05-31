@@ -36,13 +36,13 @@ public slots:
 
 private:
 	FlowLayout* library;
+	QList<GameButton *> buttons;
 	QFont font;
 	QString buttonStyleSheet = QString::fromUtf8("border: 1px solid grey;\n"
 		"border-radius: 10px;\n"
-		"background-image: url(\"GameThumbnail/10.jpg\");\n"
+		//"background-image: url(\"GameThumbnail/10.jpg\");\n"
 		"background-repeat: no-repeat;\n"
 		"background-position: center; color: white; padding-top: 70px;");
-
 };
 
 #endif
