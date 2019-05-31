@@ -12,7 +12,24 @@ void Game::execute() {
 }
 
 void Game::GameListGenerate() {
+	rapidjson::Document games_doc = LoadJson::LoadLibrary();
+	rapidjson::Document steamgames = LoadJson::LoadSteam();
 
+	rapidjson::Value& games = games_doc["games"];
+	rapidjson::Value& s_games = steamgames["response"]["games"];
+
+	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++)
+	{
+		if (it->value["platform"].GetString() == "steam")
+		{
+			it->value.
+		}
+	}
+
+	for (rapidjson::Value::ConstMemberIterator it = s_games.MemberBegin(); it != s_games.MemberEnd(); it++)
+	{
+
+	}
 }
 
 SteamGame::SteamGame(int gameid, int steamid) : Game(gameid) {
