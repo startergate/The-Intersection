@@ -25,7 +25,7 @@ rapidjson::Document LoadJson::LoadLibrary() {
 	return data;
 }
 
-rapidjson::Document LoadSteam() {
+/*rapidjson::Document LoadJson::LoadSteam() {
 	rapidjson::Document userinfo = this->LoadUserData();
 
 	std::string steamid64 = userinfo["steamid64"].GetString();
@@ -63,9 +63,9 @@ rapidjson::Document LoadSteam() {
 	rapidjson::Document error;
 	error.Parse("{\"error\": 1}");
 	return error;
-}
+}*/
 
-rapidjson::Document LoadUserData() {
+rapidjson::Document LoadJson::LoadUserData() {
 	std::ifstream jsondata("data/user.json");
 
 	rapidjson::IStreamWrapper jsons(jsondata);

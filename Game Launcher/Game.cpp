@@ -14,11 +14,11 @@ void Game::execute() {
 void Game::GameListGenerate() {
 	LoadJson* lj = new LoadJson;
 	rapidjson::Document games_doc = lj->LoadLibraryW();
-	rapidjson::Document steamgames = lj->LoadSteam();
-	rapidjson::Document new_game_doc;
+	//rapidjson::Document steamgames = lj->LoadSteam();
+	//rapidjson::Document new_game_doc;
 
 	rapidjson::Value& games = games_doc["games"];
-	rapidjson::Value& s_games = steamgames["response"]["games"];
+	/*rapidjson::Value& s_games = steamgames["response"]["games"];
 	std::list<std::string> toRemove;
 
 	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++)
@@ -32,14 +32,19 @@ void Game::GameListGenerate() {
 	for (rapidjson::Value::ConstMemberIterator it = s_games.MemberBegin(); it != s_games.MemberEnd(); it++)
 	{
 		rapidjson::Document gamedata;
-		/*gamedata.append(it->value["appid"].GetString());
-		gamedata.append("\": { \"tiid\": \"");
-		gamedata.append(it->value["name"].GetString());*/
+		//gamedata.append(it->value["appid"].GetString());
+		//gamedata.append("\": { \"tiid\": \"");
+		//gamedata.append(it->value["name"].GetString());
 
 		//rapidjson::Value& tempvalue = temp;
 
 
 		//games_doc.AddMember<rapidjson::Document>(it->value["appid"].GetString(), gamedata, games_doc.GetAllocator());
+	}*/
+
+	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++)
+	{
+
 	}
 }
 
