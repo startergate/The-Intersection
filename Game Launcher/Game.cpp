@@ -11,7 +11,7 @@ void Game::execute() {
 	system(executeable.c_str());
 }
 
-void Game::GameListGenerate() {
+rapidjson::Document Game::GameListGenerate() {
 	LoadJson* lj = new LoadJson;
 	rapidjson::Document games_doc = lj->LoadLibraryW();
 	//rapidjson::Document steamgames = lj->LoadSteam();
@@ -42,10 +42,7 @@ void Game::GameListGenerate() {
 		//games_doc.AddMember<rapidjson::Document>(it->value["appid"].GetString(), gamedata, games_doc.GetAllocator());
 	}*/
 
-	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++)
-	{
-
-	}
+	return games_doc;
 }
 
 SteamGame::SteamGame(int gameid, int steamid) : Game(gameid) {

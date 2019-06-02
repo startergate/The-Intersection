@@ -3,9 +3,9 @@
 QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent) {
 	font.setFamily(QString::fromUtf8("Noto Sans KR Light"));
 	font.setPointSize(11);
-	library = new FlowLayout;
-	library->setParent(target);
-	target->setLayout(library);
+	//this->library = new FlowLayout;
+	//this->library->setParent(target);
+	//this->target->setLayout(library);
 };
 
 QCustomStacked::~QCustomStacked() {};
@@ -44,8 +44,6 @@ void QCustomStacked::loadGameLibrary() {
 	rapidjson::Document data = lj.LoadLibrary();
 	rapidjson::Value& games = data["games"];
 	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++) {
-		it->value["template"].GetString();
-
 		GameButton* button = new GameButton(target);
 		std::string objectname = "game";
 		objectname += it->value["tiid"].GetString();
@@ -56,7 +54,7 @@ void QCustomStacked::loadGameLibrary() {
 		std::string background = "background-image: url(\"GameThumbnail/";
 		background.append(it->value["tiid"].GetString());
 		background.append(".jpg\");\n");
-		tempButtonStyleSheet.append("background-image: url(\"GameThumbnail/570.jpg\");\n");
+		tempButtonStyleSheet.append(background.c_str());
 		button->setStyleSheet(tempButtonStyleSheet);
 		buttons.append(button);
 	}
