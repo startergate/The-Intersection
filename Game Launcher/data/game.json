@@ -8,7 +8,18 @@
       "playedTime": 0,
       "platform": "steam",
       "additional": {
-        "steamid": 10
+        "steamid": "10"
+      }
+    },
+    "8930": {
+      "tiid": "8930",
+      "name": "Sid Meier's Civilization V",
+      "isInstalled": "false",
+      "addedTime": 1530489600,
+      "playedTime": 0,
+      "platform": "steam",
+      "additional": {
+        "steamid": "8930"
       }
     }
   }
