@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 #include <string>
+#include <list>
 #include <LoadJson.h>
 #include <rapidjson/istreamwrapper.h>
 
@@ -10,7 +11,7 @@ public:
 	Game(int gameid);
 	virtual ~Game();
 	void virtual execute();
-	void GameListGenerate();
+	void GameListGenerate(void);
 protected:
 	int gameid;
 };

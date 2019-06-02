@@ -117,6 +117,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="LoadJson.cpp" />
     <ClCompile Include="PlayButton.cpp" />
     <ClCompile Include="QCustomStacked.cpp" />

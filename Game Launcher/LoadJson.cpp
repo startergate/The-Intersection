@@ -15,7 +15,7 @@ namespace
 }
 
 
-inline rapidjson::Document LoadJson::LoadLibrary() {
+rapidjson::Document LoadJson::LoadLibrary() {
 	std::ifstream jsondata("data/game.json");
 
 	rapidjson::IStreamWrapper jsons(jsondata);
@@ -25,8 +25,8 @@ inline rapidjson::Document LoadJson::LoadLibrary() {
 	return data;
 }
 
-inline rapidjson::Document LoadSteam() {
-	rapidjson::Document userinfo = LoadJson::LoadUserData();
+rapidjson::Document LoadSteam() {
+	rapidjson::Document userinfo = this->LoadUserData();
 
 	std::string steamid64 = userinfo["steamid64"].GetString();
 	CURL *curl;
@@ -65,7 +65,7 @@ inline rapidjson::Document LoadSteam() {
 	return error;
 }
 
-inline rapidjson::Document LoadUserData() {
+rapidjson::Document LoadUserData() {
 	std::ifstream jsondata("data/user.json");
 
 	rapidjson::IStreamWrapper jsons(jsondata);

@@ -14,7 +14,8 @@ QCustomStacked::~QCustomStacked() {};
 void QCustomStacked::setGamePage(int gameid) {
 	delete game;
 	auto* gamePage = this->widget(1);
-	rapidjson::Document data = LoadJson::LoadLibrary();
+	LoadJson* lj = new LoadJson;
+	rapidjson::Document data = lj->LoadLibraryW();
 	char str[10];
 	auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
 	gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].GetString());
@@ -31,6 +32,7 @@ void QCustomStacked::setGameLibrary() {
 }
 
 void QCustomStacked::loadGameLibrary() {
+	LoadJson lj;
 	QList<GameButton*> buttons = library->findChildren<GameButton*>();
 	for (size_t i = 0; i < buttons.length(); i++)
 	{
@@ -39,7 +41,7 @@ void QCustomStacked::loadGameLibrary() {
 
 	game->GameListGenerate();
 
-	rapidjson::Document data = LoadJson::LoadLibrary();
+	rapidjson::Document data = lj.LoadLibrary();
 	rapidjson::Value& games = data["games"];
 	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++) {
 		it->value["template"].GetString();
