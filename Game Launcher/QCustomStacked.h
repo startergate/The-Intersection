@@ -26,8 +26,8 @@ public:
 	~QCustomStacked();
 	
 	Game* game = new SteamGame(10, 10);
-	QWidget* target;
 	void loadGameLibrary();
+	void init(QWidget*);
 
 public slots:
 	void setGamePage(int gameid);
@@ -35,12 +35,12 @@ public slots:
 	void startGame();
 
 private:
+	QWidget* target;
 	FlowLayout* library;
 	QList<GameButton *> buttons;
 	QFont font;
 	QString buttonStyleSheet = QString::fromUtf8("border: 1px solid grey;\n"
 		"border-radius: 10px;\n"
-		//"background-image: url(\"GameThumbnail/10.jpg\");\n"
 		"background-repeat: no-repeat;\n"
 		"background-position: center; color: white; padding-top: 70px;");
 };

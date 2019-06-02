@@ -9,7 +9,7 @@ GameLauncher::GameLauncher(QWidget *parent)
 	ui.launcherLibraryTitle->target = 0;
 	ui.stackedWidget->setCurrentIndex(0);
 
-	ui.stackedWidget->target = ui.scrollAreaWidgetContents;
+	ui.stackedWidget->init(ui.scrollAreaWidgetContents);
 	ui.stackedWidget->loadGameLibrary();
 	//ui.stackedWidget->setCurrentIndex(3);
 }

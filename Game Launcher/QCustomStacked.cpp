@@ -1,11 +1,9 @@
 #include "QCustomStacked.h"
 
-QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent) {
+QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent), target(target) {
 	font.setFamily(QString::fromUtf8("Noto Sans KR Light"));
 	font.setPointSize(11);
-	//this->library = new FlowLayout;
-	//this->library->setParent(target);
-	//this->target->setLayout(library);
+	this->library = new FlowLayout;
 };
 
 QCustomStacked::~QCustomStacked() {};
@@ -58,4 +56,10 @@ void QCustomStacked::loadGameLibrary() {
 		button->setStyleSheet(tempButtonStyleSheet);
 		buttons.append(button);
 	}
+}
+
+void QCustomStacked::init(QWidget* target) {
+	this->target = target;
+	this->library->setParent(target);
+	this->target->setLayout(library);
 }
