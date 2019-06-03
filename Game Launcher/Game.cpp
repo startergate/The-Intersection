@@ -24,7 +24,7 @@ Json::Value Game::GameListGenerate() {
 	std::list<std::string> toRemove;
 
 	for (Json::ValueIterator it = games.begin(); it != games.end(); it++)
-		if (it["platform"] == "steam") toRemove.push_back(it["tiid"]);
+		if ((*it)["platform"] == "steam") toRemove.push_back((*it)["tiid"].asCString());
 
 	for (auto const& it : toRemove)
 		games_doc["games"].removeMember(it.c_str());
@@ -34,25 +34,15 @@ Json::Value Game::GameListGenerate() {
 	for (Json::ValueIterator it = s_games.begin(); it != s_games.end(); it++)
 	{
 		char buffer[10];
-		std::string gamedataROW = "{\"";
-		gamedataROW.append(itoa(it["appid"].GetInt(), buffer, 10));
-		gamedataROW.append("\": { \"tiid\": \"");
-		gamedataROW.append(it["name"].GetString());
-		gamedataROW.append("\",\"isInstalled\": ");
-		gamedataROW.append("\"false\"");
-		gamedataROW.append("\"addedTime\": 1530489600, \"playedTime\": ");
-		gamedataROW.append(itoa(it->value["playtime_forever"].GetInt(), buffer, 10));
-		gamedataROW.append(", \"platform\": \"steam\", \"additional\": {\"steamid\": ");
-		gamedataROW.append(itoa(it->value["appid"].GetInt(), buffer, 10));
-		gamedataROW.append("}}");
-		rapidjson::Document gamedata(&new_games.GetAllocator());
-		gamedata.Parse(gamedataROW.c_str());
-		games.AddMember(itoa(it->value["appid"].GetInt(), buffer, 10), gamedata, new_games.GetAllocator());
-		//new_games.AddMember(itoa(it->value["appid"].GetInt(), buffer, 10), gamedata, new_games.GetAllocator());
-		//rapidjson::Value& tempvalue = temp;
-
-
-		//games_doc.AddMember<rapidjson::Document>(it->value["appid"].GetString(), gamedata, games_doc.GetAllocator());
+		Json::Value gamedata;
+		gamedata["tiid"] = itoa((*it)["appid"].asInt(), buffer, 10);
+		gamedata["name"] = (*it)["name"].asCString();
+		gamedata["isInstalled"] = "false";
+		gamedata["addedTime"] = 1530489600;
+		gamedata["playedTime"] = (*it)["playtime_forever"].asInt();
+		gamedata["platform"] = "steam";
+		gamedata["additional"]["steamid"] = (*it)["appid"].asInt();
+		games[itoa((*it)["appid"].asInt(), buffer, 10)] = gamedata;
 	}
 
 	return games_doc;
