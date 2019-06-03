@@ -11,33 +11,33 @@ void Game::execute() {
 	system(executeable.c_str());
 }
 
-rapidjson::Document Game::GameListGenerate() {
+Json::Value Game::GameListGenerate() {
 	Json::Value games_docs;
 	LoadJson* lj = new LoadJson;
-	rapidjson::Document games_doc = lj->LoadLibraryW();
-	rapidjson::Document steamgames = lj->LoadSteam();
-	rapidjson::Document new_game_doc;
-	rapidjson::Document new_games;
+	Json::Value games_doc = lj->LoadLibraryW();
+	Json::Value steamgames = lj->LoadSteam();
+	Json::Value new_game_doc;
+	Json::Value new_games;
 
-	rapidjson::Value& games = games_doc["games"];
-	rapidjson::Value& s_games = steamgames["response"]["games"];
+	Json::Value& games = games_doc["games"];
+	Json::Value& s_games = steamgames["response"]["games"];
 	std::list<std::string> toRemove;
 
-	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++)
-		if (it->value["platform"].GetString() == "steam") toRemove.push_back(it->value["tiid"].GetString());
+	for (Json::ValueIterator it = games.begin(); it != games.end(); it++)
+		if (it["platform"] == "steam") toRemove.push_back(it["tiid"]);
 
 	for (auto const& it : toRemove)
-		games_doc["games"].EraseMember(it.c_str());
+		games_doc["games"].removeMember(it.c_str());
 
 
 
-	for (rapidjson::Value::ConstMemberIterator it = s_games.MemberBegin(); it != s_games.MemberEnd(); it++)
+	for (Json::ValueIterator it = s_games.begin(); it != s_games.end(); it++)
 	{
 		char buffer[10];
 		std::string gamedataROW = "{\"";
-		gamedataROW.append(itoa(it->value["appid"].GetInt(), buffer, 10));
+		gamedataROW.append(itoa(it["appid"].GetInt(), buffer, 10));
 		gamedataROW.append("\": { \"tiid\": \"");
-		gamedataROW.append(it->value["name"].GetString());
+		gamedataROW.append(it["name"].GetString());
 		gamedataROW.append("\",\"isInstalled\": ");
 		gamedataROW.append("\"false\"");
 		gamedataROW.append("\"addedTime\": 1530489600, \"playedTime\": ");

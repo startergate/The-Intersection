@@ -7,13 +7,14 @@
 #include <fstream>
 #include <rapidjson/document.h>
 #include <rapidjson/istreamwrapper.h>
+#include <json/json.h>
 #include <curl/curl.h>
 #include <string>
 #include <memory>
 
 class LoadJson {
 public:
-	rapidjson::Document LoadLibraryW();
-	rapidjson::Document LoadSteam();
-	rapidjson::Document LoadUserData();
+	Json::Value LoadLibraryW();
+	Json::Value LoadSteam();
+	Json::Value LoadUserData();
 };

@@ -14,7 +14,7 @@ public:
 	Game(int gameid);
 	virtual ~Game();
 	void virtual execute();
-	rapidjson::Document GameListGenerate(void);
+	Json::Value GameListGenerate(void);
 protected:
 	int gameid;
 };
