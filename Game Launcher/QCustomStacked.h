@@ -39,10 +39,7 @@ private:
 	FlowLayout* library;
 	QList<GameButton *> buttons;
 	QFont font;
-	QString buttonStyleSheet = QString::fromUtf8("border: 1px solid grey;\n"
-		"border-radius: 10px;\n"
-		"background-repeat: no-repeat;\n"
-		"background-position: center; color: white; padding-top: 70px;");
+	std::string buttonStyleSheet = "border: 1px solid grey;\nborder-radius: 10px;\nbackground-repeat: no-repeat;\nbackground-position: center; color: white; padding-top: 70px;";
 };
 
 #endif

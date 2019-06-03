@@ -8,7 +8,7 @@
       "playedTime": 0,
       "platform": "steam",
       "additional": {
-        "steamid": "10"
+        "steamid": 10
       }
     },
     "8930": {
@@ -19,7 +19,7 @@
       "playedTime": 0,
       "platform": "steam",
       "additional": {
-        "steamid": "8930"
+        "steamid": 8930
       }
     }
   }

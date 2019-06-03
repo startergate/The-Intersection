@@ -14,7 +14,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>The Intersection</string>
+   <string>GameLauncher</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="styleSheet">
@@ -85,6 +85,70 @@ margin: 10px;</string>
          <height>323</height>
         </rect>
        </property>
+       <widget class="GameButton" name="game10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>169</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans KR Light</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>Counter-Strike</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>10</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid grey;
+border-radius: 10px;
+background-image: url(&quot;GameThumbnail/10.jpg&quot;);
+background-repeat: no-repeat;
+background-position: center; color: white; padding-top: 70px;</string>
+        </property>
+        <property name="text">
+         <string>Counter-Strike</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="game20">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>10</y>
+          <width>171</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Sans KR Light</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="accessibleName">
+         <string>Counter-Strike</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>20</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid grey;
+border-radius: 10px;
+background-image: url(&quot;GameThumbnail/570.jpg&quot;);
+background-repeat: no-repeat;
+background-position: center; color: white; padding-top: 70px;</string>
+        </property>
+        <property name="text">
+         <string>Dota 2</string>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="ClickableLabel" name="libraryLauncherTitle">
@@ -384,6 +448,15 @@ margin: 10px;</string>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
+   <class>GameButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">GameButton.h</header>
+   <slots>
+    <signal>changeStackedWidgetIndex(int)</signal>
+    <signal>changeGameWidget(int)</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
    <class>ClickableLabel</class>
    <extends>QLabel</extends>
    <header location="global">ClickableQLabel.h</header>
@@ -440,6 +513,38 @@ margin: 10px;</string>
     <hint type="destinationlabel">
      <x>62</x>
      <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>game10</sender>
+   <signal>changeStackedWidgetIndex(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>160</x>
+     <y>609</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>game10</sender>
+   <signal>changeGameWidget(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setGamePage(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>527</y>
     </hint>
    </hints>
   </connection>
