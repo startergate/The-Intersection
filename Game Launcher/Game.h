@@ -1,10 +1,13 @@
 #pragma once
 
+#pragma comment (lib, "lib_json.lib")
+
 #include <stdlib.h>
 #include <string>
 #include <list>
 #include <LoadJson.h>
 #include <rapidjson/istreamwrapper.h>
+#include <json/json.h>
 
 class Game {
 public:
