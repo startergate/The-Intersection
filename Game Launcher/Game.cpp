@@ -45,6 +45,10 @@ Json::Value Game::GameListGenerate() {
 		games_doc["games"][itoa((*it)["appid"].asInt(), buffer, 10)] = gamedata;
 	}
 
+	std::ofstream data;
+	data.open("data/game.json");
+
+	data << games_doc;
 	return games_doc;
 }
 

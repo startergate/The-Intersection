@@ -64,7 +64,7 @@ margin: 10px;</string>
         <x>0</x>
         <y>80</y>
         <width>1006</width>
-        <height>323</height>
+        <height>711</height>
        </rect>
       </property>
       <property name="whatsThis">
@@ -82,7 +82,7 @@ margin: 10px;</string>
          <x>0</x>
          <y>0</y>
          <width>1006</width>
-         <height>323</height>
+         <height>711</height>
         </rect>
        </property>
       </widget>
@@ -117,9 +117,9 @@ margin: 10px;</string>
      <widget class="QLabel" name="gameInfoName">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>65</x>
         <y>0</y>
-        <width>1006</width>
+        <width>941</width>
         <height>62</height>
        </rect>
       </property>
@@ -158,6 +158,31 @@ margin: 10px;</string>
       </property>
       <property name="text">
        <string>▶ Play</string>
+      </property>
+     </widget>
+     <widget class="ClickableLabel" name="goBack">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>-10</y>
+        <width>91</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Avenir LT 65 Medium</family>
+        <pointsize>50</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+margin: 10px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
       </property>
      </widget>
     </widget>
@@ -387,6 +412,9 @@ margin: 10px;</string>
    <class>ClickableLabel</class>
    <extends>QLabel</extends>
    <header location="global">ClickableQLabel.h</header>
+   <slots>
+    <signal>changeStackedWidgetIndex(int)</signal>
+   </slots>
   </customwidget>
   <customwidget>
    <class>QCustomStacked</class>
@@ -456,6 +484,22 @@ margin: 10px;</string>
     <hint type="destinationlabel">
      <x>64</x>
      <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>goBack</sender>
+   <signal>changeStackedWidgetIndex(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>66</x>
+     <y>385</y>
     </hint>
    </hints>
   </connection>
