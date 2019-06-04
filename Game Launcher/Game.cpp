@@ -42,7 +42,7 @@ Json::Value Game::GameListGenerate() {
 		gamedata["playedTime"] = (*it)["playtime_forever"].asInt();
 		gamedata["platform"] = "steam";
 		gamedata["additional"]["steamid"] = (*it)["appid"].asInt();
-		games[itoa((*it)["appid"].asInt(), buffer, 10)] = gamedata;
+		games_doc["games"][itoa((*it)["appid"].asInt(), buffer, 10)] = gamedata;
 	}
 
 	return games_doc;
