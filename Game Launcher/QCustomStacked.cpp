@@ -17,7 +17,7 @@ void QCustomStacked::setGamePage(int gameid) {
 	char str[10];
 	auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
 	gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].asCString());
-	if (data["games"][itoa(gameid, str, 10)]["platform"].asCString() == "steam")
+	if (data["games"][itoa(gameid, str, 10)]["platform"].asString().compare("steam") == 0)
 	{
 		game = new SteamGame(gameid, data["games"][itoa(gameid, str, 10)]["additional"]["steamid"].asInt());
 	}
