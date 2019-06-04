@@ -5,8 +5,6 @@
 #pragma comment(lib, "Ws2_32.lib")
 
 #include <fstream>
-#include <rapidjson/document.h>
-#include <rapidjson/istreamwrapper.h>
 #include <json/json.h>
 #include <curl/curl.h>
 #include <string>

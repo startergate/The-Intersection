@@ -6,8 +6,7 @@
 #include <string>
 #include <list>
 #include <LoadJson.h>
-#include <rapidjson/istreamwrapper.h>
-#include <json/json.h>
+#include "json/json.h"
 
 class Game {
 public:

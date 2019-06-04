@@ -13,12 +13,18 @@ void QCustomStacked::setGamePage(int gameid) {
 	delete game;
 	auto* gamePage = this->widget(1);
 	LoadJson* lj = new LoadJson;
-	rapidjson::Document data = lj->LoadLibraryW();
+	Json::Value data = lj->LoadLibraryW();
 	char str[10];
 	auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
-	gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].GetString());
-	game = new SteamGame(gameid, data["games"][itoa(gameid, str, 10)]["additional"]["steamid"].GetInt());
-
+	gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].asCString());
+	if (data["games"][itoa(gameid, str, 10)]["platform"].asCString() == "steam")
+	{
+		game = new SteamGame(gameid, data["games"][itoa(gameid, str, 10)]["additional"]["steamid"].asInt());
+	}
+	else
+	{
+		game = new Game(gameid);
+	}
 };
 
 void QCustomStacked::startGame() {
@@ -39,28 +45,28 @@ void QCustomStacked::loadGameLibrary() {
 
 	game->GameListGenerate();
 
-	rapidjson::Document data = lj.LoadLibrary();
-	rapidjson::Value& games = data["games"];
-	for (rapidjson::Value::ConstMemberIterator it = games.MemberBegin(); it != games.MemberEnd(); it++) {
+	Json::Value data = lj.LoadLibrary();
+	Json::Value& games = data["games"];
+	for (Json::ValueIterator it = games.begin(); it != games.end(); it++) {
 		GameButton* button = new GameButton(target);
 		std::string objectname = "game";
-		objectname += it->value["tiid"].GetString();
+		objectname += (*it)["tiid"].asCString();
 		button->setObjectName(QString::fromUtf8(objectname.c_str()));
 		button->setGeometry(QRect(0, 0, 171, 101));
 		button->setFont(font);
 		std::string tempButtonStyleSheet = buttonStyleSheet;
 		tempButtonStyleSheet += "background-image: url(\"GameThumbnail/";
-		tempButtonStyleSheet.append(it->value["tiid"].GetString());
+		tempButtonStyleSheet.append((*it)["tiid"].asCString());
 		tempButtonStyleSheet.append(".jpg\");\n");
 		button->setStyleSheet(QString::fromUtf8(tempButtonStyleSheet.c_str()));
 #ifndef QT_NO_ACCESSIBILITY
-		button->setAccessibleName(QApplication::translate("GameLauncherClass", it->value["name"].GetString(), nullptr));
+		button->setAccessibleName(QApplication::translate("GameLauncherClass", (*it)["name"].asCString(), nullptr));
 #endif // QT_NO_ACCESSIBILITY
 #ifndef QT_NO_ACCESSIBILITY
-		button->setAccessibleDescription(QApplication::translate("GameLauncherClass", it->value["tiid"].GetString(), nullptr));
+		button->setAccessibleDescription(QApplication::translate("GameLauncherClass", (*it)["tiid"].asCString(), nullptr));
 #endif // QT_NO_ACCESSIBILITY
-		button->setText(QApplication::translate("GameLauncherClass", it->value["name"].GetString(), nullptr));
-		button->setGameid(it->value["tiid"].GetString());
+		button->setText(QApplication::translate("GameLauncherClass", (*it)["name"].asCString(), nullptr));
+		button->setGameid((*it)["tiid"].asCString());
 		QObject::connect(button, SIGNAL(changeStackedWidgetIndex(int)), this, SLOT(setCurrentIndex(int)));
 		QObject::connect(button, SIGNAL(changeGameWidget(int)), this, SLOT(setGamePage(int)));
 		buttons.append(button);

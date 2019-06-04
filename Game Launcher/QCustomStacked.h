@@ -12,10 +12,9 @@
 #include <QStackedWidget>
 #include <QLabel>
 #include <fstream>
-#include <rapidjson/document.h>
-#include <rapidjson/istreamwrapper.h>
 #include <sstream>
 #include <string>
+#include "json/json.h"
 
 
 class QCustomStacked : public QStackedWidget {
