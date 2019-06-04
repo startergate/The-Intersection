@@ -117,10 +117,10 @@ public:
         goBack->setObjectName(QString::fromUtf8("goBack"));
         goBack->setGeometry(QRect(-10, -10, 91, 81));
         QFont font3;
-        font3.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
+        font3.setFamily(QString::fromUtf8("Avenir LT 65 Medium"));
         font3.setPointSize(50);
-        font3.setBold(true);
-        font3.setWeight(75);
+        font3.setBold(false);
+        font3.setWeight(50);
         goBack->setFont(font3);
         goBack->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
@@ -204,6 +204,7 @@ public:
         QObject::connect(libraryLauncherTitle, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
         QObject::connect(launcherLibraryTitle, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
         QObject::connect(gameStartButton, SIGNAL(gameStart()), stackedWidget, SLOT(startGame()));
+        QObject::connect(goBack, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
 
         stackedWidget->setCurrentIndex(0);
 
