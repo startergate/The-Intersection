@@ -24,7 +24,7 @@ Json::Value Game::GameListGenerate() {
 	std::list<std::string> toRemove;
 
 	for (Json::ValueIterator it = games.begin(); it != games.end(); it++)
-		if ((*it)["platform"] == "steam") toRemove.push_back((*it)["tiid"].asCString());
+		if ((*it)["platform"].asCString() == "steam") toRemove.push_back((*it)["tiid"].asCString());
 
 	for (auto const& it : toRemove)
 		games_doc["games"].removeMember(it.c_str());

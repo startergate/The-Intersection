@@ -1,6 +1,5 @@
 #include "LoadJson.h"
 #include "json/reader.h"
-#include "json/writer.h"
 namespace
 {
 	std::size_t callback(
@@ -18,10 +17,9 @@ namespace
 
 Json::Value LoadJson::LoadLibrary() {
 	std::ifstream jsondata("data/game.json");
-
 	Json::Value data;
-
-	jsondata >> data;
+	Json::Reader reader;
+	reader.parse(jsondata, data, false);
 	return data;
 }
 

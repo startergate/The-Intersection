@@ -7,6 +7,7 @@ GameLauncher::GameLauncher(QWidget *parent)
 
 	ui.libraryLauncherTitle->target = 2;
 	ui.launcherLibraryTitle->target = 0;
+	ui.goBack->target = 0;
 	ui.stackedWidget->setCurrentIndex(0);
 
 	ui.stackedWidget->init(ui.scrollAreaWidgetContents);
