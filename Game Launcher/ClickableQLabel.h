@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef CLICKABLELABEL_H
 #define CLICKABLELABEL_H
 

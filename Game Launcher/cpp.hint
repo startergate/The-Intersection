@@ -1,5 +1,5 @@
-// 힌트 파일은 Visual Studio IDE에서 함수 및 매크로 이름과 같은 Visual C++ 식별자를
-// 해석하는 데 도움이 됩니다.
-// 자세한 내용은 다음을 참조하세요. https://go.microsoft.com/fwlink/?linkid=865984
+// ?�트 ?�일?� Visual Studio IDE?�서 ?�수 �?매크�??�름�?같�? Visual C++ ?�별?��?
+// ?�석?�는 ???��????�니??
+// ?�세???�용?� ?�음??참조?�세?? https://go.microsoft.com/fwlink/?linkid=865984
 #define Q_OBJECT public: QT_WARNING_PUSH Q_OBJECT_NO_OVERRIDE_WARNING static const QMetaObject staticMetaObject; virtual const QMetaObject *metaObject() const; virtual void *qt_metacast(const char *); virtual int qt_metacall(QMetaObject::Call, int, void **); QT_TR_FUNCTIONS private: Q_OBJECT_NO_ATTRIBUTES_WARNING Q_DECL_HIDDEN_STATIC_METACALL static void qt_static_metacall(QObject *, QMetaObject::Call, int, void **); QT_WARNING_POP struct QPrivateSignal {}; QT_ANNOTATE_CLASS(qt_qobject, "")
 #define Q_OBJECT

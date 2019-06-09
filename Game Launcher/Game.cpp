@@ -29,8 +29,6 @@ Json::Value Game::GameListGenerate() {
 	for (auto const& it : toRemove)
 		games_doc["games"].removeMember(it.c_str());
 
-
-
 	for (Json::ValueIterator it = s_games.begin(); it != s_games.end(); it++)
 	{
 		char buffer[10];

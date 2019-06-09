@@ -183,6 +183,19 @@
 			"playedTime" : 0,
 			"tiid" : "204880"
 		},
+		"20500" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 20500
+			},
+			"isInstalled" : "false",
+			"name" : "Red Faction: Guerrilla Steam Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "20500"
+		},
 		"20510" : 
 		{
 			"addedTime" : 1530489600,
@@ -638,6 +651,19 @@
 			"playedTime" : 0,
 			"tiid" : "237110"
 		},
+		"238210" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 238210
+			},
+			"isInstalled" : "false",
+			"name" : "System Shock 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "238210"
+		},
 		"238370" : 
 		{
 			"addedTime" : 1530489600,
@@ -742,6 +768,19 @@
 			"playedTime" : 0,
 			"tiid" : "245280"
 		},
+		"245390" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 245390
+			},
+			"isInstalled" : "false",
+			"name" : "I Have No Mouth, and I Must Scream",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "245390"
+		},
 		"246620" : 
 		{
 			"addedTime" : 1530489600,
@@ -767,6 +806,19 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "246900"
+		},
+		"247020" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 247020
+			},
+			"isInstalled" : "false",
+			"name" : "Cook, Serve, Delicious!",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "247020"
 		},
 		"249130" : 
 		{
@@ -819,6 +871,19 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "251530"
+		},
+		"251770" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 251770
+			},
+			"isInstalled" : "false",
+			"name" : "Shadow Man",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "251770"
 		},
 		"252130" : 
 		{
@@ -885,6 +950,19 @@
 			"playedTime" : 30,
 			"tiid" : "253290"
 		},
+		"254320" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 254320
+			},
+			"isInstalled" : "false",
+			"name" : "Duskers",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "254320"
+		},
 		"255520" : 
 		{
 			"addedTime" : 1530489600,
@@ -908,7 +986,7 @@
 			"isInstalled" : "false",
 			"name" : "Cities: Skylines",
 			"platform" : "steam",
-			"playedTime" : 4924,
+			"playedTime" : 4925,
 			"tiid" : "255710"
 		},
 		"259170" : 
@@ -1105,6 +1183,19 @@
 			"platform" : "steam",
 			"playedTime" : 1,
 			"tiid" : "268910"
+		},
+		"269650" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 269650
+			},
+			"isInstalled" : "false",
+			"name" : "Dex",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "269650"
 		},
 		"270170" : 
 		{
@@ -1379,6 +1470,19 @@
 			"playedTime" : 0,
 			"tiid" : "294750"
 		},
+		"295790" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 295790
+			},
+			"isInstalled" : "false",
+			"name" : "Never Alone (Kisima Ingitchuna)",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "295790"
+		},
 		"298110" : 
 		{
 			"addedTime" : 1530489600,
@@ -1389,7 +1493,7 @@
 			"isInstalled" : "false",
 			"name" : "Far Cry 4",
 			"platform" : "steam",
-			"playedTime" : 1317,
+			"playedTime" : 1494,
 			"tiid" : "298110"
 		},
 		"299950" : 
@@ -1574,6 +1678,19 @@
 			"playedTime" : 0,
 			"tiid" : "311480"
 		},
+		"312230" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 312230
+			},
+			"isInstalled" : "false",
+			"name" : "Spirits of Xanadu",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "312230"
+		},
 		"312610" : 
 		{
 			"addedTime" : 1530489600,
@@ -1586,6 +1703,19 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "312610"
+		},
+		"312840" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 312840
+			},
+			"isInstalled" : "false",
+			"name" : "Fahrenheit: Indigo Prophecy Remastered",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "312840"
 		},
 		"313020" : 
 		{
@@ -1612,6 +1742,19 @@
 			"platform" : "steam",
 			"playedTime" : 10,
 			"tiid" : "313340"
+		},
+		"317040" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 317040
+			},
+			"isInstalled" : "false",
+			"name" : "Strife: Veteran Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "317040"
 		},
 		"317470" : 
 		{
@@ -2679,6 +2822,58 @@
 			"playedTime" : 0,
 			"tiid" : "407560"
 		},
+		"410110" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 410110
+			},
+			"isInstalled" : "false",
+			"name" : "12 is Better Than 6",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "410110"
+		},
+		"410700" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 410700
+			},
+			"isInstalled" : "false",
+			"name" : "System Shock: Classic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "410700"
+		},
+		"410710" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 410710
+			},
+			"isInstalled" : "false",
+			"name" : "System Shock: Enhanced Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "410710"
+		},
+		"414340" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 414340
+			},
+			"isInstalled" : "false",
+			"name" : "Hellblade: Senua's Sacrifice",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "414340"
+		},
 		"416080" : 
 		{
 			"addedTime" : 1530489600,
@@ -3524,6 +3719,19 @@
 			"playedTime" : 0,
 			"tiid" : "50300"
 		},
+		"503560" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 503560
+			},
+			"isInstalled" : "false",
+			"name" : "911 Operator",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "503560"
+		},
 		"505210" : 
 		{
 			"addedTime" : 1530489600,
@@ -3640,6 +3848,19 @@
 			"platform" : "steam",
 			"playedTime" : 592,
 			"tiid" : "522210"
+		},
+		"522240" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 522240
+			},
+			"isInstalled" : "false",
+			"name" : "Pool Panic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "522240"
 		},
 		"524220" : 
 		{
@@ -3875,6 +4096,19 @@
 			"playedTime" : 0,
 			"tiid" : "556870"
 		},
+		"557340" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 557340
+			},
+			"isInstalled" : "false",
+			"name" : "My Friend Pedro",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "557340"
+		},
 		"560380" : 
 		{
 			"addedTime" : 1530489600,
@@ -4017,6 +4251,19 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "582160"
+		},
+		"582560" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 582560
+			},
+			"isInstalled" : "false",
+			"name" : "The Invisible Hours",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "582560"
 		},
 		"582890" : 
 		{
@@ -4186,6 +4433,19 @@
 			"platform" : "steam",
 			"playedTime" : 11,
 			"tiid" : "606140"
+		},
+		"606150" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 606150
+			},
+			"isInstalled" : "false",
+			"name" : "Moonlighter",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "606150"
 		},
 		"611500" : 
 		{
@@ -4473,6 +4733,19 @@
 			"playedTime" : 0,
 			"tiid" : "65930"
 		},
+		"667720" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 667720
+			},
+			"isInstalled" : "false",
+			"name" : "Red Faction Guerrilla Re-Mars-tered",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "667720"
+		},
 		"667810" : 
 		{
 			"addedTime" : 1530489600,
@@ -4485,6 +4758,19 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "667810"
+		},
+		"684680" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 684680
+			},
+			"isInstalled" : "false",
+			"name" : "Polygoneer",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "684680"
 		},
 		"691690" : 
 		{
@@ -4613,7 +4899,7 @@
 			"isInstalled" : "false",
 			"name" : "Sudoku Universe",
 			"platform" : "steam",
-			"playedTime" : 733,
+			"playedTime" : 783,
 			"tiid" : "733070"
 		},
 		"735580" : 
@@ -4628,6 +4914,19 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "735580"
+		},
+		"747350" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 747350
+			},
+			"isInstalled" : "false",
+			"name" : "Hellblade: Senua's Sacrifice VR Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "747350"
 		},
 		"769920" : 
 		{
@@ -4769,7 +5068,7 @@
 			"isInstalled" : "false",
 			"name" : "HITMAN\u2122 2",
 			"platform" : "steam",
-			"playedTime" : 10687,
+			"playedTime" : 10782,
 			"tiid" : "863550"
 		},
 		"8650" : 
@@ -4798,6 +5097,19 @@
 			"playedTime" : 0,
 			"tiid" : "8870"
 		},
+		"888040" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 888040
+			},
+			"isInstalled" : "false",
+			"name" : "Metal Fatigue",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "888040"
+		},
 		"8930" : 
 		{
 			"addedTime" : 1530489600,
@@ -4810,6 +5122,19 @@
 			"platform" : "steam",
 			"playedTime" : 208,
 			"tiid" : "8930"
+		},
+		"897030" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 897030
+			},
+			"isInstalled" : "false",
+			"name" : "Paratopic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "897030"
 		},
 		"897820" : 
 		{

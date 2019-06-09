@@ -1,5 +1,4 @@
 #include "GameLauncher.h"
-#include "Game.h"
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])

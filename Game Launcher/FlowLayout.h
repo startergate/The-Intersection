@@ -38,6 +38,8 @@
 **
 ****************************************************************************/
 
+#pragma once
+
 #ifndef FLOWLAYOUT_H
 #define FLOWLAYOUT_H
 
