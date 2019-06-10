@@ -10,9 +10,10 @@ QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent), target
 QCustomStacked::~QCustomStacked() {};
 
 void QCustomStacked::login() {
+	Json::StyledWriter writer;
 	std::string clientid = sid->createClientID("the-intersection");
 	Json::Value userdata = sid->login(clientid, id_form->text().toStdString(), pw_form->text().toStdString());
-	if (userdata["type"].asCString() == "error")
+	if (userdata["error"])
 	{
 		return this->loginError();
 	}
@@ -20,15 +21,18 @@ void QCustomStacked::login() {
 	LoadJson* lj = new LoadJson;
 	
 	Json::Value userdataFile = lj->LoadUserData();
-	userdataFile["sid"]["clientid"] = userdata["clientid"];
+	userdataFile["sid"]["clientid"] = clientid;
 	userdataFile["sid"]["sessid"] = userdata["sessid"];
 	userdataFile["sid"]["pid"] = userdata["pid"];
 	userdataFile["sid"]["nickname"] = userdata["nickname"];
+	lj->Save("data/user.json", userdataFile);
+	Json::Value game = lj->LoadLibraryOn(userdata["pid"].asString());
+	lj->Save("data/game.json", game);
 
-	std::ofstream data;
-	data.open("data/game.json");
+	this->widget(4)->findChild<QLineEdit *>("steamidEnter")->setText(userdataFile["steamid64"].asCString());
 
-	data << userdataFile;
+	this->loadGameLibrary();
+	this->setCurrentIndex(0);
 }
 
 void QCustomStacked::loginError() {
@@ -116,4 +120,15 @@ void QCustomStacked::init(QWidget* target) {
 void QCustomStacked::loginInit(QLineEdit* id, QLineEdit* pw) {
 	this->id_form = id;
 	this->pw_form = pw;
+}
+
+void QCustomStacked::changeToUserTab() {
+	this->setCurrentIndex(4);
+}
+
+void QCustomStacked::setSteamID64() {
+	LoadJson* lj = new LoadJson;
+	Json::Value userdata = lj->LoadUserData();
+	userdata["steamid64"] = this->widget(4)->findChild<QLineEdit *>("steamidEnter")->text().toStdString();
+	lj->Save("data/user.json", userdata);
 }

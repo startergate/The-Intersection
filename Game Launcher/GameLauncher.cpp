@@ -9,6 +9,7 @@ GameLauncher::GameLauncher(QWidget *parent)
 	ui.libraryLauncherTitle->target = 2;
 	ui.launcherLibraryTitle->target = 0;
 	ui.goBack->target = 0;
+	ui.goBack_2->target = 0;
 	Json::Value userdata = lj.LoadUserData();
 	SIDCpp sid("the-intersection");
 	Json::Value loginData = sid.login(userdata["sid"]["clientid"].asCString(), userdata["sid"]["sessid"].asCString());
@@ -20,6 +21,7 @@ GameLauncher::GameLauncher(QWidget *parent)
 	{
 		ui.stackedWidget->setCurrentIndex(0);
 		ui.stackedWidget->setUsername(loginData["nickname"].asString());
+		ui.steamidEnter->setText(userdata["steamid64"].asCString());
 	}
 
 	ui.stackedWidget->init(ui.scrollAreaWidgetContents);

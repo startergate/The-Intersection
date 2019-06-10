@@ -38,6 +38,8 @@ public slots:
 	void setGameLibrary();
 	void startGame();
 	void login();
+	void changeToUserTab();
+	void setSteamID64();
 
 private:
 	QWidget* target;

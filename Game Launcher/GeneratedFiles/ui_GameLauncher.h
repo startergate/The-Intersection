@@ -34,7 +34,7 @@ public:
     QScrollArea *libraryApps;
     QWidget *scrollAreaWidgetContents;
     ClickableLabel *libraryLauncherTitle;
-    QLabel *libraryName;
+    ClickableLabel *libraryName;
     QWidget *gameInfoTab;
     QLabel *gameInfoName;
     PlayButton *gameStartButton;
@@ -42,7 +42,7 @@ public:
     QWidget *launcherTab;
     ClickableLabel *launcherLibraryTitle;
     QLabel *launcherlauncherTitle;
-    QLabel *launcherName;
+    ClickableLabel *launcherName;
     QWidget *loginTab;
     QFrame *frame;
     QPushButton *loginBtn;
@@ -51,6 +51,11 @@ public:
     QLabel *idDesc;
     QLineEdit *idEnter;
     QLabel *loginText;
+    QWidget *userInfoTab;
+    ClickableLabel *goBack_2;
+    QLineEdit *steamidEnter;
+    QLabel *steamid;
+    QPushButton *pushButton;
 
     void setupUi(QMainWindow *GameLauncherClass)
     {
@@ -97,7 +102,7 @@ public:
         libraryLauncherTitle->setFont(font1);
         libraryLauncherTitle->setStyleSheet(QString::fromUtf8("color: rgb(128, 128, 128);\n"
 "margin: 10px;"));
-        libraryName = new QLabel(libraryTab);
+        libraryName = new ClickableLabel(libraryTab);
         libraryName->setObjectName(QString::fromUtf8("libraryName"));
         libraryName->setGeometry(QRect(670, 20, 311, 20));
         QFont font2;
@@ -156,9 +161,9 @@ public:
         launcherlauncherTitle->setFont(font5);
         launcherlauncherTitle->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
-        launcherName = new QLabel(launcherTab);
+        launcherName = new ClickableLabel(launcherTab);
         launcherName->setObjectName(QString::fromUtf8("launcherName"));
-        launcherName->setGeometry(QRect(680, 20, 311, 20));
+        launcherName->setGeometry(QRect(670, 20, 311, 20));
         launcherName->setFont(font2);
         launcherName->setStyleSheet(QString::fromUtf8("color:white;"));
         launcherName->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
@@ -217,6 +222,33 @@ public:
         loginText->setStyleSheet(QString::fromUtf8("color: white"));
         loginText->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(loginTab);
+        userInfoTab = new QWidget();
+        userInfoTab->setObjectName(QString::fromUtf8("userInfoTab"));
+        goBack_2 = new ClickableLabel(userInfoTab);
+        goBack_2->setObjectName(QString::fromUtf8("goBack_2"));
+        goBack_2->setGeometry(QRect(0, 0, 91, 81));
+        goBack_2->setFont(font4);
+        goBack_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"margin: 10px;"));
+        steamidEnter = new QLineEdit(userInfoTab);
+        steamidEnter->setObjectName(QString::fromUtf8("steamidEnter"));
+        steamidEnter->setGeometry(QRect(50, 410, 113, 20));
+        QFont font10;
+        font10.setFamily(QString::fromUtf8("Noto Serif CJK KR Light"));
+        steamidEnter->setFont(font10);
+        steamidEnter->setStyleSheet(QString::fromUtf8("background-color:white"));
+        steamid = new QLabel(userInfoTab);
+        steamid->setObjectName(QString::fromUtf8("steamid"));
+        steamid->setGeometry(QRect(50, 390, 61, 16));
+        QFont font11;
+        font11.setFamily(QString::fromUtf8("Noto Sans CJK KR Light"));
+        steamid->setFont(font11);
+        steamid->setStyleSheet(QString::fromUtf8("color: white"));
+        pushButton = new QPushButton(userInfoTab);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(170, 410, 41, 21));
+        pushButton->setStyleSheet(QString::fromUtf8("background-color:white;border-radius: 3px;"));
+        stackedWidget->addWidget(userInfoTab);
         GameLauncherClass->setCentralWidget(centralWidget);
 
         retranslateUi(GameLauncherClass);
@@ -225,8 +257,11 @@ public:
         QObject::connect(gameStartButton, SIGNAL(gameStart()), stackedWidget, SLOT(startGame()));
         QObject::connect(goBack, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
         QObject::connect(loginBtn, SIGNAL(clicked()), stackedWidget, SLOT(login()));
+        QObject::connect(goBack_2, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
+        QObject::connect(launcherName, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(changeToUserTab()));
+        QObject::connect(libraryName, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(changeToUserTab()));
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(GameLauncherClass);
@@ -255,6 +290,10 @@ public:
         idEnter->setInputMask(QString());
         idEnter->setText(QString());
         loginText->setText(QApplication::translate("GameLauncherClass", "Login", nullptr));
+        goBack_2->setText(QApplication::translate("GameLauncherClass", "<", nullptr));
+        steamidEnter->setText(QApplication::translate("GameLauncherClass", "test", nullptr));
+        steamid->setText(QApplication::translate("GameLauncherClass", "SteamID64", nullptr));
+        pushButton->setText(QApplication::translate("GameLauncherClass", "Save", nullptr));
     } // retranslateUi
 
 };

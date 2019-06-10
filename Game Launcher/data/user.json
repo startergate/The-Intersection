@@ -1,9 +1,9 @@
 {
-  "sid": {
-    "clientid": "3LSLqFwtkBMMyio3eRKHfvvX4hOisF0Aoc7ySPMpYrK4Bzw2pk261MFcLmLs0LLG",
-    "sessid": "GuiZkZjmHgPVwk2Mqlc1ERJvq7h0w8UO7VNCYl1DHIEDLLKYCWCcWizREq2n3wnC",
-    "pid": "533ab7046077c6fb1700df08f086c60a",
-    "nickname": "startergate"
-  },
-  "steamid64": "76561198149890990"
+   "sid" : {
+      "clientid" : "NlEt50k65BB50iYsFDAmEWARQrsbpJc6DjwJdTClOTCtNCuGGhjVdlDbQxiPLGYj",
+      "nickname" : "startergate",
+      "pid" : "b77c255b90269c87abbedf893e62c7af",
+      "sessid" : "wpNJRmmL07NiXJEtUdzNlvF0EAzfCOqoQsJGd9f1E03B8DH0hLKUwHWMLWMPdaw1"
+   },
+   "steamid64" : "76561198149890990"
 }

@@ -15,6 +15,7 @@ Json::Value Game::GameListGenerate() {
 	Json::Value games_docs;
 	LoadJson* lj = new LoadJson;
 	Json::Value games_doc = lj->LoadLibraryW();
+	Json::Value user = lj->LoadUserData();
 	Json::Value steamgames = lj->LoadSteam();
 	Json::Value new_game_doc;
 	Json::Value new_games;
@@ -47,6 +48,9 @@ Json::Value Game::GameListGenerate() {
 	data.open("data/game.json");
 
 	data << games_doc;
+
+	lj->UploadLibrary(user["sid"]["pid"].asString(), games_doc);
+
 	return games_doc;
 }
 

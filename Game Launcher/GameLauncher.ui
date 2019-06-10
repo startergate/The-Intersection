@@ -30,7 +30,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="libraryTab">
      <widget class="QLabel" name="libraryLibraryTitle">
@@ -112,7 +112,7 @@ margin: 10px;</string>
        <string>Launcher</string>
       </property>
      </widget>
-     <widget class="QLabel" name="libraryName">
+     <widget class="ClickableLabel" name="libraryName">
       <property name="geometry">
        <rect>
         <x>670</x>
@@ -263,7 +263,7 @@ margin: 10px;</string>
        <string>Launcher</string>
       </property>
      </widget>
-     <widget class="QLabel" name="launcherName">
+     <widget class="ClickableLabel" name="launcherName">
       <property name="geometry">
        <rect>
         <x>670</x>
@@ -458,6 +458,91 @@ margin: 10px;</string>
       </widget>
      </widget>
     </widget>
+    <widget class="QWidget" name="userInfoTab">
+     <widget class="ClickableLabel" name="goBack_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>91</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Avenir LT 65 Medium</family>
+        <pointsize>50</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+margin: 10px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="steamidEnter">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>410</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Serif CJK KR Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white</string>
+      </property>
+      <property name="text">
+       <string>test</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="steamid">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>390</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans CJK KR Light</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white</string>
+      </property>
+      <property name="text">
+       <string>SteamID64</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>410</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;border-radius: 3px;</string>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
  </widget>
@@ -480,6 +565,7 @@ margin: 10px;</string>
     <slot>setGamePage(int)</slot>
     <slot>startGame()</slot>
     <slot>login()</slot>
+    <slot>changeToUserTab()</slot>
    </slots>
   </customwidget>
   <customwidget>
@@ -572,6 +658,54 @@ margin: 10px;</string>
     <hint type="destinationlabel">
      <x>116</x>
      <y>541</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>goBack_2</sender>
+   <signal>changeStackedWidgetIndex(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>304</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>launcherName</sender>
+   <signal>changeStackedWidgetIndex(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>changeToUserTab()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>853</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>723</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>libraryName</sender>
+   <signal>changeStackedWidgetIndex(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>changeToUserTab()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>894</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>801</x>
+     <y>26</y>
     </hint>
    </hints>
   </connection>

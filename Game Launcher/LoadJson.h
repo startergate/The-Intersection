@@ -15,4 +15,7 @@ public:
 	Json::Value LoadLibraryW();
 	Json::Value LoadSteam();
 	Json::Value LoadUserData();
+	Json::Value LoadLibraryOn(std::string);
+	void UploadLibrary(std::string, Json::Value);
+	void LoadJson::Save(std::string, Json::Value);
 };
