@@ -526,7 +526,7 @@ margin: 10px;</string>
        <string>SteamID64</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="steamidSave">
       <property name="geometry">
        <rect>
         <x>170</x>
@@ -545,6 +545,22 @@ margin: 10px;</string>
       </property>
       <property name="text">
        <string>Save</string>
+      </property>
+     </widget>
+     <widget class="ClickableLabel" name="logout">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>480</y>
+        <width>56</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;</string>
+      </property>
+      <property name="text">
+       <string>로그아웃</string>
       </property>
      </widget>
     </widget>
@@ -572,6 +588,7 @@ margin: 10px;</string>
     <slot>login()</slot>
     <slot>changeToUserTab()</slot>
     <slot>setSteamID64()</slot>
+    <slot>logout()</slot>
    </slots>
   </customwidget>
   <customwidget>
@@ -716,7 +733,7 @@ margin: 10px;</string>
    </hints>
   </connection>
   <connection>
-   <sender>pushButton</sender>
+   <sender>steamidSave</sender>
    <signal>clicked()</signal>
    <receiver>stackedWidget</receiver>
    <slot>setSteamID64()</slot>
@@ -728,6 +745,22 @@ margin: 10px;</string>
     <hint type="destinationlabel">
      <x>133</x>
      <y>390</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>logout</sender>
+   <signal>changeStackedWidgetIndex(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>logout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>497</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>576</y>
     </hint>
    </hints>
   </connection>

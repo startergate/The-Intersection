@@ -38,6 +38,7 @@ public slots:
 	void setGameLibrary();
 	void startGame();
 	void login();
+	void logout();
 	void changeToUserTab();
 	void setSteamID64();
 

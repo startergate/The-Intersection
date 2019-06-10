@@ -55,7 +55,8 @@ public:
     ClickableLabel *goBack_2;
     QLineEdit *steamidEnter;
     QLabel *steamid;
-    QPushButton *pushButton;
+    QPushButton *steamidSave;
+    ClickableLabel *logout;
 
     void setupUi(QMainWindow *GameLauncherClass)
     {
@@ -234,7 +235,7 @@ public:
         steamidEnter->setObjectName(QString::fromUtf8("steamidEnter"));
         steamidEnter->setGeometry(QRect(50, 410, 113, 20));
         QFont font10;
-        font10.setFamily(QString::fromUtf8("Noto Serif CJK KR Light"));
+        font10.setFamily(QString::fromUtf8("Noto Sans KR Light"));
         steamidEnter->setFont(font10);
         steamidEnter->setStyleSheet(QString::fromUtf8("background-color:white"));
         steamid = new QLabel(userInfoTab);
@@ -244,10 +245,15 @@ public:
         font11.setFamily(QString::fromUtf8("Noto Sans CJK KR Light"));
         steamid->setFont(font11);
         steamid->setStyleSheet(QString::fromUtf8("color: white"));
-        pushButton = new QPushButton(userInfoTab);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(170, 410, 41, 21));
-        pushButton->setStyleSheet(QString::fromUtf8("background-color:white;border-radius: 3px;"));
+        steamidSave = new QPushButton(userInfoTab);
+        steamidSave->setObjectName(QString::fromUtf8("steamidSave"));
+        steamidSave->setGeometry(QRect(170, 410, 41, 21));
+        steamidSave->setFont(font10);
+        steamidSave->setStyleSheet(QString::fromUtf8("background-color:white;border-radius: 3px;"));
+        logout = new ClickableLabel(userInfoTab);
+        logout->setObjectName(QString::fromUtf8("logout"));
+        logout->setGeometry(QRect(50, 480, 56, 12));
+        logout->setStyleSheet(QString::fromUtf8("color:white;"));
         stackedWidget->addWidget(userInfoTab);
         GameLauncherClass->setCentralWidget(centralWidget);
 
@@ -260,8 +266,10 @@ public:
         QObject::connect(goBack_2, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(setCurrentIndex(int)));
         QObject::connect(launcherName, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(changeToUserTab()));
         QObject::connect(libraryName, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(changeToUserTab()));
+        QObject::connect(steamidSave, SIGNAL(clicked()), stackedWidget, SLOT(setSteamID64()));
+        QObject::connect(logout, SIGNAL(changeStackedWidgetIndex(int)), stackedWidget, SLOT(logout()));
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(4);
 
 
         QMetaObject::connectSlotsByName(GameLauncherClass);
@@ -291,9 +299,10 @@ public:
         idEnter->setText(QString());
         loginText->setText(QApplication::translate("GameLauncherClass", "Login", nullptr));
         goBack_2->setText(QApplication::translate("GameLauncherClass", "<", nullptr));
-        steamidEnter->setText(QApplication::translate("GameLauncherClass", "test", nullptr));
+        steamidEnter->setText(QApplication::translate("GameLauncherClass", "STEAMID64_PLACEHOLDER", nullptr));
         steamid->setText(QApplication::translate("GameLauncherClass", "SteamID64", nullptr));
-        pushButton->setText(QApplication::translate("GameLauncherClass", "Save", nullptr));
+        steamidSave->setText(QApplication::translate("GameLauncherClass", "Save", nullptr));
+        logout->setText(QApplication::translate("GameLauncherClass", "\353\241\234\352\267\270\354\225\204\354\233\203", nullptr));
     } // retranslateUi
 
 };

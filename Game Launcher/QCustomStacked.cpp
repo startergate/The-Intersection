@@ -131,4 +131,16 @@ void QCustomStacked::setSteamID64() {
 	Json::Value userdata = lj->LoadUserData();
 	userdata["steamid64"] = this->widget(4)->findChild<QLineEdit *>("steamidEnter")->text().toStdString();
 	lj->Save("data/user.json", userdata);
+	this->loadGameLibrary();
+}
+
+void QCustomStacked::logout() {
+	LoadJson* lj = new LoadJson;
+	Json::Value userdata = lj->LoadUserData();
+	this->sid->logout(userdata["sid"]["clientid"].asString(), userdata["sid"]["sessid"].asString());
+	userdata["sid"]["sessid"] = "";
+	userdata["sid"]["nickname"] = "";
+	userdata["sid"]["pid"] = "";
+	lj->Save("data/user.json", userdata);
+	this->setCurrentIndex(3);
 }
