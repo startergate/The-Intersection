@@ -30,7 +30,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="libraryTab">
      <widget class="QLabel" name="libraryLibraryTitle">
@@ -495,14 +495,14 @@ margin: 10px;</string>
       </property>
       <property name="font">
        <font>
-        <family>Noto Serif CJK KR Light</family>
+        <family>Noto Sans KR Light</family>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color:white</string>
       </property>
       <property name="text">
-       <string>test</string>
+       <string>STEAMID64_PLACEHOLDER</string>
       </property>
      </widget>
      <widget class="QLabel" name="steamid">
@@ -535,6 +535,11 @@ margin: 10px;</string>
         <height>21</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans KR Light</family>
+       </font>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color:white;border-radius: 3px;</string>
       </property>
@@ -566,6 +571,7 @@ margin: 10px;</string>
     <slot>startGame()</slot>
     <slot>login()</slot>
     <slot>changeToUserTab()</slot>
+    <slot>setSteamID64()</slot>
    </slots>
   </customwidget>
   <customwidget>
@@ -706,6 +712,22 @@ margin: 10px;</string>
     <hint type="destinationlabel">
      <x>801</x>
      <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setSteamID64()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>390</y>
     </hint>
    </hints>
   </connection>
