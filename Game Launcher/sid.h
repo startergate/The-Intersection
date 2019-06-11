@@ -10,7 +10,6 @@
 #include "json/writer.h"
 #include "curl/curl.h"
 #include <string>
-// #include <iostream>
 
 
 namespace
@@ -42,7 +41,6 @@ public:
 	Json::Value login(std::string clientid, std::string id, std::string pw);
 	int logout(std::string clientid, std::string sessid);
 	std::string getUserNickname(std::string cilentid, std::string sessid);
-	// int passwordCheck(std::string clientid, std::string sessid, std::string pw);
 	std::string createClientID(std::string devicedata);
 };
 
