@@ -8,9 +8,6 @@
     <ClCompile Include="FlowLayout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AppLibrary.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ClickableQLabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
