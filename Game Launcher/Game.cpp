@@ -1,71 +1,71 @@
 #include <Game.h>
 
 Game::Game(int gameid) {
-	this->gameid = gameid; // °ÔÀÓÀÇ °íÀ¯ ID¸¦ ÀÎ¼ö·Î ¹Ş½À´Ï´Ù.
+    this->gameid = gameid; // ê²Œì„ì˜ ê³ ìœ  IDë¥¼ ì¸ìˆ˜ë¡œ ë°›ìŠµë‹ˆë‹¤.
 }
 
 Game::~Game() {}
 
 void Game::execute() {
-	std::string executeable = "";
-	system(executeable.c_str());
+    std::string executeable = "";
+    system(executeable.c_str());
 }
 
 Json::Value Game::GameListGenerate() {
-	Json::Value games_docs;
-	LoadJson* lj = new LoadJson;
-	Json::Value games_doc = lj->LoadLibraryW(); // °ÔÀÓ ¶óÀÌºê·¯¸® ÆÄÀÏÀ» ·ÎµåÇÕ´Ï´Ù.
-	Json::Value user = lj->LoadUserData(); // À¯Àú Á¤º¸ ÆÄÀÏÀ» ·ÎµåÇÕ´Ï´Ù.
-	Json::Value steamgames = lj->LoadSteam(); // ½ºÆÀ ¶óÀÌºê·¯¸®¸¦ ·ÎµåÇÕ´Ï´Ù.
-	Json::Value new_game_doc;
-	Json::Value new_games;
+    Json::Value games_docs;
+    LoadJson* lj = new LoadJson;
+    Json::Value games_doc = lj->LoadLibraryW(); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ íŒŒì¼ì„ ë¡œë“œí•©ë‹ˆë‹¤.
+    Json::Value user = lj->LoadUserData(); // ìœ ì € ì •ë³´ íŒŒì¼ì„ ë¡œë“œí•©ë‹ˆë‹¤.
+    Json::Value steamgames = lj->LoadSteam(); // ìŠ¤íŒ€ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¡œë“œí•©ë‹ˆë‹¤.
+    Json::Value new_game_doc;
+    Json::Value new_games;
 
-	Json::Value& games = games_doc["games"];
-	Json::Value& s_games = steamgames["response"]["games"];
-	std::list<std::string> toRemove;
+    Json::Value& games = games_doc["games"];
+    Json::Value& s_games = steamgames["response"]["games"];
+    std::list<std::string> toRemove;
 
-	for (Json::ValueIterator it = games.begin(); it != games.end(); it++) if (!(*it)["platform"].asString().compare("steam")) toRemove.push_back((*it)["tiid"].asCString()); // ÇÃ·§ÆûÀÌ ½ºÆÀÀÎ °ÔÀÓµéÀ» Ã£½À´Ï´Ù.
-	for (auto const& it : toRemove) games_doc["games"].removeMember(it.c_str()); // ÇÃ·§ÆûÀÌ ½ºÆÀÀÎ °ÔÀÓµéÀ» »èÁ¦ÇÕ´Ï´Ù.
+    for (Json::ValueIterator it = games.begin(); it != games.end(); it++) if (!(*it)["platform"].asString().compare("steam")) toRemove.push_back((*it)["tiid"].asCString()); // í”Œë«í¼ì´ ìŠ¤íŒ€ì¸ ê²Œì„ë“¤ì„ ì°¾ìŠµë‹ˆë‹¤.
+    for (auto const& it : toRemove) games_doc["games"].removeMember(it.c_str()); // í”Œë«í¼ì´ ìŠ¤íŒ€ì¸ ê²Œì„ë“¤ì„ ì‚­ì œí•©ë‹ˆë‹¤.
 
-	for (Json::ValueIterator it = s_games.begin(); it != s_games.end(); it++)
-	{
-		char buffer[10];
-		Json::Value gamedata;
+    for (Json::ValueIterator it = s_games.begin(); it != s_games.end(); it++)
+    {
+        char buffer[10];
+        Json::Value gamedata;
 
-		// ½ºÆÀ API·ÎºÎÅÍ ¹ŞÀº µ¥ÀÌÅÍ¿¡¼­ µ¥ÀÌÅÍ¸¦ ÃßÃâÇÕ´Ï´Ù.
-		gamedata["tiid"] = itoa((*it)["appid"].asInt(), buffer, 10);
-		gamedata["name"] = (*it)["name"].asCString();
-		gamedata["isInstalled"] = "false";
-		gamedata["addedTime"] = 1530489600;
-		gamedata["playedTime"] = (*it)["playtime_forever"].asInt();
-		gamedata["platform"] = "steam";
-		gamedata["additional"]["steamid"] = (*it)["appid"].asInt();
+        // ìŠ¤íŒ€ APIë¡œë¶€í„° ë°›ì€ ë°ì´í„°ì—ì„œ ë°ì´í„°ë¥¼ ì¶”ì¶œí•©ë‹ˆë‹¤.
+        gamedata["tiid"] = itoa((*it)["appid"].asInt(), buffer, 10);
+        gamedata["name"] = (*it)["name"].asCString();
+        gamedata["isInstalled"] = "false";
+        gamedata["addedTime"] = 1530489600;
+        gamedata["playedTime"] = (*it)["playtime_forever"].asInt();
+        gamedata["platform"] = "steam";
+        gamedata["additional"]["steamid"] = (*it)["appid"].asInt();
 
-		// ÃßÃâÇÑ µ¥ÀÌÅÍ¸¦ °ÔÀÓ ¶óÀÌºê·¯¸® °´Ã¼¿¡ ³Ö½À´Ï´Ù.
-		games_doc["games"][itoa((*it)["appid"].asInt(), buffer, 10)] = gamedata;
-	}
+        // ì¶”ì¶œí•œ ë°ì´í„°ë¥¼ ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ ê°ì²´ì— ë„£ìŠµë‹ˆë‹¤.
+        games_doc["games"][itoa((*it)["appid"].asInt(), buffer, 10)] = gamedata;
+    }
 
-	std::ofstream data;
-	data.open("data/game.json");
+    std::ofstream data;
+    data.open("data/game.json");
 
-	data << games_doc; // °ÔÀÓ ¶óÀÌºê·¯¸® °´Ã¼¸¦ ÆÄÀÏ·Î ÀúÀåÇÕ´Ï´Ù.
+    data << games_doc; // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ ê°ì²´ë¥¼ íŒŒì¼ë¡œ ì €ì¥í•©ë‹ˆë‹¤.
 
-	lj->UploadLibrary(user["sid"]["pid"].asString(), games_doc); // °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ¼­¹ö·Î ¾÷·ÎµåÇÕ´Ï´Ù. ¹é¾÷ÀÇ ¿ªÇÒÀ» ÇÕ´Ï´Ù.
+    lj->UploadLibrary(user["sid"]["pid"].asString(), games_doc); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì„œë²„ë¡œ ì—…ë¡œë“œí•©ë‹ˆë‹¤. ë°±ì—…ì˜ ì—­í• ì„ í•©ë‹ˆë‹¤.
 
-	return games_doc; // °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ¸®ÅÏÇÕ´Ï´Ù.
+    return games_doc; // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¦¬í„´í•©ë‹ˆë‹¤.
 }
 
 SteamGame::SteamGame(int gameid, int steamid) : Game(gameid) {
-	this->steamid = steamid; // ½ºÆÀ °ÔÀÓ¿¡ ÇÑÇØ¼­ steamid ÀÎ¼ö¸¦ Ãß°¡·Î ¹Ş½À´Ï´Ù.
+    this->steamid = steamid; // ìŠ¤íŒ€ ê²Œì„ì— í•œí•´ì„œ steamid ì¸ìˆ˜ë¥¼ ì¶”ê°€ë¡œ ë°›ìŠµë‹ˆë‹¤.
 }
 
 SteamGame::~SteamGame() {}
 
 void SteamGame::execute() {
-	// ½ºÆÀ ½ÇÇà ¸í·É¾î¸¦ ¸¸µì´Ï´Ù.
-	std::string executeable = "explorer steam://run/";
-	executeable += std::to_string(steamid);
-	executeable.append("/");
+    // ìŠ¤íŒ€ ì‹¤í–‰ ëª…ë ¹ì–´ë¥¼ ë§Œë“­ë‹ˆë‹¤.
+    std::string executeable = "explorer steam://run/";
+    executeable += std::to_string(steamid);
+    executeable.append("/");
 
-	system(executeable.c_str()); // ¸í·É¾î¸¦ ½ÇÇàÇÕ´Ï´Ù.
+    system(executeable.c_str()); // ëª…ë ¹ì–´ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 }

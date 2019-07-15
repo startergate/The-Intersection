@@ -1,12 +1,12 @@
 #include "ClickableQLabel.h"
 
 ClickableLabel::ClickableLabel(QWidget* parent, Qt::WindowFlags f)
-	: QLabel(parent) {
+        : QLabel(parent) {
 
 }
 
 ClickableLabel::~ClickableLabel() {}
 
-void ClickableLabel::mousePressEvent(QMouseEvent* event) { // ¸¶¿ì½º Å¬¸¯ ÀÌº¥Æ®¸¦ °¨ÁöÇÕ´Ï´Ù.
-	emit changeStackedWidgetIndex(this->target); // changeStackedWidgetIndex(int) ½Ã±×³ÎÀ» ¹ß»ı½ÃÅµ´Ï´Ù.
+void ClickableLabel::mousePressEvent(QMouseEvent* event) { // ë§ˆìš°ìŠ¤ í´ë¦­ ì´ë²¤íŠ¸ë¥¼ ê°ì§€í•©ë‹ˆë‹¤.
+    emit changeStackedWidgetIndex(this->target); // changeStackedWidgetIndex(int) ì‹œê·¸ë„ì„ ë°œìƒì‹œí‚µë‹ˆë‹¤.
 }
