@@ -16,15 +16,15 @@ namespace
 
 
 Json::Value LoadJson::LoadLibrary() {
-	std::ifstream jsondata("data/game.json"); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºê·¯ï¿½ï¿½ ï¿½ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+	std::ifstream jsondata("data/game.json"); // °ÔÀÓ ¶óÀÌºê·¯¸® ÆÄÀÏ°úÀÇ ½ºÆ®¸²À» ¸¸µì´Ï´Ù.
 	Json::Value data;
 	Json::Reader reader;
-	reader.parse(jsondata, data, false); // ï¿½Þ¾Æ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ json ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
-	return data; // ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+	reader.parse(jsondata, data, false); // ¹Þ¾Æ¿Â ÆÄÀÏÀ» json °´Ã¼·Î ¸¸µì´Ï´Ù.
+	return data; // °´Ã¼¸¦ ¸®ÅÏÇÕ´Ï´Ù.
 }
 
 Json::Value LoadJson::LoadSteam() {
-	Json::Value userinfo = this->LoadUserData(); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½É´Ï´ï¿½.
+	Json::Value userinfo = this->LoadUserData(); // À¯Àú Á¤º¸ ÆÄÀÏÀ» °¡Á®¿É´Ï´Ù.
 
 	std::string steamid64 = userinfo["steamid64"].asCString();
 	CURL *curl = NULL;
@@ -33,25 +33,25 @@ Json::Value LoadJson::LoadSteam() {
 	int httpCode(0);
 	std::unique_ptr<std::string> httpData(new std::string());
 
-	// ï¿½ï¿½ï¿½ï¿½ API ï¿½ï¿½Å©ï¿½ï¿½ ï¿½Øºï¿½ï¿½Õ´Ï´ï¿½.
+	// ½ºÆÀ API ¸µÅ©¸¦ ÁØºñÇÕ´Ï´Ù.
 	std::string targetUrl("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=B6137C92F67299965B5E6BF287ECA4AE&format=json&include_appinfo=1&steamid=");
 	targetUrl += steamid64;
 	curl_global_init(CURL_GLOBAL_ALL);
 
 	curl = curl_easy_init();
 	if (curl) {
-		// curl requestï¿½ï¿½ ï¿½Øºï¿½ï¿½Õ´Ï´ï¿½.
+		// curl request¸¦ ÁØºñÇÕ´Ï´Ù.
 		curl_easy_setopt(curl, CURLOPT_URL, targetUrl.c_str());
 		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callback);
 		curl_easy_setopt(curl, CURLOPT_WRITEDATA, httpData.get());
-		res = curl_easy_perform(curl); // requestï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+		res = curl_easy_perform(curl); // request¸¦ ½ÇÇàÇÕ´Ï´Ù.
 		curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &httpCode);
 		curl_easy_cleanup(curl);
 		if (httpCode == 200)
 		{
 			Json::Value steamgames;
 			Json::Reader reader;
-			reader.parse(httpData.get()->c_str(), steamgames); // ï¿½Þ¾Æ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ json ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+			reader.parse(httpData.get()->c_str(), steamgames); // ¹Þ¾Æ¿Â µ¥ÀÌÅÍ¸¦ json °´Ã¼·Î ¸¸µì´Ï´Ù.
 
 			return steamgames;
 		}
@@ -62,19 +62,19 @@ Json::Value LoadJson::LoadSteam() {
 }
 
 Json::Value LoadJson::LoadUserData() {
-	std::ifstream jsondata("data/user.json"); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+	std::ifstream jsondata("data/user.json"); // À¯Àú µ¥ÀÌÅÍ¿ÍÀÇ ÆÄÀÏ ½ºÆ®¸²À» ¸¸µì´Ï´Ù.
 
 	Json::Value data;
 
-	jsondata >> data; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ json ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.
+	jsondata >> data; // ÆÄÀÏÀ» °¡Á®¿Í json °´Ã¼¿¡ ³Ö½À´Ï´Ù.
 	return data;
 }
 
 Json::Value LoadJson::LoadLibraryOn(std::string pid) {
-	// The Intersection ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ urlï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+	// The Intersection ¼­¹ö¿ÍÀÇ Åë½ÅÀ» À§ÇÑ urlÀ» ¸¸µì´Ï´Ù.
 	std::string url = "http://localhost:3000/api/";
 	url += pid;
-
+	
 	CURL *curl = NULL;
 	CURLcode res;
 
@@ -85,7 +85,7 @@ Json::Value LoadJson::LoadLibraryOn(std::string pid) {
 
 	curl = curl_easy_init();
 	if (curl) {
-		// curl requestï¿½ï¿½ ï¿½Øºï¿½ï¿½Õ´Ï´ï¿½.
+		// curl request¸¦ ÁØºñÇÕ´Ï´Ù.
 		struct curl_slist *chunk = NULL;
 		curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 		curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
@@ -94,32 +94,32 @@ Json::Value LoadJson::LoadLibraryOn(std::string pid) {
 		curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "GET");
 		curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, true);
 
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Øºï¿½ï¿½Õ´Ï´ï¿½.
+		// Çì´õ¸¦ ÁØºñÇÕ´Ï´Ù.
 		//chunk = curl_slist_append(chunk, "Accept: application/json");
 		chunk = curl_slist_append(chunk, "Content-Type: application/json");
 		curl_easy_setopt(curl, CURLOPT_HTTPHEADER, chunk);
 		//curl_easy_setopt(curl, CURLOPT_VERBOSE, true);
 
-		// requestï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+		// request¸¦ ½ÇÇàÇÕ´Ï´Ù.
 		res = curl_easy_perform(curl);
 		curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &httpCode);
 		curl_easy_cleanup(curl);
 		Json::Value data;
 		Json::Reader reader;
-		reader.parse(httpData.get()->c_str(), data); // ï¿½Þ¾Æ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ json ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+		reader.parse(httpData.get()->c_str(), data); // ¹Þ¾Æ¿Â µ¥ÀÌÅÍ¸¦ json °´Ã¼·Î ¸¸µì´Ï´Ù.
 
-		return data; // ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+		return data; // °´Ã¼¸¦ ¸®ÅÏÇÕ´Ï´Ù.
 	}
 }
 
 void LoadJson::UploadLibrary(std::string pid, Json::Value library) {
 	Json::StyledWriter writer;
 
-	// The Intersection ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ urlï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+	// The Intersection ¼­¹ö¿ÍÀÇ Åë½ÅÀ» À§ÇÑ urlÀ» ¸¸µì´Ï´Ù.
 	std::string url = "http://localhost:3000/api/";
 	url += pid;
-
-	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Øºï¿½ï¿½Õ´Ï´ï¿½.
+	
+	// º¸³¾ µ¥ÀÌÅÍ¸¦ ÁØºñÇÕ´Ï´Ù.
 	Json::Value senddata;
 	senddata["data"] = writer.write(library);
 	CURL *curl = NULL;
@@ -132,31 +132,31 @@ void LoadJson::UploadLibrary(std::string pid, Json::Value library) {
 
 	curl = curl_easy_init();
 	if (curl) {
-		// curl requestï¿½ï¿½ ï¿½Øºï¿½ï¿½Õ´Ï´ï¿½.
+		// curl request¸¦ ÁØºñÇÕ´Ï´Ù.
 		struct curl_slist *chunk = NULL;
 		curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 		curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callback);
 		curl_easy_setopt(curl, CURLOPT_WRITEDATA, httpData.get());
 		curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "PUT");
-		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, writer.write(senddata)); // request ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.
+		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, writer.write(senddata)); // request µ¥ÀÌÅÍ¸¦ ³Ö½À´Ï´Ù.
 		curl_easy_setopt(curl, CURLOPT_POSTFIELDSIZE_LARGE, senddata.size());
 		curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, true);
 
-		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Øºï¿½ï¿½Õ´Ï´ï¿½.
+		// Çì´õ¸¦ ÁØºñÇÕ´Ï´Ù.
 		//chunk = curl_slist_append(chunk, "Accept: application/json");
 		chunk = curl_slist_append(chunk, "Content-Type: application/json");
 		curl_easy_setopt(curl, CURLOPT_HTTPHEADER, chunk);
 		//curl_easy_setopt(curl, CURLOPT_VERBOSE, true);
 
-		// requestï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+		// request¸¦ ½ÇÇàÇÕ´Ï´Ù.
 		res = curl_easy_perform(curl);
 		curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &httpCode);
 		curl_easy_cleanup(curl);
 	}
 }
 
-void LoadJson::Save(std::string route, Json::Value value) { // ï¿½Î¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Json::Valueï¿½ï¿½ routeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+void LoadJson::Save(std::string route, Json::Value value) { // ÀÎ¼ö·Î ¹ÞÀº Json::Value¸¦ route¿¡ ÀúÀåÇÕ´Ï´Ù.
 	Json::StyledWriter writer;
 	std::ofstream data1;
 	data1.open(route);
