@@ -1,24 +1,24 @@
 #include "GameButton.h"
 
 GameButton::GameButton(QWidget* parent, Qt::WindowFlags f)
-	: QPushButton(parent) {
+        : QPushButton(parent) {
 
 }
 
 GameButton::~GameButton() {}
 
-void GameButton::mousePressEvent(QMouseEvent* event) { // ¸¶¿ì½º Å¬¸¯À» °¨ÁöÇÕ´Ï´Ù.
-	char id[3];
-	//sprintf(id, "%d", this->gameid);
-	//OutputDebugStringA(id);
-	emit changeStackedWidgetIndex(1); // changeStackedWidgetIndex(int) ½Ã±×³ÎÀ» ¹ß»ý½ÃÅµ´Ï´Ù.
-	emit changeGameWidget(this->gameid); // changeGameWidget(int) ½Ã±×³ÎÀ» ¹ß»ý½ÃÄÑ °ÔÀÓ Á¤º¸ Ã¢¿¡ °ÔÀÓ Á¤º¸¸¦ Ç¥½ÃÇÕ´Ï´Ù.
+void GameButton::mousePressEvent(QMouseEvent* event) { // ë§ˆìš°ìŠ¤ í´ë¦­ì„ ê°ì§€í•©ë‹ˆë‹¤.
+    char id[3];
+    //sprintf(id, "%d", this->gameid);
+    //OutputDebugStringA(id);
+    emit changeStackedWidgetIndex(1); // changeStackedWidgetIndex(int) ì‹œê·¸ë„ì„ ë°œìƒì‹œí‚µë‹ˆë‹¤.
+    emit changeGameWidget(this->gameid); // changeGameWidget(int) ì‹œê·¸ë„ì„ ë°œìƒì‹œì¼œ ê²Œìž„ ì •ë³´ ì°½ì— ê²Œìž„ ì •ë³´ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤.
 }
 
 void GameButton::setGameid(int gameid) {
-	this->gameid = gameid; // gameid¸¦ ¼ýÀÚ·Î °¡Á®¿É´Ï´Ù.
+    this->gameid = gameid; // gameidë¥¼ ìˆ«ìžë¡œ ê°€ì ¸ì˜µë‹ˆë‹¤.
 }
 
 void GameButton::setGameid(std::string gameid) {
-	this->gameid = atoi(gameid.c_str()); // gameid¸¦ stringÀ¸·Î °¡Á®¿Í int·Î º¯È¯ÇÕ´Ï´Ù.
+    this->gameid = atoi(gameid.c_str()); // gameidë¥¼ stringìœ¼ë¡œ ê°€ì ¸ì™€ intë¡œ ë³€í™˜í•©ë‹ˆë‹¤.
 }

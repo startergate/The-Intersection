@@ -1,10 +1,10 @@
 #include "GameLauncher.h"
 #include <QtWidgets/QApplication>
 
-int main(int argc, char *argv[]) // Qt ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀ» VS·Î ¸¸µé¸é ±âº»À¸·Î »ı¼ºµÇ´Â ÆÄÀÏÀÔ´Ï´Ù.
+int main(int argc, char *argv[]) // Qt ì• í”Œë¦¬ì¼€ì´ì…˜ì„ VSë¡œ ë§Œë“¤ë©´ ê¸°ë³¸ìœ¼ë¡œ ìƒì„±ë˜ëŠ” íŒŒì¼ì…ë‹ˆë‹¤.
 {
-	QApplication a(argc, argv);
-	GameLauncher w;
-	w.show();
-	return a.exec();
+    QApplication a(argc, argv);
+    GameLauncher w;
+    w.show();
+    return a.exec();
 }

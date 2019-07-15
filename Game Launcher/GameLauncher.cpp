@@ -1,35 +1,35 @@
 #include "GameLauncher.h"
 #include "json/writer.h"
 GameLauncher::GameLauncher(QWidget *parent)
-	: QMainWindow(parent)
+        : QMainWindow(parent)
 {
-	LoadJson lj;
-	ui.setupUi(this);
+    LoadJson lj;
+    ui.setupUi(this);
 
-	// ¿©·¯ ClickableQLabelÀÇ ¸ñÇ¥¸¦ ¼³Á¤ÇØÁİ´Ï´Ù.
-	ui.libraryLauncherTitle->target = 2;
-	ui.launcherLibraryTitle->target = 0;
-	ui.goBack->target = 0;
-	ui.goBack_2->target = 0;
-	Json::Value userdata = lj.LoadUserData(); // À¯Àú µ¥ÀÌÅÍ ÆÄÀÏÀ» ·ÎµåÇÕ´Ï´Ù.
-	SIDCpp sid("the-intersection"); // SIDCpp °´Ã¼¸¦ »ı¼ºÇÕ´Ï´Ù.
-	Json::Value loginData = sid.login(userdata["sid"]["clientid"].asCString(), userdata["sid"]["sessid"].asCString()); // ÀÚµ¿ ·Î±×ÀÎÀ» ½ÃµµÇÕ´Ï´Ù.
-	if (loginData["error"])
-	{
-		ui.stackedWidget->setCurrentIndex(3); // ÀÚµ¿ ·Î±×ÀÎÀÌ ½ÇÆĞÇÏ¸é, ·Î±×ÀÎ Ã¢À¸·Î º¸³À´Ï´Ù.
-	}
-	else
-	{		
-		ui.stackedWidget->setCurrentIndex(0); // ÀÚµ¿ ·Î±×ÀÎÀÌ ¼º°øÇÏ¸é, °ÔÀÓ ¶óÀÌºê·¯¸® Ã¢À¸·Î º¸³À´Ï´Ù.
-		ui.stackedWidget->setUsername(loginData["nickname"].asString()); // QCustomStacked¿¡ ÀÖ´Â ÁöÁ¤µÈ ¶óº§µé¿¡ ´Ğ³×ÀÓÀ» ³Ö¾îÁİ´Ï´Ù.
-		ui.steamidEnter->setText(userdata["steamid64"].asCString()); // ½ºÆÀ ¿¬µ¿ ÀÔ·Â Ã¢¿¡ ÇöÀç µ¥ÀÌÅÍ¸¦ ³Ö¾îÁİ´Ï´Ù.
-	}
+    // ì—¬ëŸ¬ ClickableQLabelì˜ ëª©í‘œë¥¼ ì„¤ì •í•´ì¤ë‹ˆë‹¤.
+    ui.libraryLauncherTitle->target = 2;
+    ui.launcherLibraryTitle->target = 0;
+    ui.goBack->target = 0;
+    ui.goBack_2->target = 0;
+    Json::Value userdata = lj.LoadUserData(); // ìœ ì € ë°ì´í„° íŒŒì¼ì„ ë¡œë“œí•©ë‹ˆë‹¤.
+    SIDCpp sid("the-intersection"); // SIDCpp ê°ì²´ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.
+    Json::Value loginData = sid.login(userdata["sid"]["clientid"].asCString(), userdata["sid"]["sessid"].asCString()); // ìë™ ë¡œê·¸ì¸ì„ ì‹œë„í•©ë‹ˆë‹¤.
+    if (loginData["error"])
+    {
+        ui.stackedWidget->setCurrentIndex(3); // ìë™ ë¡œê·¸ì¸ì´ ì‹¤íŒ¨í•˜ë©´, ë¡œê·¸ì¸ ì°½ìœ¼ë¡œ ë³´ëƒ…ë‹ˆë‹¤.
+    }
+    else
+    {
+        ui.stackedWidget->setCurrentIndex(0); // ìë™ ë¡œê·¸ì¸ì´ ì„±ê³µí•˜ë©´, ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ ì°½ìœ¼ë¡œ ë³´ëƒ…ë‹ˆë‹¤.
+        ui.stackedWidget->setUsername(loginData["nickname"].asString()); // QCustomStackedì— ìˆëŠ” ì§€ì •ëœ ë¼ë²¨ë“¤ì— ë‹‰ë„¤ì„ì„ ë„£ì–´ì¤ë‹ˆë‹¤.
+        ui.steamidEnter->setText(userdata["steamid64"].asCString()); // ìŠ¤íŒ€ ì—°ë™ ì…ë ¥ ì°½ì— í˜„ì¬ ë°ì´í„°ë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
+    }
 
-	ui.stackedWidget->init(ui.scrollAreaWidgetContents); // QStackedWidgetÀ» ¼³Á¤ÇÕ´Ï´Ù.
-	ui.stackedWidget->loginInit(ui.idEnter, ui.pwEnter); // ·Î±×ÀÎ ÆûÀ» ÁØºñÇÕ´Ï´Ù.
-	ui.stackedWidget->loadGameLibrary(); // °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ·ÎµåÇÏ°í, ¶óÀÌºê·¯¸® ÆäÀÌÁö¿¡ Ç¥½ÃÇÕ´Ï´Ù.
+    ui.stackedWidget->init(ui.scrollAreaWidgetContents); // QStackedWidgetì„ ì„¤ì •í•©ë‹ˆë‹¤.
+    ui.stackedWidget->loginInit(ui.idEnter, ui.pwEnter); // ë¡œê·¸ì¸ í¼ì„ ì¤€ë¹„í•©ë‹ˆë‹¤.
+    ui.stackedWidget->loadGameLibrary(); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¡œë“œí•˜ê³ , ë¼ì´ë¸ŒëŸ¬ë¦¬ í˜ì´ì§€ì— í‘œì‹œí•©ë‹ˆë‹¤.
 }
 
 void GameLauncher::buttonClicked(int gameid) {
-	
+
 }

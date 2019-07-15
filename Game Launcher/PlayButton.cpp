@@ -3,6 +3,6 @@
 PlayButton::PlayButton(QWidget* parent, Qt::WindowFlags f) : QPushButton(parent) {}
 PlayButton::~PlayButton() {}
 
-void PlayButton::mousePressEvent(QMouseEvent* event) { // ¸¶¿ì½º Å¬¸¯ ÀÌº¥Æ®¸¦ °¨ÁöÇÕ´Ï´Ù.
-	emit gameStart(); // gameStart(void) ½Ã±×³ÎÀ» ¹ß»ı½ÃÄÑ °ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù.
+void PlayButton::mousePressEvent(QMouseEvent* event) { // ë§ˆìš°ìŠ¤ í´ë¦­ ì´ë²¤íŠ¸ë¥¼ ê°ì§€í•©ë‹ˆë‹¤.
+    emit gameStart(); // gameStart(void) ì‹œê·¸ë„ì„ ë°œìƒì‹œì¼œ ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤.
 }

@@ -1,157 +1,157 @@
 #include "QCustomStacked.h"
 
 QCustomStacked::QCustomStacked(QWidget* parent) : QStackedWidget(parent), target(target) {
-	// UI¿¡ ÇÊ¿äÇÑ º¯¼öµéÀ» Á¤ÀÇÇÕ´Ï´Ù.
-	font.setFamily(QString::fromUtf8("Noto Sans KR Light"));
-	font.setPointSize(11);
-	this->library = new FlowLayout;
-	this->sid = new SIDCpp("the-intersection");
+    // UIì— í•„ìš”í•œ ë³€ìˆ˜ë“¤ì„ ì •ì˜í•©ë‹ˆë‹¤.
+    font.setFamily(QString::fromUtf8("Noto Sans KR Light"));
+    font.setPointSize(11);
+    this->library = new FlowLayout;
+    this->sid = new SIDCpp("the-intersection");
 };
 
 QCustomStacked::~QCustomStacked() {};
 
-void QCustomStacked::login() { // Á÷Á¢ ·Î±×ÀÎÀ» ½ÇÇàÇÕ´Ï´Ù.
-	Json::StyledWriter writer;
-	std::string clientid = sid->createClientID("the-intersection"); // ±â±â °íÀ¯ ID¸¦ ¸¸µì´Ï´Ù.
-	Json::Value userdata = sid->login(clientid, id_form->text().toStdString(), pw_form->text().toStdString()); // ·Î±×ÀÎÀ» ½ÇÇàÇÕ´Ï´Ù.
-	if (userdata["error"])
-	{
-		return this->loginError(); // ¿¡·¯°¡ ¹ß»ıÇÏ¸é ÆË¾÷À» ¶ç¿ó´Ï´Ù.
-	}
+void QCustomStacked::login() { // ì§ì ‘ ë¡œê·¸ì¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
+    Json::StyledWriter writer;
+    std::string clientid = sid->createClientID("the-intersection"); // ê¸°ê¸° ê³ ìœ  IDë¥¼ ë§Œë“­ë‹ˆë‹¤.
+    Json::Value userdata = sid->login(clientid, id_form->text().toStdString(), pw_form->text().toStdString()); // ë¡œê·¸ì¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
+    if (userdata["error"])
+    {
+        return this->loginError(); // ì—ëŸ¬ê°€ ë°œìƒí•˜ë©´ íŒì—…ì„ ë„ì›ë‹ˆë‹¤.
+    }
 
-	LoadJson* lj = new LoadJson;
-	
-	Json::Value userdataFile = lj->LoadUserData(); // À¯Àú Á¤º¸¸¦ ·ÎµåÇÕ´Ï´Ù.
+    LoadJson* lj = new LoadJson;
 
-	// ºÒ·¯¿Â ÆÄÀÏ¿¡ ·Î±×ÀÎÇÑ À¯ÀúÀÇ Á¤º¸¸¦ ³Ö½À´Ï´Ù.
-	userdataFile["sid"]["clientid"] = clientid;
-	userdataFile["sid"]["sessid"] = userdata["sessid"];
-	userdataFile["sid"]["pid"] = userdata["pid"];
-	userdataFile["sid"]["nickname"] = userdata["nickname"];
-	lj->Save("data/user.json", userdataFile); // ¼öÁ¤µÈ ÆÄÀÏÀ» ÀúÀåÇÕ´Ï´Ù.
-	Json::Value game = lj->LoadLibraryOn(userdata["pid"].asString()); // ¼­¹ö¿¡ ÀúÀåµÈ °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ºÒ·¯¿É´Ï´Ù.
-	lj->Save("data/game.json", game); // ·ÎÄÃ °ÔÀÓ ¶óÀÌºê·¯¸® ÆÄÀÏ¿¡ ÀúÀåÇÕ´Ï´Ù.
+    Json::Value userdataFile = lj->LoadUserData(); // ìœ ì € ì •ë³´ë¥¼ ë¡œë“œí•©ë‹ˆë‹¤.
 
-	this->widget(4)->findChild<QLineEdit *>("steamidEnter")->setText(userdataFile["steamid64"].asCString()); // À¯Àú°¡ ·Î±×¾Æ¿ôÇß´Ù°¡ ´Ù½Ã ·Î±×ÀÎÇßÀ» °æ¿ì¸¦ ´ëºñÇØ ¿¬µ¿µÈ ½ºÆÀ °èÁ¤À» ¸®¼ÂÇÕ´Ï´Ù.
+    // ë¶ˆëŸ¬ì˜¨ íŒŒì¼ì— ë¡œê·¸ì¸í•œ ìœ ì €ì˜ ì •ë³´ë¥¼ ë„£ìŠµë‹ˆë‹¤.
+    userdataFile["sid"]["clientid"] = clientid;
+    userdataFile["sid"]["sessid"] = userdata["sessid"];
+    userdataFile["sid"]["pid"] = userdata["pid"];
+    userdataFile["sid"]["nickname"] = userdata["nickname"];
+    lj->Save("data/user.json", userdataFile); // ìˆ˜ì •ëœ íŒŒì¼ì„ ì €ì¥í•©ë‹ˆë‹¤.
+    Json::Value game = lj->LoadLibraryOn(userdata["pid"].asString()); // ì„œë²„ì— ì €ì¥ëœ ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¶ˆëŸ¬ì˜µë‹ˆë‹¤.
+    lj->Save("data/game.json", game); // ë¡œì»¬ ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ íŒŒì¼ì— ì €ì¥í•©ë‹ˆë‹¤.
 
-	this->loadGameLibrary(); // °ÔÀÓ ¶óÀÌºê·¯¸® Ã¢À» ÁØºñÇÕ´Ï´Ù.
-	this->setCurrentIndex(0); // °ÔÀÓ ¶óÀÌºê·¯¸® Ã¢À» Ç¥½ÃÇÕ´Ï´Ù.
+    this->widget(4)->findChild<QLineEdit *>("steamidEnter")->setText(userdataFile["steamid64"].asCString()); // ìœ ì €ê°€ ë¡œê·¸ì•„ì›ƒí–ˆë‹¤ê°€ ë‹¤ì‹œ ë¡œê·¸ì¸í–ˆì„ ê²½ìš°ë¥¼ ëŒ€ë¹„í•´ ì—°ë™ëœ ìŠ¤íŒ€ ê³„ì •ì„ ë¦¬ì…‹í•©ë‹ˆë‹¤.
+
+    this->loadGameLibrary(); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ ì°½ì„ ì¤€ë¹„í•©ë‹ˆë‹¤.
+    this->setCurrentIndex(0); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ ì°½ì„ í‘œì‹œí•©ë‹ˆë‹¤.
 }
 
 void QCustomStacked::loginError() {
-	QMessageBox::information(0, QString("Error"), QString("Login failed. Try again."), QMessageBox::Ok); // ·Î±×ÀÎ ½ÇÆĞ ¸Ş½ÃÁö¸¦ ¹ß½ÅÇÕ´Ï´Ù.
+    QMessageBox::information(0, QString("Error"), QString("Login failed. Try again."), QMessageBox::Ok); // ë¡œê·¸ì¸ ì‹¤íŒ¨ ë©”ì‹œì§€ë¥¼ ë°œì‹ í•©ë‹ˆë‹¤.
 }
 
 void QCustomStacked::setGamePage(int gameid) {
-	delete game;
-	LoadJson* lj = new LoadJson;
-	auto* gamePage = this->widget(1);
-	Json::Value data = lj->LoadLibraryW(); // °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ·ÎµåÇÕ´Ï´Ù.
-	char str[10];
-	auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
-	gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].asCString()); // °ÔÀÓ ÀÌ¸§À» ³Ö½À´Ï´Ù.
+    delete game;
+    LoadJson* lj = new LoadJson;
+    auto* gamePage = this->widget(1);
+    Json::Value data = lj->LoadLibraryW(); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¡œë“œí•©ë‹ˆë‹¤.
+    char str[10];
+    auto* gameText = gamePage->findChild<QLabel *>("gameInfoName");
+    gameText->setText(data["games"][itoa(gameid, str, 10)]["name"].asCString()); // ê²Œì„ ì´ë¦„ì„ ë„£ìŠµë‹ˆë‹¤.
 
-	// °ÔÀÓ ÇÃ·§Æû¿¡ µû¶ó °´Ã¼¸¦ »ı¼ºÇÕ´Ï´Ù.
-	if (data["games"][itoa(gameid, str, 10)]["platform"].asString().compare("steam") == 0)
-	{
-		game = new SteamGame(gameid, data["games"][itoa(gameid, str, 10)]["additional"]["steamid"].asInt());
-	}
-	else
-	{
-		game = new Game(gameid);
-	}
+    // ê²Œì„ í”Œë«í¼ì— ë”°ë¼ ê°ì²´ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.
+    if (data["games"][itoa(gameid, str, 10)]["platform"].asString().compare("steam") == 0)
+    {
+        game = new SteamGame(gameid, data["games"][itoa(gameid, str, 10)]["additional"]["steamid"].asInt());
+    }
+    else
+    {
+        game = new Game(gameid);
+    }
 };
 
-void QCustomStacked::setUsername(std::string name) { // °ÔÀÓ ¶óÀÌºê·¯¸® Ã¢°ú °ÔÀÓ ·±Ã³ ¸ñ·Ï Ã¢¿¡ ÀÖ´Â À¯Àú ´Ğ³×ÀÓÀ» ¼³Á¤ÇÕ´Ï´Ù.
-	std::string out = "Logged in as ";
-	out += name;
-	this->widget(0)->findChild<QLabel *>("libraryName")->setText(out.c_str());
-	this->widget(2)->findChild<QLabel *>("launcherName")->setText(out.c_str());
+void QCustomStacked::setUsername(std::string name) { // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ ì°½ê³¼ ê²Œì„ ëŸ°ì²˜ ëª©ë¡ ì°½ì— ìˆëŠ” ìœ ì € ë‹‰ë„¤ì„ì„ ì„¤ì •í•©ë‹ˆë‹¤.
+    std::string out = "Logged in as ";
+    out += name;
+    this->widget(0)->findChild<QLabel *>("libraryName")->setText(out.c_str());
+    this->widget(2)->findChild<QLabel *>("launcherName")->setText(out.c_str());
 }
 
-void QCustomStacked::startGame() { // °ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù.
-	this->game->execute();
+void QCustomStacked::startGame() { // ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤.
+    this->game->execute();
 }
 
-void QCustomStacked::setGameLibrary() { // loadGameLibrary()¸¦ ½ÇÇàÇÏ´Â ½½·ÔÀÔ´Ï´Ù.
-	this->loadGameLibrary();
+void QCustomStacked::setGameLibrary() { // loadGameLibrary()ë¥¼ ì‹¤í–‰í•˜ëŠ” ìŠ¬ë¡¯ì…ë‹ˆë‹¤.
+    this->loadGameLibrary();
 }
 
-void QCustomStacked::loadGameLibrary() { // °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ·ÎµåÇÏ°í Ç¥½ÃÇÕ´Ï´Ù.
-	LoadJson lj;
-	QList<GameButton*> buttons = library->findChildren<GameButton*>();
-	for (size_t i = 0; i < buttons.length(); i++) // ÇöÀç Ã¢¿¡ ÀÖ´Â ¸ğµç °ÔÀÓ ¹öÆ°À» Áö¿ó´Ï´Ù.
-	{
-		library->removeWidget(buttons[i]);
-	}
+void QCustomStacked::loadGameLibrary() { // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¡œë“œí•˜ê³  í‘œì‹œí•©ë‹ˆë‹¤.
+    LoadJson lj;
+    QList<GameButton*> buttons = library->findChildren<GameButton*>();
+    for (size_t i = 0; i < buttons.length(); i++) // í˜„ì¬ ì°½ì— ìˆëŠ” ëª¨ë“  ê²Œì„ ë²„íŠ¼ì„ ì§€ì›ë‹ˆë‹¤.
+    {
+        library->removeWidget(buttons[i]);
+    }
 
-	game->GameListGenerate(); // °ÔÀÓ ¸®½ºÆ®¸¦ ´Ù½Ã ¸¸µì´Ï´Ù.
+    game->GameListGenerate(); // ê²Œì„ ë¦¬ìŠ¤íŠ¸ë¥¼ ë‹¤ì‹œ ë§Œë“­ë‹ˆë‹¤.
 
-	Json::Value data = lj.LoadLibrary(); // °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ·ÎµåÇÕ´Ï´Ù.
-	Json::Value& games = data["games"];
-	for (Json::ValueIterator it = games.begin(); it != games.end(); it++) {
-		// ¹öÆ°µéÀ» ¸¸µì´Ï´Ù.
-		GameButton* button = new GameButton(target);
-		std::string objectname = "game";
-		objectname += (*it)["tiid"].asCString();
-		button->setObjectName(QString::fromUtf8(objectname.c_str()));
-		button->setGeometry(QRect(0, 0, 171, 101));
-		button->setFont(font);
-		std::string tempButtonStyleSheet = buttonStyleSheet;
-		tempButtonStyleSheet += "background-image: url(\"GameThumbnail/";
-		tempButtonStyleSheet.append((*it)["tiid"].asCString());
-		tempButtonStyleSheet.append(".jpg\");\n");
-		button->setStyleSheet(QString::fromUtf8(tempButtonStyleSheet.c_str()));
+    Json::Value data = lj.LoadLibrary(); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¡œë“œí•©ë‹ˆë‹¤.
+    Json::Value& games = data["games"];
+    for (Json::ValueIterator it = games.begin(); it != games.end(); it++) {
+        // ë²„íŠ¼ë“¤ì„ ë§Œë“­ë‹ˆë‹¤.
+        GameButton* button = new GameButton(target);
+        std::string objectname = "game";
+        objectname += (*it)["tiid"].asCString();
+        button->setObjectName(QString::fromUtf8(objectname.c_str()));
+        button->setGeometry(QRect(0, 0, 171, 101));
+        button->setFont(font);
+        std::string tempButtonStyleSheet = buttonStyleSheet;
+        tempButtonStyleSheet += "background-image: url(\"GameThumbnail/";
+        tempButtonStyleSheet.append((*it)["tiid"].asCString());
+        tempButtonStyleSheet.append(".jpg\");\n");
+        button->setStyleSheet(QString::fromUtf8(tempButtonStyleSheet.c_str()));
 #ifndef QT_NO_ACCESSIBILITY
-		button->setAccessibleName(QApplication::translate("GameLauncherClass", (*it)["name"].asCString(), nullptr));
+        button->setAccessibleName(QApplication::translate("GameLauncherClass", (*it)["name"].asCString(), nullptr));
 #endif // QT_NO_ACCESSIBILITY
 #ifndef QT_NO_ACCESSIBILITY
-		button->setAccessibleDescription(QApplication::translate("GameLauncherClass", (*it)["tiid"].asCString(), nullptr));
+        button->setAccessibleDescription(QApplication::translate("GameLauncherClass", (*it)["tiid"].asCString(), nullptr));
 #endif // QT_NO_ACCESSIBILITY
-		button->setText(QApplication::translate("GameLauncherClass", (*it)["name"].asCString(), nullptr));
-		button->setGameid((*it)["tiid"].asCString());
-		QObject::connect(button, SIGNAL(changeStackedWidgetIndex(int)), this, SLOT(setCurrentIndex(int)));
-		QObject::connect(button, SIGNAL(changeGameWidget(int)), this, SLOT(setGamePage(int)));
-		buttons.append(button); // ¹öÆ°À» ¹öÆ° ¸®½ºÆ®¿¡ Ãß°¡ÇÕ´Ï´Ù.
-		library->addWidget(button);
-	}
+        button->setText(QApplication::translate("GameLauncherClass", (*it)["name"].asCString(), nullptr));
+        button->setGameid((*it)["tiid"].asCString());
+        QObject::connect(button, SIGNAL(changeStackedWidgetIndex(int)), this, SLOT(setCurrentIndex(int)));
+        QObject::connect(button, SIGNAL(changeGameWidget(int)), this, SLOT(setGamePage(int)));
+        buttons.append(button); // ë²„íŠ¼ì„ ë²„íŠ¼ ë¦¬ìŠ¤íŠ¸ì— ì¶”ê°€í•©ë‹ˆë‹¤.
+        library->addWidget(button);
+    }
 }
 
 void QCustomStacked::init(QWidget* target) {
-	// ÁÖ¿ä º¯¼öµéÀ» ÃÊ±âÈ­ÇÕ´Ï´Ù.
-	this->target = target;
-	this->library->setParent(target);
-	this->target->setLayout(library);
+    // ì£¼ìš” ë³€ìˆ˜ë“¤ì„ ì´ˆê¸°í™”í•©ë‹ˆë‹¤.
+    this->target = target;
+    this->library->setParent(target);
+    this->target->setLayout(library);
 }
 
 void QCustomStacked::loginInit(QLineEdit* id, QLineEdit* pw) {
-	// ·Î±×ÀÎ °ü·Ã ÆûÀ» °¡Á®¿É´Ï´Ù.
-	this->id_form = id;
-	this->pw_form = pw;
+    // ë¡œê·¸ì¸ ê´€ë ¨ í¼ì„ ê°€ì ¸ì˜µë‹ˆë‹¤.
+    this->id_form = id;
+    this->pw_form = pw;
 }
 
 void QCustomStacked::changeToUserTab() {
-	// À¯Àú Á¤º¸ ÅÇÀ¸·Î ¹Ù²ß´Ï´Ù.
-	this->setCurrentIndex(4);
+    // ìœ ì € ì •ë³´ íƒ­ìœ¼ë¡œ ë°”ê¿‰ë‹ˆë‹¤.
+    this->setCurrentIndex(4);
 }
 
-void QCustomStacked::setSteamID64() { // ½ºÆÀ ¿¬µ¿ °èÁ¤À» ¹Ù²ß´Ï´Ù.
-	LoadJson* lj = new LoadJson;
-	Json::Value userdata = lj->LoadUserData(); // À¯Àú µ¥ÀÌÅÍ¸¦ ·ÎµåÇÕ´Ï´Ù.
-	userdata["steamid64"] = this->widget(4)->findChild<QLineEdit *>("steamidEnter")->text().toStdString();
-	lj->Save("data/user.json", userdata); // SteamID64¸¦ ´Ù½Ã ·ÎµåÇØ ÆÄÀÏ¿¡ ³Ö½À´Ï´Ù.
-	this->loadGameLibrary(); // °ÔÀÓ ¶óÀÌºê·¯¸®¸¦ ´Ù½Ã ·ÎµåÇÕ´Ï´Ù.
+void QCustomStacked::setSteamID64() { // ìŠ¤íŒ€ ì—°ë™ ê³„ì •ì„ ë°”ê¿‰ë‹ˆë‹¤.
+    LoadJson* lj = new LoadJson;
+    Json::Value userdata = lj->LoadUserData(); // ìœ ì € ë°ì´í„°ë¥¼ ë¡œë“œí•©ë‹ˆë‹¤.
+    userdata["steamid64"] = this->widget(4)->findChild<QLineEdit *>("steamidEnter")->text().toStdString();
+    lj->Save("data/user.json", userdata); // SteamID64ë¥¼ ë‹¤ì‹œ ë¡œë“œí•´ íŒŒì¼ì— ë„£ìŠµë‹ˆë‹¤.
+    this->loadGameLibrary(); // ê²Œì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë‹¤ì‹œ ë¡œë“œí•©ë‹ˆë‹¤.
 }
 
 void QCustomStacked::logout() {
-	LoadJson* lj = new LoadJson;
-	Json::Value userdata = lj->LoadUserData(); // À¯Àú µ¥ÀÌÅÍ¸¦ ·ÎµåÇÕ´Ï´Ù.
-	this->sid->logout(userdata["sid"]["clientid"].asString(), userdata["sid"]["sessid"].asString()); // SID ¼­¹ö¿Í Åë½ÅÇØ ·Î±×¾Æ¿ôÀ» ½ÇÇàÇÕ´Ï´Ù.
-	
-	// ÆÄÀÏ¿¡ ÀÖ´Â À¯Àú µ¥ÀÌÅÍ¸¦ Áö¿ó´Ï´Ù.
-	userdata["sid"]["sessid"] = "";
-	userdata["sid"]["nickname"] = "";
-	userdata["sid"]["pid"] = "";
-	lj->Save("data/user.json", userdata); // À¯Àú µ¥ÀÌÅÍ¸¦ Áö¿î ÆÄÀÏÀ» ÀúÀåÇÕ´Ï´Ù.
-	this->setCurrentIndex(3);
+    LoadJson* lj = new LoadJson;
+    Json::Value userdata = lj->LoadUserData(); // ìœ ì € ë°ì´í„°ë¥¼ ë¡œë“œí•©ë‹ˆë‹¤.
+    this->sid->logout(userdata["sid"]["clientid"].asString(), userdata["sid"]["sessid"].asString()); // SID ì„œë²„ì™€ í†µì‹ í•´ ë¡œê·¸ì•„ì›ƒì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
+
+    // íŒŒì¼ì— ìˆëŠ” ìœ ì € ë°ì´í„°ë¥¼ ì§€ì›ë‹ˆë‹¤.
+    userdata["sid"]["sessid"] = "";
+    userdata["sid"]["nickname"] = "";
+    userdata["sid"]["pid"] = "";
+    lj->Save("data/user.json", userdata); // ìœ ì € ë°ì´í„°ë¥¼ ì§€ìš´ íŒŒì¼ì„ ì €ì¥í•©ë‹ˆë‹¤.
+    this->setCurrentIndex(3);
 }

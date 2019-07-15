@@ -1,155 +1,155 @@
 #include "sid.h"
 
 Json::Value SIDCpp::curlPost(std::string url, std::string data, std::string method) {
-	CURL *curl = NULL;
-	CURLcode res;
+    CURL *curl = NULL;
+    CURLcode res;
 
-	int httpCode(0); // http »óÅÂ ÄÚµå¸¦ ¹ŞÀ» º¯¼ö¸¦ ÁØºñÇÕ´Ï´Ù.
-	std::unique_ptr<std::string> httpData(new std::string()); // ¼ö½ÅµÈ µ¥ÀÌÅÍ¸¦ ¹ŞÀ» º¯¼ö¸¦ ÁØºñÇÕ´Ï´Ù.
+    int httpCode(0); // http ìƒíƒœ ì½”ë“œë¥¼ ë°›ì„ ë³€ìˆ˜ë¥¼ ì¤€ë¹„í•©ë‹ˆë‹¤.
+    std::unique_ptr<std::string> httpData(new std::string()); // ìˆ˜ì‹ ëœ ë°ì´í„°ë¥¼ ë°›ì„ ë³€ìˆ˜ë¥¼ ì¤€ë¹„í•©ë‹ˆë‹¤.
 
-	curl_global_init(CURL_GLOBAL_ALL);
+    curl_global_init(CURL_GLOBAL_ALL);
 
-	curl = curl_easy_init();
-	if (curl) {
-		// curl request¸¦ ÁØºñÇÕ´Ï´Ù.
-		struct curl_slist *chunk = NULL;
-		curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-		curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
-		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callback);
-		curl_easy_setopt(curl, CURLOPT_WRITEDATA, httpData.get());
-		curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, method.c_str());
-		curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data.c_str());
-		curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, true);
+    curl = curl_easy_init();
+    if (curl) {
+        // curl requestë¥¼ ì¤€ë¹„í•©ë‹ˆë‹¤.
+        struct curl_slist *chunk = NULL;
+        curl_easy_setopt(curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callback);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, httpData.get());
+        curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, method.c_str());
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data.c_str());
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, true);
 
-		// Çì´õ¸¦ ÀÛ¼ºÇÕ´Ï´Ù.
-		chunk = curl_slist_append(chunk, "Accept: application/json");
-		chunk = curl_slist_append(chunk, "Content-Type: application/json");
-		curl_easy_setopt(curl, CURLOPT_HTTPHEADER, chunk);
-		//curl_easy_setopt(curl, CURLOPT_VERBOSE, true);
+        // í—¤ë”ë¥¼ ì‘ì„±í•©ë‹ˆë‹¤.
+        chunk = curl_slist_append(chunk, "Accept: application/json");
+        chunk = curl_slist_append(chunk, "Content-Type: application/json");
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, chunk);
+        //curl_easy_setopt(curl, CURLOPT_VERBOSE, true);
 
-		// Åë½ÅÀ» ½ÇÇàÇÕ´Ï´Ù.
-		res = curl_easy_perform(curl);
-		curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &httpCode);
-		curl_easy_cleanup(curl);
-		Json::Value data;
-		Json::Reader reader;
-		// ¼ö½ÅÇÑ ¹®ÀÚ¿­À» JSON document ÇüÅÂ·Î ¸®ÅÏÇÕ´Ï´Ù.
-		reader.parse(httpData.get()->c_str(), data);
+        // í†µì‹ ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
+        res = curl_easy_perform(curl);
+        curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &httpCode);
+        curl_easy_cleanup(curl);
+        Json::Value data;
+        Json::Reader reader;
+        // ìˆ˜ì‹ í•œ ë¬¸ìì—´ì„ JSON document í˜•íƒœë¡œ ë¦¬í„´í•©ë‹ˆë‹¤.
+        reader.parse(httpData.get()->c_str(), data);
 
-		return data;
-	}
-	Json::Value error;
-	error["error"] = 1;
-	return error;
+        return data;
+    }
+    Json::Value error;
+    error["error"] = 1;
+    return error;
 }
 
 SIDCpp::SIDCpp(std::string clientName) {
-	this->clientName = clientName; // Å¬¶óÀÌ¾ğÆ® ÀÌ¸§À» ÀÎ¼ö·Î ¹Ş½À´Ï´Ù.
+    this->clientName = clientName; // í´ë¼ì´ì–¸íŠ¸ ì´ë¦„ì„ ì¸ìˆ˜ë¡œ ë°›ìŠµë‹ˆë‹¤.
 }
 
 SIDCpp::~SIDCpp() {}
 
-Json::Value SIDCpp::login(std::string clientid, std::string sessid) { // ·Î±×ÀÎ 1: ÀÚµ¿ ·Î±×ÀÎ
-	try
-	{
-		Json::FastWriter writer;
-		Json::Value senddata;
+Json::Value SIDCpp::login(std::string clientid, std::string sessid) { // ë¡œê·¸ì¸ 1: ìë™ ë¡œê·¸ì¸
+    try
+    {
+        Json::FastWriter writer;
+        Json::Value senddata;
 
-		// request·Î Àü¼ÛÇÒ µ¥ÀÌÅÍ¸¦ ÁØºñÇÕ´Ï´Ù.
-		senddata["type"] = "login";
-		senddata["clientid"] = clientid;
-		senddata["sessid"] = sessid;
+        // requestë¡œ ì „ì†¡í•  ë°ì´í„°ë¥¼ ì¤€ë¹„í•©ë‹ˆë‹¤.
+        senddata["type"] = "login";
+        senddata["clientid"] = clientid;
+        senddata["sessid"] = sessid;
 
-		Json::Value userdata = this->curlPost("http://sid.donote.co:3000/api/session", writer.write(senddata)); // SID ¼­¹ö¿Í Åë½ÅÇÕ´Ï´Ù.
-		if (userdata["type"].asCString() == "error")
-		{
-			throw new std::exception; // ¼­¹ö¿Í Åë½ÅÇÑ °á°ú °ªÀ» °Ë»çÇÕ´Ï´Ù.
-		}
+        Json::Value userdata = this->curlPost("http://sid.donote.co:3000/api/session", writer.write(senddata)); // SID ì„œë²„ì™€ í†µì‹ í•©ë‹ˆë‹¤.
+        if (userdata["type"].asCString() == "error")
+        {
+            throw new std::exception; // ì„œë²„ì™€ í†µì‹ í•œ ê²°ê³¼ ê°’ì„ ê²€ì‚¬í•©ë‹ˆë‹¤.
+        }
 
-		//¼ö½ÅÇÑ µ¥ÀÌÅÍ¸¦ ÀÏÁ¤ÇÑ Çü½Ä¿¡ ¸ÂÃç ¸®ÅÏÇÕ´Ï´Ù.
-		Json::Value output;
-		output["sessid"] = userdata["response_data"][0].asCString();
-		output["pid"] = userdata["response_data"][1].asCString();
-		output["nickname"] = userdata["response_data"][2].asCString();
-		output["expire"] = userdata["response_data"][3].asCString();
-		return output;
-	}
-	catch (const std::exception&)
-	{
-		Json::Value error;
-		error["error"] = 1;
-		return error;
-	}
+        //ìˆ˜ì‹ í•œ ë°ì´í„°ë¥¼ ì¼ì •í•œ í˜•ì‹ì— ë§ì¶° ë¦¬í„´í•©ë‹ˆë‹¤.
+        Json::Value output;
+        output["sessid"] = userdata["response_data"][0].asCString();
+        output["pid"] = userdata["response_data"][1].asCString();
+        output["nickname"] = userdata["response_data"][2].asCString();
+        output["expire"] = userdata["response_data"][3].asCString();
+        return output;
+    }
+    catch (const std::exception&)
+    {
+        Json::Value error;
+        error["error"] = 1;
+        return error;
+    }
 }
 
-Json::Value SIDCpp::login(std::string clientid, std::string id, std::string pw) { // ·Î±×ÀÎ 2: Á÷Á¢ ·Î±×ÀÎ
-	Json::Value senddata;
-	Json::FastWriter writer;
+Json::Value SIDCpp::login(std::string clientid, std::string id, std::string pw) { // ë¡œê·¸ì¸ 2: ì§ì ‘ ë¡œê·¸ì¸
+    Json::Value senddata;
+    Json::FastWriter writer;
 
-	// request·Î Àü¼ÛÇÒ µ¥ÀÌÅÍ¸¦ ÁØºñÇÕ´Ï´Ù.
-	senddata["type"] = "login";
-	senddata["clientid"] = clientid;
-	senddata["userid"] = id;
-	senddata["password"] = pw;
+    // requestë¡œ ì „ì†¡í•  ë°ì´í„°ë¥¼ ì¤€ë¹„í•©ë‹ˆë‹¤.
+    senddata["type"] = "login";
+    senddata["clientid"] = clientid;
+    senddata["userid"] = id;
+    senddata["password"] = pw;
 
-	Json::Value userdata = this->curlPost("http://sid.donote.co:3000/api/session", writer.write(senddata)); // SID ¼­¹ö¿Í Åë½ÅÇÕ´Ï´Ù.
-	if (userdata["type"].asCString() == "error")
-	{
-		throw new std::exception; // ¼­¹ö¿Í Åë½ÅÇÑ °á°ú °ªÀ» °Ë»çÇÕ´Ï´Ù.
-	}
+    Json::Value userdata = this->curlPost("http://sid.donote.co:3000/api/session", writer.write(senddata)); // SID ì„œë²„ì™€ í†µì‹ í•©ë‹ˆë‹¤.
+    if (userdata["type"].asCString() == "error")
+    {
+        throw new std::exception; // ì„œë²„ì™€ í†µì‹ í•œ ê²°ê³¼ ê°’ì„ ê²€ì‚¬í•©ë‹ˆë‹¤.
+    }
 
-	// ¼ö½ÅÇÑ µ¥ÀÌÅÍ¸¦ ÀÏÁ¤ÇÑ Çü½Ä¿¡ ¸ÂÃç ¸®ÅÏÇÕ´Ï´Ù.
-	Json::Value output;
-	output["sessid"] = userdata["response_data"][0].asCString();
-	output["pid"] = userdata["response_data"][1].asCString();
-	output["nickname"] = userdata["response_data"][2].asCString();
-	output["expire"] = userdata["response_data"][3].asCString();
-	return output;
+    // ìˆ˜ì‹ í•œ ë°ì´í„°ë¥¼ ì¼ì •í•œ í˜•ì‹ì— ë§ì¶° ë¦¬í„´í•©ë‹ˆë‹¤.
+    Json::Value output;
+    output["sessid"] = userdata["response_data"][0].asCString();
+    output["pid"] = userdata["response_data"][1].asCString();
+    output["nickname"] = userdata["response_data"][2].asCString();
+    output["expire"] = userdata["response_data"][3].asCString();
+    return output;
 }
 
-int SIDCpp::logout(std::string clientid, std::string sessid) { // ·Î±×¾Æ¿ô
-	Json::Value senddata;
-	Json::FastWriter writer;
+int SIDCpp::logout(std::string clientid, std::string sessid) { // ë¡œê·¸ì•„ì›ƒ
+    Json::Value senddata;
+    Json::FastWriter writer;
 
-	// request·Î Àü¼ÛÇÒ µ¥ÀÌÅÍ¸¦ ÁØºñÇÕ´Ï´Ù.
-	senddata["type"] = "logout";
-	senddata["clientid"] = clientid;
-	senddata["sessid"] = sessid;
+    // requestë¡œ ì „ì†¡í•  ë°ì´í„°ë¥¼ ì¤€ë¹„í•©ë‹ˆë‹¤.
+    senddata["type"] = "logout";
+    senddata["clientid"] = clientid;
+    senddata["sessid"] = sessid;
 
-	Json::Value result = this->curlPost("http://sid.donote.co:3000/api/session", writer.write(senddata), "DELETE"); // SID ¼­¹ö¿Í Åë½ÅÇÕ´Ï´Ù.
-	
-	// °á°ú °ªÀ» °Ë»çÇÕ´Ï´Ù.
-	if (result["type"].asString().compare("error")) {
-		return 0;
-	}
-	if (!result["is_succeed"].asBool()) {
-		return 0;
-	}
+    Json::Value result = this->curlPost("http://sid.donote.co:3000/api/session", writer.write(senddata), "DELETE"); // SID ì„œë²„ì™€ í†µì‹ í•©ë‹ˆë‹¤.
 
-	return 1;
+    // ê²°ê³¼ ê°’ì„ ê²€ì‚¬í•©ë‹ˆë‹¤.
+    if (result["type"].asString().compare("error")) {
+        return 0;
+    }
+    if (!result["is_succeed"].asBool()) {
+        return 0;
+    }
+
+    return 1;
 }
 
-std::string SIDCpp::getUserNickname(std::string clientid, std::string sessid) { // À¯ÀúÀÇ ´Ğ³×ÀÓÀ» °¡Á®¿É´Ï´Ù.
-	// Åë½ÅÇÒ URLÀ» ÁØºñÇÕ´Ï´Ù.
-	std::string url = "http://sid.donote.co:3000/api/";
-	url.append(clientid).append("/").append(sessid).append("/usname");
-	try
-	{
-		Json::Value userdata = this->curlPost(url, "", "GET"); // SID ¼­¹ö¿Í Åë½ÅÇÕ´Ï´Ù/
-		
-		// °á°ú °ªÀ» °Ë»çÇÕ´Ï´Ù.
-		if (userdata["type"].asCString() == "error")
-			return "";
-		if (!userdata["is_vaild"].asBool()) {
-			return "";
-		}
+std::string SIDCpp::getUserNickname(std::string clientid, std::string sessid) { // ìœ ì €ì˜ ë‹‰ë„¤ì„ì„ ê°€ì ¸ì˜µë‹ˆë‹¤.
+    // í†µì‹ í•  URLì„ ì¤€ë¹„í•©ë‹ˆë‹¤.
+    std::string url = "http://sid.donote.co:3000/api/";
+    url.append(clientid).append("/").append(sessid).append("/usname");
+    try
+    {
+        Json::Value userdata = this->curlPost(url, "", "GET"); // SID ì„œë²„ì™€ í†µì‹ í•©ë‹ˆë‹¤/
 
-		return userdata["response_data"].asString(); // ¹Ş¾Æ¿Â ´Ğ³×ÀÓÀ» ¸®ÅÏÇÕ´Ï´Ù.
-	}
-	catch (const std::exception&)
-	{
-		return "";
-	}
+        // ê²°ê³¼ ê°’ì„ ê²€ì‚¬í•©ë‹ˆë‹¤.
+        if (userdata["type"].asCString() == "error")
+            return "";
+        if (!userdata["is_vaild"].asBool()) {
+            return "";
+        }
+
+        return userdata["response_data"].asString(); // ë°›ì•„ì˜¨ ë‹‰ë„¤ì„ì„ ë¦¬í„´í•©ë‹ˆë‹¤.
+    }
+    catch (const std::exception&)
+    {
+        return "";
+    }
 }
 
 
@@ -170,16 +170,16 @@ std::string SIDCpp::getUserNickname(std::string clientid, std::string sessid) { 
 	}
 }*/
 
-std::string SIDCpp::createClientID(std::string devicedata) { // ±â±â °íÀ¯ ID¸¦ »ı¼ºÇÕ´Ï´Ù.
-	Json::Value senddata;
-	Json::FastWriter writer;
-	
-	// request·Î º¸³¾ µ¥ÀÌÅÍ¸¦ ÁØºñÇÕ´Ï´Ù.
-	senddata["type"] = "create";
-	senddata["data"] = "clientid";
-	senddata["devicedata"] = devicedata;
+std::string SIDCpp::createClientID(std::string devicedata) { // ê¸°ê¸° ê³ ìœ  IDë¥¼ ìƒì„±í•©ë‹ˆë‹¤.
+    Json::Value senddata;
+    Json::FastWriter writer;
 
-	Json::Value received = this->curlPost("http://sid.donote.co:3000/api/clientid", writer.write(senddata)); // SID ¼­¹ö¿Í Åë½ÅÇÕ´Ï´Ù.
+    // requestë¡œ ë³´ë‚¼ ë°ì´í„°ë¥¼ ì¤€ë¹„í•©ë‹ˆë‹¤.
+    senddata["type"] = "create";
+    senddata["data"] = "clientid";
+    senddata["devicedata"] = devicedata;
 
-	return received["response_data"].asCString(); // ±â±â ID¸¦ ¸®ÅÏÇÕ´Ï´Ù.
+    Json::Value received = this->curlPost("http://sid.donote.co:3000/api/clientid", writer.write(senddata)); // SID ì„œë²„ì™€ í†µì‹ í•©ë‹ˆë‹¤.
+
+    return received["response_data"].asCString(); // ê¸°ê¸° IDë¥¼ ë¦¬í„´í•©ë‹ˆë‹¤.
 }
