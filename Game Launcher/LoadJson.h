@@ -12,7 +12,7 @@
 
 class LoadJson {
 public:
-	Json::Value LoadLibraryW();
+	Json::Value LoadLibrary();
 	Json::Value LoadSteam();
 	Json::Value LoadUserData();
 	Json::Value LoadLibraryOn(std::string);

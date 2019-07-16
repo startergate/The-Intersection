@@ -55,18 +55,19 @@
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;D:\CPPLIB\curl-7.65.0\include;D:\CPPLIB\jsoncpp-1.8.4\jsoncpp-1.8.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtCore;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtGui;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtANGLE;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtNetwork;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtWebSockets;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtWidgets;D:\CPPLIB\curl-7.65.1\include;D:\CPPLIB\jsoncpp-1.8.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\CPPLIB\jsoncpp-1.8.4\jsoncpp-1.8.4\makefiles\msvc2010\x64\Debug;D:\CPPLIB\curl-7.65.0\build\Win64\VC15\LIB Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib;D:\CPPLIB\jsoncpp-1.8.4\makefiles\msvc2010\x64\Debug;D:\CPPLIB\curl-7.65.1\build\Win64\VC15\LIB Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Networkd.lib;Qt5WebSocketsd.lib;Qt5Widgetsd.lib;lib_json.lib;libcurld.lib;ws2_32.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\qtmaind.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Cored.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Guid.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Networkd.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5WebSocketsd.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Widgetsd.lib;lib_json.lib;libcurld.lib;libucrtd.lib;wldap32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
@@ -87,17 +88,18 @@
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WEBSOCKETS_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtCore;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtGui;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtANGLE;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtNetwork;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtWebSockets;D:\CPPLIB\Qt\5.13.0\msvc2017_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat />
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5WebSockets.lib;Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\qtmain.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Core.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Gui.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Network.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5WebSockets.lib;D:\CPPLIB\Qt\5.13.0\msvc2017_64\lib\Qt5Widgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <QtMoc>
       <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
@@ -171,7 +173,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_x64="msvc2017_64" MocOptions="" />
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" MocOptions="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

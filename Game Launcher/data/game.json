@@ -300,6 +300,19 @@
 			"playedTime" : 0,
 			"tiid" : "209670"
 		},
+		"210770" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 210770
+			},
+			"isInstalled" : "false",
+			"name" : "Sanctum 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "210770"
+		},
 		"211160" : 
 		{
 			"addedTime" : 1530489600,
@@ -362,7 +375,7 @@
 			"isInstalled" : "false",
 			"name" : "PAYDAY 2",
 			"platform" : "steam",
-			"playedTime" : 10464,
+			"playedTime" : 10636,
 			"tiid" : "218620"
 		},
 		"220" : 
@@ -440,7 +453,7 @@
 			"isInstalled" : "false",
 			"name" : "Fallout: New Vegas",
 			"platform" : "steam",
-			"playedTime" : 4906,
+			"playedTime" : 5020,
 			"tiid" : "22380"
 		},
 		"223850" : 
@@ -453,7 +466,7 @@
 			"isInstalled" : "false",
 			"name" : "3DMark",
 			"platform" : "steam",
-			"playedTime" : 27,
+			"playedTime" : 74,
 			"tiid" : "223850"
 		},
 		"224480" : 
@@ -622,7 +635,7 @@
 			"isInstalled" : "false",
 			"name" : "War Thunder",
 			"platform" : "steam",
-			"playedTime" : 33,
+			"playedTime" : 55,
 			"tiid" : "236390"
 		},
 		"236870" : 
@@ -804,7 +817,7 @@
 			"isInstalled" : "false",
 			"name" : "Dead Rising 3",
 			"platform" : "steam",
-			"playedTime" : 223,
+			"playedTime" : 774,
 			"tiid" : "265550"
 		},
 		"265590" : 
@@ -856,7 +869,7 @@
 			"isInstalled" : "false",
 			"name" : "Grand Theft Auto V",
 			"platform" : "steam",
-			"playedTime" : 37630,
+			"playedTime" : 37739,
 			"tiid" : "271590"
 		},
 		"275390" : 
@@ -986,7 +999,7 @@
 			"isInstalled" : "false",
 			"name" : "For Honor",
 			"platform" : "steam",
-			"playedTime" : 34,
+			"playedTime" : 168,
 			"tiid" : "304390"
 		},
 		"304930" : 
@@ -1064,7 +1077,7 @@
 			"isInstalled" : "false",
 			"name" : "Don't Starve Together",
 			"platform" : "steam",
-			"playedTime" : 1215,
+			"playedTime" : 1240,
 			"tiid" : "322330"
 		},
 		"323580" : 
@@ -1236,6 +1249,19 @@
 			"playedTime" : 52,
 			"tiid" : "346900"
 		},
+		"351940" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 351940
+			},
+			"isInstalled" : "false",
+			"name" : "The Descendant",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "351940"
+		},
 		"354500" : 
 		{
 			"addedTime" : 1530489600,
@@ -1324,7 +1350,7 @@
 			"isInstalled" : "false",
 			"name" : "Tom Clancy's Rainbow Six Siege",
 			"platform" : "steam",
-			"playedTime" : 27630,
+			"playedTime" : 29057,
 			"tiid" : "359550"
 		},
 		"360620" : 
@@ -1506,7 +1532,7 @@
 			"isInstalled" : "false",
 			"name" : "Garry's Mod",
 			"platform" : "steam",
-			"playedTime" : 4227,
+			"playedTime" : 4296,
 			"tiid" : "4000"
 		},
 		"402390" : 
@@ -1522,6 +1548,19 @@
 			"playedTime" : 0,
 			"tiid" : "402390"
 		},
+		"406150" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 406150
+			},
+			"isInstalled" : "false",
+			"name" : "Refunct",
+			"platform" : "steam",
+			"playedTime" : 21,
+			"tiid" : "406150"
+		},
 		"413150" : 
 		{
 			"addedTime" : 1530489600,
@@ -1532,7 +1571,7 @@
 			"isInstalled" : "false",
 			"name" : "Stardew Valley",
 			"platform" : "steam",
-			"playedTime" : 622,
+			"playedTime" : 782,
 			"tiid" : "413150"
 		},
 		"423580" : 
@@ -1545,7 +1584,7 @@
 			"isInstalled" : "false",
 			"name" : "Project Highrise",
 			"platform" : "steam",
-			"playedTime" : 92,
+			"playedTime" : 116,
 			"tiid" : "423580"
 		},
 		"427460" : 
@@ -1909,7 +1948,7 @@
 			"isInstalled" : "false",
 			"name" : "The Elder Scrolls V: Skyrim Special Edition",
 			"platform" : "steam",
-			"playedTime" : 14327,
+			"playedTime" : 14328,
 			"tiid" : "489830"
 		},
 		"490220" : 
@@ -2169,7 +2208,7 @@
 			"isInstalled" : "false",
 			"name" : "PLAYERUNKNOWN'S BATTLEGROUNDS",
 			"platform" : "steam",
-			"playedTime" : 4343,
+			"playedTime" : 4428,
 			"tiid" : "578080"
 		},
 		"584980" : 
@@ -2455,7 +2494,7 @@
 			"isInstalled" : "false",
 			"name" : "Counter-Strike: Global Offensive",
 			"platform" : "steam",
-			"playedTime" : 2737,
+			"playedTime" : 3035,
 			"tiid" : "730"
 		},
 		"755790" : 
@@ -2520,7 +2559,7 @@
 			"isInstalled" : "false",
 			"name" : "Totally Accurate Battlegrounds",
 			"platform" : "steam",
-			"playedTime" : 36,
+			"playedTime" : 140,
 			"tiid" : "823130"
 		},
 		"845070" : 
@@ -2587,6 +2626,19 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "878750"
+		},
+		"884660" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 884660
+			},
+			"isInstalled" : "false",
+			"name" : "Cuisine Royale",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "884660"
 		},
 		"941650" : 
 		{

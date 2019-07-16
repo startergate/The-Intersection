@@ -1,9 +1,7 @@
 #include "ClickableQLabel.h"
 
 ClickableLabel::ClickableLabel(QWidget* parent, Qt::WindowFlags f)
-        : QLabel(parent) {
-
-}
+        : QLabel(parent) {}
 
 ClickableLabel::~ClickableLabel() {}
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'GameLauncher.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.3
+** Created by: Qt User Interface Compiler version 5.13.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -96,7 +96,7 @@ public:
         libraryLauncherTitle->setObjectName(QString::fromUtf8("libraryLauncherTitle"));
         libraryLauncherTitle->setGeometry(QRect(140, 0, 181, 62));
         QFont font1;
-        font1.setFamily(QString::fromUtf8("Avenir LT 35 Light"));
+        font1.setFamily(QString::fromUtf8("Avenir LT Std 35 Light"));
         font1.setPointSize(26);
         font1.setBold(false);
         font1.setWeight(50);
@@ -126,19 +126,19 @@ public:
         gameStartButton->setObjectName(QString::fromUtf8("gameStartButton"));
         gameStartButton->setGeometry(QRect(20, 70, 91, 31));
         QFont font3;
-        font3.setFamily(QString::fromUtf8("Avenir LT 55 Roman"));
+        font3.setFamily(QString::fromUtf8("Avenir LT Std 55 Roman"));
         font3.setPointSize(16);
-        font3.setBold(true);
-        font3.setWeight(75);
+        font3.setBold(false);
+        font3.setWeight(50);
         gameStartButton->setFont(font3);
         goBack = new ClickableLabel(gameInfoTab);
         goBack->setObjectName(QString::fromUtf8("goBack"));
         goBack->setGeometry(QRect(-10, -10, 91, 81));
         QFont font4;
-        font4.setFamily(QString::fromUtf8("Avenir LT 65 Medium"));
+        font4.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
         font4.setPointSize(50);
-        font4.setBold(false);
-        font4.setWeight(50);
+        font4.setBold(true);
+        font4.setWeight(75);
         goBack->setFont(font4);
         goBack->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
@@ -154,12 +154,7 @@ public:
         launcherlauncherTitle = new QLabel(launcherTab);
         launcherlauncherTitle->setObjectName(QString::fromUtf8("launcherlauncherTitle"));
         launcherlauncherTitle->setGeometry(QRect(140, 0, 181, 62));
-        QFont font5;
-        font5.setFamily(QString::fromUtf8("Avenir LT 65 Medium"));
-        font5.setPointSize(26);
-        font5.setBold(true);
-        font5.setWeight(75);
-        launcherlauncherTitle->setFont(font5);
+        launcherlauncherTitle->setFont(font);
         launcherlauncherTitle->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "margin: 10px;"));
         launcherName = new ClickableLabel(launcherTab);
@@ -179,47 +174,47 @@ public:
         loginBtn = new QPushButton(frame);
         loginBtn->setObjectName(QString::fromUtf8("loginBtn"));
         loginBtn->setGeometry(QRect(120, 170, 121, 51));
-        QFont font6;
-        font6.setFamily(QString::fromUtf8("Avenir LT 45 Book"));
-        font6.setPointSize(15);
-        loginBtn->setFont(font6);
+        QFont font5;
+        font5.setFamily(QString::fromUtf8("Avenir LT Std 45 Book"));
+        font5.setPointSize(15);
+        loginBtn->setFont(font5);
         loginBtn->setStyleSheet(QString::fromUtf8("background-color: white;border: 1px solid grey;border-radius: 10px"));
         pwEnter = new QLineEdit(frame);
         pwEnter->setObjectName(QString::fromUtf8("pwEnter"));
         pwEnter->setGeometry(QRect(110, 120, 170, 30));
-        QFont font7;
-        font7.setFamily(QString::fromUtf8("Aleo"));
-        font7.setPointSize(15);
-        pwEnter->setFont(font7);
+        QFont font6;
+        font6.setFamily(QString::fromUtf8("Aleo"));
+        font6.setPointSize(15);
+        pwEnter->setFont(font6);
         pwEnter->setStyleSheet(QString::fromUtf8("background-color: white;color:black;"));
         pwEnter->setEchoMode(QLineEdit::Password);
         pwDesc = new QLabel(frame);
         pwDesc->setObjectName(QString::fromUtf8("pwDesc"));
         pwDesc->setGeometry(QRect(70, 120, 30, 24));
-        QFont font8;
-        font8.setFamily(QString::fromUtf8("Avenir LT 35 Light"));
-        font8.setPointSize(15);
-        pwDesc->setFont(font8);
+        QFont font7;
+        font7.setFamily(QString::fromUtf8("Avenir LT Std 35 Light"));
+        font7.setPointSize(15);
+        pwDesc->setFont(font7);
         pwDesc->setStyleSheet(QString::fromUtf8("color:white"));
         pwDesc->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         idDesc = new QLabel(frame);
         idDesc->setObjectName(QString::fromUtf8("idDesc"));
         idDesc->setGeometry(QRect(80, 90, 20, 24));
-        idDesc->setFont(font8);
+        idDesc->setFont(font7);
         idDesc->setStyleSheet(QString::fromUtf8("color:white"));
         idDesc->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         idEnter = new QLineEdit(frame);
         idEnter->setObjectName(QString::fromUtf8("idEnter"));
         idEnter->setGeometry(QRect(110, 90, 170, 30));
-        idEnter->setFont(font7);
+        idEnter->setFont(font6);
         idEnter->setStyleSheet(QString::fromUtf8("background-color: white;color:black;"));
         loginText = new QLabel(frame);
         loginText->setObjectName(QString::fromUtf8("loginText"));
         loginText->setGeometry(QRect(120, 10, 112, 52));
-        QFont font9;
-        font9.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
-        font9.setPointSize(32);
-        loginText->setFont(font9);
+        QFont font8;
+        font8.setFamily(QString::fromUtf8("Avenir LT Std 65 Medium"));
+        font8.setPointSize(32);
+        loginText->setFont(font8);
         loginText->setStyleSheet(QString::fromUtf8("color: white"));
         loginText->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(loginTab);
@@ -234,25 +229,29 @@ public:
         steamidEnter = new QLineEdit(userInfoTab);
         steamidEnter->setObjectName(QString::fromUtf8("steamidEnter"));
         steamidEnter->setGeometry(QRect(50, 410, 113, 20));
-        QFont font10;
-        font10.setFamily(QString::fromUtf8("Noto Sans KR Light"));
-        steamidEnter->setFont(font10);
+        QFont font9;
+        font9.setFamily(QString::fromUtf8("Noto Sans KR Light"));
+        steamidEnter->setFont(font9);
         steamidEnter->setStyleSheet(QString::fromUtf8("background-color:white"));
         steamid = new QLabel(userInfoTab);
         steamid->setObjectName(QString::fromUtf8("steamid"));
         steamid->setGeometry(QRect(50, 390, 61, 16));
-        QFont font11;
-        font11.setFamily(QString::fromUtf8("Noto Sans CJK KR Light"));
-        steamid->setFont(font11);
+        QFont font10;
+        font10.setFamily(QString::fromUtf8("Noto Sans CJK KR Light"));
+        steamid->setFont(font10);
         steamid->setStyleSheet(QString::fromUtf8("color: white"));
         steamidSave = new QPushButton(userInfoTab);
         steamidSave->setObjectName(QString::fromUtf8("steamidSave"));
         steamidSave->setGeometry(QRect(170, 410, 41, 21));
-        steamidSave->setFont(font10);
+        steamidSave->setFont(font9);
         steamidSave->setStyleSheet(QString::fromUtf8("background-color:white;border-radius: 3px;"));
         logout = new ClickableLabel(userInfoTab);
         logout->setObjectName(QString::fromUtf8("logout"));
-        logout->setGeometry(QRect(50, 480, 56, 12));
+        logout->setGeometry(QRect(50, 480, 61, 21));
+        QFont font11;
+        font11.setFamily(QString::fromUtf8("Noto Sans KR Thin"));
+        font11.setPointSize(10);
+        logout->setFont(font11);
         logout->setStyleSheet(QString::fromUtf8("color:white;"));
         stackedWidget->addWidget(userInfoTab);
         GameLauncherClass->setCentralWidget(centralWidget);
@@ -277,32 +276,32 @@ public:
 
     void retranslateUi(QMainWindow *GameLauncherClass)
     {
-        GameLauncherClass->setWindowTitle(QApplication::translate("GameLauncherClass", "The Intersection", nullptr));
-        libraryLibraryTitle->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
-#ifndef QT_NO_WHATSTHIS
-        libraryApps->setWhatsThis(QApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
-#endif // QT_NO_WHATSTHIS
-        libraryLauncherTitle->setText(QApplication::translate("GameLauncherClass", "Launcher", nullptr));
-        libraryName->setText(QApplication::translate("GameLauncherClass", "Logged in as startergate", nullptr));
-        gameInfoName->setText(QApplication::translate("GameLauncherClass", "GAME_NAME", nullptr));
-        gameStartButton->setText(QApplication::translate("GameLauncherClass", "\342\226\266 Play", nullptr));
-        goBack->setText(QApplication::translate("GameLauncherClass", "<", nullptr));
-        launcherLibraryTitle->setText(QApplication::translate("GameLauncherClass", "Library", nullptr));
-        launcherlauncherTitle->setText(QApplication::translate("GameLauncherClass", "Launcher", nullptr));
-        launcherName->setText(QApplication::translate("GameLauncherClass", "Logged in as startergate", nullptr));
-        loginBtn->setText(QApplication::translate("GameLauncherClass", "Login", nullptr));
+        GameLauncherClass->setWindowTitle(QCoreApplication::translate("GameLauncherClass", "The Intersection", nullptr));
+        libraryLibraryTitle->setText(QCoreApplication::translate("GameLauncherClass", "Library", nullptr));
+#if QT_CONFIG(whatsthis)
+        libraryApps->setWhatsThis(QCoreApplication::translate("GameLauncherClass", "Counter-Strike", nullptr));
+#endif // QT_CONFIG(whatsthis)
+        libraryLauncherTitle->setText(QCoreApplication::translate("GameLauncherClass", "Launcher", nullptr));
+        libraryName->setText(QCoreApplication::translate("GameLauncherClass", "Logged in as startergate", nullptr));
+        gameInfoName->setText(QCoreApplication::translate("GameLauncherClass", "GAME_NAME", nullptr));
+        gameStartButton->setText(QCoreApplication::translate("GameLauncherClass", "\342\226\266 Play", nullptr));
+        goBack->setText(QCoreApplication::translate("GameLauncherClass", "<", nullptr));
+        launcherLibraryTitle->setText(QCoreApplication::translate("GameLauncherClass", "Library", nullptr));
+        launcherlauncherTitle->setText(QCoreApplication::translate("GameLauncherClass", "Launcher", nullptr));
+        launcherName->setText(QCoreApplication::translate("GameLauncherClass", "Logged in as startergate", nullptr));
+        loginBtn->setText(QCoreApplication::translate("GameLauncherClass", "Login", nullptr));
         pwEnter->setInputMask(QString());
         pwEnter->setText(QString());
-        pwDesc->setText(QApplication::translate("GameLauncherClass", "PW", nullptr));
-        idDesc->setText(QApplication::translate("GameLauncherClass", "ID", nullptr));
+        pwDesc->setText(QCoreApplication::translate("GameLauncherClass", "PW", nullptr));
+        idDesc->setText(QCoreApplication::translate("GameLauncherClass", "ID", nullptr));
         idEnter->setInputMask(QString());
         idEnter->setText(QString());
-        loginText->setText(QApplication::translate("GameLauncherClass", "Login", nullptr));
-        goBack_2->setText(QApplication::translate("GameLauncherClass", "<", nullptr));
-        steamidEnter->setText(QApplication::translate("GameLauncherClass", "STEAMID64_PLACEHOLDER", nullptr));
-        steamid->setText(QApplication::translate("GameLauncherClass", "SteamID64", nullptr));
-        steamidSave->setText(QApplication::translate("GameLauncherClass", "Save", nullptr));
-        logout->setText(QApplication::translate("GameLauncherClass", "\353\241\234\352\267\270\354\225\204\354\233\203", nullptr));
+        loginText->setText(QCoreApplication::translate("GameLauncherClass", "Login", nullptr));
+        goBack_2->setText(QCoreApplication::translate("GameLauncherClass", "<", nullptr));
+        steamidEnter->setText(QCoreApplication::translate("GameLauncherClass", "STEAMID64_PLACEHOLDER", nullptr));
+        steamid->setText(QCoreApplication::translate("GameLauncherClass", "SteamID64", nullptr));
+        steamidSave->setText(QCoreApplication::translate("GameLauncherClass", "Save", nullptr));
+        logout->setText(QCoreApplication::translate("GameLauncherClass", "\353\241\234\352\267\270\354\225\204\354\233\203", nullptr));
     } // retranslateUi
 
 };

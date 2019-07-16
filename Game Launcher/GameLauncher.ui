@@ -98,7 +98,7 @@ margin: 10px;</string>
       </property>
       <property name="font">
        <font>
-        <family>Avenir LT 35 Light</family>
+        <family>Avenir LT Std 35 Light</family>
         <pointsize>26</pointsize>
         <weight>50</weight>
         <bold>false</bold>
@@ -176,10 +176,10 @@ margin: 10px;</string>
       </property>
       <property name="font">
        <font>
-        <family>Avenir LT 55 Roman</family>
+        <family>Avenir LT Std 55 Roman</family>
         <pointsize>16</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
+        <weight>50</weight>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
@@ -197,10 +197,10 @@ margin: 10px;</string>
       </property>
       <property name="font">
        <font>
-        <family>Avenir LT 65 Medium</family>
+        <family>Avenir LT Std 65 Medium</family>
         <pointsize>50</pointsize>
-        <weight>50</weight>
-        <bold>false</bold>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -224,7 +224,7 @@ margin: 10px;</string>
       </property>
       <property name="font">
        <font>
-        <family>Avenir LT 35 Light</family>
+        <family>Avenir LT Std 35 Light</family>
         <pointsize>26</pointsize>
         <weight>50</weight>
         <bold>false</bold>
@@ -249,7 +249,7 @@ margin: 10px;</string>
       </property>
       <property name="font">
        <font>
-        <family>Avenir LT 65 Medium</family>
+        <family>Avenir LT Std 65 Medium</family>
         <pointsize>26</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -317,7 +317,7 @@ margin: 10px;</string>
        </property>
        <property name="font">
         <font>
-         <family>Avenir LT 45 Book</family>
+         <family>Avenir LT Std 45 Book</family>
          <pointsize>15</pointsize>
         </font>
        </property>
@@ -367,7 +367,7 @@ margin: 10px;</string>
        </property>
        <property name="font">
         <font>
-         <family>Avenir LT 35 Light</family>
+         <family>Avenir LT Std 35 Light</family>
          <pointsize>15</pointsize>
         </font>
        </property>
@@ -392,7 +392,7 @@ margin: 10px;</string>
        </property>
        <property name="font">
         <font>
-         <family>Avenir LT 35 Light</family>
+         <family>Avenir LT Std 35 Light</family>
          <pointsize>15</pointsize>
         </font>
        </property>
@@ -470,10 +470,10 @@ margin: 10px;</string>
       </property>
       <property name="font">
        <font>
-        <family>Avenir LT 65 Medium</family>
+        <family>Avenir LT Std 65 Medium</family>
         <pointsize>50</pointsize>
-        <weight>50</weight>
-        <bold>false</bold>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -552,9 +552,15 @@ margin: 10px;</string>
        <rect>
         <x>50</x>
         <y>480</y>
-        <width>56</width>
-        <height>12</height>
+        <width>61</width>
+        <height>21</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans KR Thin</family>
+        <pointsize>10</pointsize>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">color:white;</string>

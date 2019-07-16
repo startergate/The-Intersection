@@ -1,6 +1,9 @@
 // sid.cpp
 // require JsonCpp, libcurl
 
+#pragma comment (lib, "wldap32.lib")
+#pragma comment (lib, "ws2_32.lib")
+
 #pragma once
 
 #ifndef __SID_H__
