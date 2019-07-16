@@ -1,6 +1,84 @@
 {
 	"games" : 
 	{
+		"10" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 10
+			},
+			"isInstalled" : "false",
+			"name" : "Counter-Strike",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "10"
+		},
+		"100" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 100
+			},
+			"isInstalled" : "false",
+			"name" : "Counter-Strike: Condition Zero Deleted Scenes",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "100"
+		},
+		"1026820" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 1026820
+			},
+			"isInstalled" : "false",
+			"name" : "Coloring Game",
+			"platform" : "steam",
+			"playedTime" : 516,
+			"tiid" : "1026820"
+		},
+		"104200" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 104200
+			},
+			"isInstalled" : "false",
+			"name" : "BEEP",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "104200"
+		},
+		"1046030" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 1046030
+			},
+			"isInstalled" : "false",
+			"name" : "ISLANDERS",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "1046030"
+		},
+		"1046930" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 1046930
+			},
+			"isInstalled" : "false",
+			"name" : "Dota Underlords",
+			"platform" : "steam",
+			"playedTime" : 1,
+			"tiid" : "1046930"
+		},
 		"1083500" : 
 		{
 			"addedTime" : 1530489600,
@@ -14,109 +92,83 @@
 			"playedTime" : 0,
 			"tiid" : "1083500"
 		},
-		"113020" : 
+		"108710" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 113020
+				"steamid" : 108710
 			},
 			"isInstalled" : "false",
-			"name" : "Monaco",
-			"platform" : "steam",
-			"playedTime" : 47,
-			"tiid" : "113020"
-		},
-		"12210" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 12210
-			},
-			"isInstalled" : "false",
-			"name" : "Grand Theft Auto IV",
-			"platform" : "steam",
-			"playedTime" : 129,
-			"tiid" : "12210"
-		},
-		"12220" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 12220
-			},
-			"isInstalled" : "false",
-			"name" : "Grand Theft Auto: Episodes from Liberty City",
-			"platform" : "steam",
-			"playedTime" : 4,
-			"tiid" : "12220"
-		},
-		"13250" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 13250
-			},
-			"isInstalled" : "false",
-			"name" : "Unreal Gold",
+			"name" : "Alan Wake",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "13250"
+			"tiid" : "108710"
 		},
-		"15700" : 
+		"116120" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 15700
+				"steamid" : 116120
 			},
 			"isInstalled" : "false",
-			"name" : "Oddworld: Abe's Oddysee",
-			"platform" : "steam",
-			"playedTime" : 12,
-			"tiid" : "15700"
-		},
-		"200260" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 200260
-			},
-			"isInstalled" : "false",
-			"name" : "Batman: Arkham City GOTY",
-			"platform" : "steam",
-			"playedTime" : 212,
-			"tiid" : "200260"
-		},
-		"201870" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 201870
-			},
-			"isInstalled" : "false",
-			"name" : "Assassin's Creed Revelations",
-			"platform" : "steam",
-			"playedTime" : 1,
-			"tiid" : "201870"
-		},
-		"202200" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 202200
-			},
-			"isInstalled" : "false",
-			"name" : "Galactic Civilizations II: Ultimate Edition",
+			"name" : "Lightfish",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "202200"
+			"tiid" : "116120"
+		},
+		"130" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 130
+			},
+			"isInstalled" : "false",
+			"name" : "Half-Life: Blue Shift",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "130"
+		},
+		"17460" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 17460
+			},
+			"isInstalled" : "false",
+			"name" : "Mass Effect",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "17460"
+		},
+		"20" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 20
+			},
+			"isInstalled" : "false",
+			"name" : "Team Fortress Classic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "20"
+		},
+		"202750" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 202750
+			},
+			"isInstalled" : "false",
+			"name" : "Alan Wake's American Nightmare",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "202750"
 		},
 		"203140" : 
 		{
@@ -128,7 +180,7 @@
 			"isInstalled" : "false",
 			"name" : "Hitman: Absolution",
 			"platform" : "steam",
-			"playedTime" : 1896,
+			"playedTime" : 65,
 			"tiid" : "203140"
 		},
 		"203160" : 
@@ -141,47 +193,21 @@
 			"isInstalled" : "false",
 			"name" : "Tomb Raider",
 			"platform" : "steam",
-			"playedTime" : 813,
+			"playedTime" : 56,
 			"tiid" : "203160"
 		},
-		"203290" : 
+		"203770" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 203290
+				"steamid" : 203770
 			},
 			"isInstalled" : "false",
-			"name" : "America's Army: Proving Grounds",
+			"name" : "Crusader Kings II",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "203290"
-		},
-		"203750" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 203750
-			},
-			"isInstalled" : "false",
-			"name" : "Binary Domain",
-			"platform" : "steam",
-			"playedTime" : 0,
-			"tiid" : "203750"
-		},
-		"204100" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 204100
-			},
-			"isInstalled" : "false",
-			"name" : "Max Payne 3",
-			"platform" : "steam",
-			"playedTime" : 70,
-			"tiid" : "204100"
+			"tiid" : "203770"
 		},
 		"204880" : 
 		{
@@ -196,18 +222,44 @@
 			"playedTime" : 0,
 			"tiid" : "204880"
 		},
-		"205100" : 
+		"20500" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 205100
+				"steamid" : 20500
 			},
 			"isInstalled" : "false",
-			"name" : "Dishonored",
+			"name" : "Red Faction: Guerrilla Steam Edition",
 			"platform" : "steam",
-			"playedTime" : 746,
-			"tiid" : "205100"
+			"playedTime" : 0,
+			"tiid" : "20500"
+		},
+		"20510" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 20510
+			},
+			"isInstalled" : "false",
+			"name" : "S.T.A.L.K.E.R.: Clear Sky",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "20510"
+		},
+		"205790" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 205790
+			},
+			"isInstalled" : "false",
+			"name" : "Dota 2 Test",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "205790"
 		},
 		"205930" : 
 		{
@@ -219,125 +271,125 @@
 			"isInstalled" : "false",
 			"name" : "Hitman: Sniper Challenge",
 			"platform" : "steam",
-			"playedTime" : 70,
+			"playedTime" : 0,
 			"tiid" : "205930"
 		},
-		"206420" : 
+		"207140" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 206420
+				"steamid" : 207140
 			},
 			"isInstalled" : "false",
-			"name" : "Saints Row IV",
-			"platform" : "steam",
-			"playedTime" : 3575,
-			"tiid" : "206420"
-		},
-		"206480" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 206480
-			},
-			"isInstalled" : "false",
-			"name" : "Dungeons & Dragons Online\u00ae",
+			"name" : "SpeedRunners",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "206480"
+			"tiid" : "207140"
 		},
-		"208480" : 
+		"208140" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 208480
+				"steamid" : 208140
 			},
 			"isInstalled" : "false",
-			"name" : "Assassin's Creed\u00ae III",
-			"platform" : "steam",
-			"playedTime" : 10,
-			"tiid" : "208480"
-		},
-		"209080" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 209080
-			},
-			"isInstalled" : "false",
-			"name" : "Guns of Icarus Online",
+			"name" : "Endless Space",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "209080"
+			"tiid" : "208140"
 		},
-		"20920" : 
+		"208580" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 20920
+				"steamid" : 208580
 			},
 			"isInstalled" : "false",
-			"name" : "The Witcher 2: Assassins of Kings Enhanced Edition",
-			"platform" : "steam",
-			"playedTime" : 479,
-			"tiid" : "20920"
-		},
-		"209670" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 209670
-			},
-			"isInstalled" : "false",
-			"name" : "Cortex Command",
+			"name" : "STAR WARS\u2122 Knights of the Old Republic\u2122 II: The Sith Lords\u2122",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "209670"
+			"tiid" : "208580"
 		},
-		"210770" : 
+		"208610" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 210770
+				"steamid" : 208610
 			},
 			"isInstalled" : "false",
-			"name" : "Sanctum 2",
+			"name" : "Skullgirls \u221eEndless Beta\u221e",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "210770"
+			"tiid" : "208610"
 		},
-		"211160" : 
+		"21000" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 211160
+				"steamid" : 21000
 			},
 			"isInstalled" : "false",
-			"name" : "Viking: Battle for Asgard",
+			"name" : "LEGO\u00ae Batman\u2122: The Videogame",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "211160"
+			"tiid" : "21000"
 		},
-		"211500" : 
+		"21130" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 211500
+				"steamid" : 21130
 			},
 			"isInstalled" : "false",
-			"name" : "RaceRoom Racing Experience ",
+			"name" : "LEGO\u00ae Harry Potter: Years 1-4",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "211500"
+			"tiid" : "21130"
+		},
+		"211400" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 211400
+			},
+			"isInstalled" : "false",
+			"name" : "Deadlight",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "211400"
+		},
+		"212680" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 212680
+			},
+			"isInstalled" : "false",
+			"name" : "FTL: Faster Than Light",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "212680"
+		},
+		"214420" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 214420
+			},
+			"isInstalled" : "false",
+			"name" : "Gear Up",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "214420"
 		},
 		"214510" : 
 		{
@@ -352,6 +404,19 @@
 			"playedTime" : 0,
 			"tiid" : "214510"
 		},
+		"215630" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 215630
+			},
+			"isInstalled" : "false",
+			"name" : "Demonicon",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "215630"
+		},
 		"218230" : 
 		{
 			"addedTime" : 1530489600,
@@ -362,7 +427,7 @@
 			"isInstalled" : "false",
 			"name" : "PlanetSide 2",
 			"platform" : "steam",
-			"playedTime" : 399,
+			"playedTime" : 0,
 			"tiid" : "218230"
 		},
 		"218620" : 
@@ -375,8 +440,21 @@
 			"isInstalled" : "false",
 			"name" : "PAYDAY 2",
 			"platform" : "steam",
-			"playedTime" : 10636,
+			"playedTime" : 7,
 			"tiid" : "218620"
+		},
+		"219150" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 219150
+			},
+			"isInstalled" : "false",
+			"name" : "Hotline Miami",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "219150"
 		},
 		"220" : 
 		{
@@ -388,21 +466,21 @@
 			"isInstalled" : "false",
 			"name" : "Half-Life 2",
 			"platform" : "steam",
-			"playedTime" : 343,
+			"playedTime" : 0,
 			"tiid" : "220"
 		},
-		"221910" : 
+		"222140" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 221910
+				"steamid" : 222140
 			},
 			"isInstalled" : "false",
-			"name" : "The Stanley Parable",
+			"name" : "Puddle",
 			"platform" : "steam",
-			"playedTime" : 273,
-			"tiid" : "221910"
+			"playedTime" : 0,
+			"tiid" : "222140"
 		},
 		"222880" : 
 		{
@@ -414,86 +492,47 @@
 			"isInstalled" : "false",
 			"name" : "Insurgency",
 			"platform" : "steam",
-			"playedTime" : 627,
+			"playedTime" : 33,
 			"tiid" : "222880"
 		},
-		"22350" : 
+		"225080" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 22350
+				"steamid" : 225080
 			},
 			"isInstalled" : "false",
-			"name" : "BRINK",
+			"name" : "Brothers - A Tale of Two Sons",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "22350"
+			"tiid" : "225080"
 		},
-		"22370" : 
+		"225360" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 22370
+				"steamid" : 225360
 			},
 			"isInstalled" : "false",
-			"name" : "Fallout 3 - Game of the Year Edition",
+			"name" : "DARK",
 			"platform" : "steam",
-			"playedTime" : 31,
-			"tiid" : "22370"
+			"playedTime" : 0,
+			"tiid" : "225360"
 		},
-		"22380" : 
+		"225540" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 22380
+				"steamid" : 225540
 			},
 			"isInstalled" : "false",
-			"name" : "Fallout: New Vegas",
+			"name" : "Just Cause 3",
 			"platform" : "steam",
-			"playedTime" : 5045,
-			"tiid" : "22380"
-		},
-		"223850" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 223850
-			},
-			"isInstalled" : "false",
-			"name" : "3DMark",
-			"platform" : "steam",
-			"playedTime" : 74,
-			"tiid" : "223850"
-		},
-		"224480" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 224480
-			},
-			"isInstalled" : "false",
-			"name" : "Octodad: Dadliest Catch",
-			"platform" : "steam",
-			"playedTime" : 145,
-			"tiid" : "224480"
-		},
-		"225840" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 225840
-			},
-			"isInstalled" : "false",
-			"name" : "Sven Co-op",
-			"platform" : "steam",
-			"playedTime" : 15,
-			"tiid" : "225840"
+			"playedTime" : 2738,
+			"tiid" : "225540"
 		},
 		"226840" : 
 		{
@@ -508,6 +547,32 @@
 			"playedTime" : 0,
 			"tiid" : "226840"
 		},
+		"227020" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 227020
+			},
+			"isInstalled" : "false",
+			"name" : "Rise of Venice",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "227020"
+		},
+		"227060" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 227060
+			},
+			"isInstalled" : "false",
+			"name" : "Hegemony Rome: The Rise of Caesar",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "227060"
+		},
 		"227300" : 
 		{
 			"addedTime" : 1530489600,
@@ -518,21 +583,8 @@
 			"isInstalled" : "false",
 			"name" : "Euro Truck Simulator 2",
 			"platform" : "steam",
-			"playedTime" : 744,
+			"playedTime" : 1344,
 			"tiid" : "227300"
-		},
-		"227940" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 227940
-			},
-			"isInstalled" : "false",
-			"name" : "Heroes & Generals",
-			"platform" : "steam",
-			"playedTime" : 0,
-			"tiid" : "227940"
 		},
 		"228200" : 
 		{
@@ -547,19 +599,6 @@
 			"playedTime" : 0,
 			"tiid" : "228200"
 		},
-		"230410" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 230410
-			},
-			"isInstalled" : "false",
-			"name" : "Warframe",
-			"platform" : "steam",
-			"playedTime" : 1019,
-			"tiid" : "230410"
-		},
 		"231430" : 
 		{
 			"addedTime" : 1530489600,
@@ -573,70 +612,96 @@
 			"playedTime" : 0,
 			"tiid" : "231430"
 		},
-		"232050" : 
+		"233720" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 232050
+				"steamid" : 233720
 			},
 			"isInstalled" : "false",
-			"name" : "Eador. Masters of the Broken World",
+			"name" : "Surgeon Simulator",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "232050"
+			"tiid" : "233720"
 		},
-		"233450" : 
+		"234630" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 233450
+				"steamid" : 234630
 			},
 			"isInstalled" : "false",
-			"name" : "Prison Architect",
+			"name" : "Project CARS",
 			"platform" : "steam",
-			"playedTime" : 603,
-			"tiid" : "233450"
+			"playedTime" : 0,
+			"tiid" : "234630"
 		},
-		"235600" : 
+		"23490" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 235600
+				"steamid" : 23490
 			},
 			"isInstalled" : "false",
-			"name" : "Tom Clancy's Splinter Cell Blacklist",
+			"name" : "Tropico 3 - Steam Special Edition",
 			"platform" : "steam",
-			"playedTime" : 402,
-			"tiid" : "235600"
+			"playedTime" : 0,
+			"tiid" : "23490"
 		},
-		"236150" : 
+		"235540" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 236150
+				"steamid" : 235540
 			},
 			"isInstalled" : "false",
-			"name" : "Starpoint Gemini 2",
+			"name" : "Warhammer: End Times - Vermintide",
 			"platform" : "steam",
-			"playedTime" : 2,
-			"tiid" : "236150"
+			"playedTime" : 0,
+			"tiid" : "235540"
 		},
-		"236390" : 
+		"236450" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 236390
+				"steamid" : 236450
 			},
 			"isInstalled" : "false",
-			"name" : "War Thunder",
+			"name" : "PAC-MAN Championship Edition DX+",
 			"platform" : "steam",
-			"playedTime" : 55,
-			"tiid" : "236390"
+			"playedTime" : 33,
+			"tiid" : "236450"
+		},
+		"236730" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 236730
+			},
+			"isInstalled" : "false",
+			"name" : "Anomaly 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "236730"
+		},
+		"236850" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 236850
+			},
+			"isInstalled" : "false",
+			"name" : "Europa Universalis IV",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "236850"
 		},
 		"236870" : 
 		{
@@ -648,21 +713,73 @@
 			"isInstalled" : "false",
 			"name" : "HITMAN\u2122",
 			"platform" : "steam",
-			"playedTime" : 71,
+			"playedTime" : 4828,
 			"tiid" : "236870"
 		},
-		"238320" : 
+		"237110" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 238320
+				"steamid" : 237110
 			},
 			"isInstalled" : "false",
-			"name" : "Outlast",
+			"name" : "Mortal Kombat Komplete Edition",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "238320"
+			"tiid" : "237110"
+		},
+		"238210" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 238210
+			},
+			"isInstalled" : "false",
+			"name" : "System Shock 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "238210"
+		},
+		"238370" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 238370
+			},
+			"isInstalled" : "false",
+			"name" : "Magicka 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "238370"
+		},
+		"239200" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 239200
+			},
+			"isInstalled" : "false",
+			"name" : "Amnesia: A Machine for Pigs",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "239200"
+		},
+		"240" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 240
+			},
+			"isInstalled" : "false",
+			"name" : "Counter-Strike: Source",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "240"
 		},
 		"240720" : 
 		{
@@ -674,47 +791,151 @@
 			"isInstalled" : "false",
 			"name" : "Getting Over It with Bennett Foddy",
 			"platform" : "steam",
-			"playedTime" : 182,
+			"playedTime" : 0,
 			"tiid" : "240720"
 		},
-		"243870" : 
+		"242820" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 243870
+				"steamid" : 242820
 			},
 			"isInstalled" : "false",
-			"name" : "Tom Clancy's Ghost Recon Phantoms - NA",
+			"name" : "140",
 			"platform" : "steam",
-			"playedTime" : 6,
-			"tiid" : "243870"
+			"playedTime" : 93,
+			"tiid" : "242820"
 		},
-		"245620" : 
+		"243280" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 245620
+				"steamid" : 243280
 			},
 			"isInstalled" : "false",
-			"name" : "Tropico 5",
+			"name" : "Poof",
 			"platform" : "steam",
-			"playedTime" : 936,
-			"tiid" : "245620"
+			"playedTime" : 0,
+			"tiid" : "243280"
 		},
-		"247080" : 
+		"244160" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 247080
+				"steamid" : 244160
 			},
 			"isInstalled" : "false",
-			"name" : "Crypt of the NecroDancer",
+			"name" : "Homeworld Remastered Collection",
 			"platform" : "steam",
-			"playedTime" : 57,
-			"tiid" : "247080"
+			"playedTime" : 0,
+			"tiid" : "244160"
+		},
+		"245170" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 245170
+			},
+			"isInstalled" : "false",
+			"name" : "Skullgirls",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "245170"
+		},
+		"245280" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 245280
+			},
+			"isInstalled" : "false",
+			"name" : "ENSLAVED\u2122: Odyssey to the West\u2122 Premium Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "245280"
+		},
+		"245390" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 245390
+			},
+			"isInstalled" : "false",
+			"name" : "I Have No Mouth, and I Must Scream",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "245390"
+		},
+		"246620" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 246620
+			},
+			"isInstalled" : "false",
+			"name" : "Plague Inc: Evolved",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "246620"
+		},
+		"246900" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 246900
+			},
+			"isInstalled" : "false",
+			"name" : "Viscera Cleanup Detail",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "246900"
+		},
+		"247020" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 247020
+			},
+			"isInstalled" : "false",
+			"name" : "Cook, Serve, Delicious!",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "247020"
+		},
+		"248820" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 248820
+			},
+			"isInstalled" : "false",
+			"name" : "Risk of Rain",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "248820"
+		},
+		"249130" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 249130
+			},
+			"isInstalled" : "false",
+			"name" : "LEGO\u00ae MARVEL Super Heroes",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "249130"
 		},
 		"249990" : 
 		{
@@ -729,18 +950,44 @@
 			"playedTime" : 0,
 			"tiid" : "249990"
 		},
-		"251950" : 
+		"250620" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 251950
+				"steamid" : 250620
 			},
 			"isInstalled" : "false",
-			"name" : "World War II Online",
+			"name" : "Among the Sleep",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "251950"
+			"tiid" : "250620"
+		},
+		"251530" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 251530
+			},
+			"isInstalled" : "false",
+			"name" : "Anomaly Korea",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "251530"
+		},
+		"251770" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 251770
+			},
+			"isInstalled" : "false",
+			"name" : "Shadow Man",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "251770"
 		},
 		"252130" : 
 		{
@@ -755,6 +1002,45 @@
 			"playedTime" : 0,
 			"tiid" : "252130"
 		},
+		"252150" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 252150
+			},
+			"isInstalled" : "false",
+			"name" : "Grimm",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "252150"
+		},
+		"252170" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 252170
+			},
+			"isInstalled" : "false",
+			"name" : "Anomaly Warzone Earth Mobile Campaign",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "252170"
+		},
+		"253110" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 253110
+			},
+			"isInstalled" : "false",
+			"name" : "The Cat Lady",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "253110"
+		},
 		"253290" : 
 		{
 			"addedTime" : 1530489600,
@@ -765,21 +1051,73 @@
 			"isInstalled" : "false",
 			"name" : "FOTONICA",
 			"platform" : "steam",
-			"playedTime" : 34,
+			"playedTime" : 30,
 			"tiid" : "253290"
 		},
-		"253980" : 
+		"254320" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 253980
+				"steamid" : 254320
 			},
 			"isInstalled" : "false",
-			"name" : "Enclave",
+			"name" : "Duskers",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "253980"
+			"tiid" : "254320"
+		},
+		"255520" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 255520
+			},
+			"isInstalled" : "false",
+			"name" : "Viscera Cleanup Detail: Shadow Warrior",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "255520"
+		},
+		"255710" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 255710
+			},
+			"isInstalled" : "false",
+			"name" : "Cities: Skylines",
+			"platform" : "steam",
+			"playedTime" : 5094,
+			"tiid" : "255710"
+		},
+		"259170" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 259170
+			},
+			"isInstalled" : "false",
+			"name" : "Alone in the Dark",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "259170"
+		},
+		"259830" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 259830
+			},
+			"isInstalled" : "false",
+			"name" : "Wooden Sen'SeY",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "259830"
 		},
 		"261110" : 
 		{
@@ -791,8 +1129,21 @@
 			"isInstalled" : "false",
 			"name" : "Killer is Dead",
 			"platform" : "steam",
-			"playedTime" : 52,
+			"playedTime" : 0,
 			"tiid" : "261110"
+		},
+		"261570" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 261570
+			},
+			"isInstalled" : "false",
+			"name" : "Ori and the Blind Forest",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "261570"
 		},
 		"261640" : 
 		{
@@ -804,21 +1155,73 @@
 			"isInstalled" : "false",
 			"name" : "Borderlands: The Pre-Sequel",
 			"platform" : "steam",
-			"playedTime" : 334,
+			"playedTime" : 0,
 			"tiid" : "261640"
 		},
-		"265550" : 
+		"262280" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 265550
+				"steamid" : 262280
 			},
 			"isInstalled" : "false",
-			"name" : "Dead Rising 3",
+			"name" : "Dungeons 2",
 			"platform" : "steam",
-			"playedTime" : 774,
-			"tiid" : "265550"
+			"playedTime" : 0,
+			"tiid" : "262280"
+		},
+		"2630" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 2630
+			},
+			"isInstalled" : "false",
+			"name" : "Call of Duty 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "2630"
+		},
+		"263980" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 263980
+			},
+			"isInstalled" : "false",
+			"name" : "Out There Somewhere",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "263980"
+		},
+		"265000" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 265000
+			},
+			"isInstalled" : "false",
+			"name" : "FORCED SHOWDOWN",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "265000"
+		},
+		"265210" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 265210
+			},
+			"isInstalled" : "false",
+			"name" : "Viscera Cleanup Detail: Santa's Rampage",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "265210"
 		},
 		"265590" : 
 		{
@@ -830,8 +1233,47 @@
 			"isInstalled" : "false",
 			"name" : "The Red Solstice",
 			"platform" : "steam",
-			"playedTime" : 12,
+			"playedTime" : 0,
 			"tiid" : "265590"
+		},
+		"265930" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 265930
+			},
+			"isInstalled" : "false",
+			"name" : "Goat Simulator",
+			"platform" : "steam",
+			"playedTime" : 34,
+			"tiid" : "265930"
+		},
+		"266310" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 266310
+			},
+			"isInstalled" : "false",
+			"name" : "GameGuru",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "266310"
+		},
+		"26800" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 26800
+			},
+			"isInstalled" : "false",
+			"name" : "Braid",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "26800"
 		},
 		"268870" : 
 		{
@@ -846,18 +1288,83 @@
 			"playedTime" : 0,
 			"tiid" : "268870"
 		},
-		"270550" : 
+		"268910" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 270550
+				"steamid" : 268910
 			},
 			"isInstalled" : "false",
-			"name" : "Yet Another Zombie Defense",
+			"name" : "Cuphead",
 			"platform" : "steam",
-			"playedTime" : 47,
-			"tiid" : "270550"
+			"playedTime" : 1,
+			"tiid" : "268910"
+		},
+		"269650" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 269650
+			},
+			"isInstalled" : "false",
+			"name" : "Dex",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "269650"
+		},
+		"270170" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 270170
+			},
+			"isInstalled" : "false",
+			"name" : "Depression Quest",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "270170"
+		},
+		"270880" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 270880
+			},
+			"isInstalled" : "false",
+			"name" : "American Truck Simulator",
+			"platform" : "steam",
+			"playedTime" : 307,
+			"tiid" : "270880"
+		},
+		"271240" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 271240
+			},
+			"isInstalled" : "false",
+			"name" : "Offworld Trading Company",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "271240"
+		},
+		"271500" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 271500
+			},
+			"isInstalled" : "false",
+			"name" : "Sniper Art of Victory",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "271500"
 		},
 		"271590" : 
 		{
@@ -869,8 +1376,21 @@
 			"isInstalled" : "false",
 			"name" : "Grand Theft Auto V",
 			"platform" : "steam",
-			"playedTime" : 37739,
+			"playedTime" : 6577,
 			"tiid" : "271590"
+		},
+		"272990" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 272990
+			},
+			"isInstalled" : "false",
+			"name" : "GAUGE",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "272990"
 		},
 		"275390" : 
 		{
@@ -898,18 +1418,57 @@
 			"playedTime" : 0,
 			"tiid" : "278360"
 		},
-		"280790" : 
+		"280" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 280790
+				"steamid" : 280
 			},
 			"isInstalled" : "false",
-			"name" : "Creativerse",
+			"name" : "Half-Life: Source",
 			"platform" : "steam",
-			"playedTime" : 27,
-			"tiid" : "280790"
+			"playedTime" : 0,
+			"tiid" : "280"
+		},
+		"28000" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 28000
+			},
+			"isInstalled" : "false",
+			"name" : "Kane & Lynch 2: Dog Days",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "28000"
+		},
+		"281990" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 281990
+			},
+			"isInstalled" : "false",
+			"name" : "Stellaris",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "281990"
+		},
+		"282070" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 282070
+			},
+			"isInstalled" : "false",
+			"name" : "This War of Mine",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "282070"
 		},
 		"282100" : 
 		{
@@ -924,31 +1483,109 @@
 			"playedTime" : 0,
 			"tiid" : "282100"
 		},
-		"285160" : 
+		"286000" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 285160
+				"steamid" : 286000
 			},
 			"isInstalled" : "false",
-			"name" : "LEGO\u00ae The Hobbit\u2122",
+			"name" : "Tooth and Tail",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "285160"
+			"tiid" : "286000"
 		},
-		"291480" : 
+		"286930" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 291480
+				"steamid" : 286930
 			},
 			"isInstalled" : "false",
-			"name" : "Warface",
+			"name" : "Crouching Pony Hidden Dragon",
 			"platform" : "steam",
-			"playedTime" : 38,
-			"tiid" : "291480"
+			"playedTime" : 0,
+			"tiid" : "286930"
+		},
+		"287700" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 287700
+			},
+			"isInstalled" : "false",
+			"name" : "METAL GEAR SOLID V: THE PHANTOM PAIN",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "287700"
+		},
+		"287980" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 287980
+			},
+			"isInstalled" : "false",
+			"name" : "Mini Metro",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "287980"
+		},
+		"289070" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 289070
+			},
+			"isInstalled" : "false",
+			"name" : "Sid Meier's Civilization VI",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "289070"
+		},
+		"290300" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 290300
+			},
+			"isInstalled" : "false",
+			"name" : "Rebel Galaxy",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "290300"
+		},
+		"290790" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 290790
+			},
+			"isInstalled" : "false",
+			"name" : "Grey Goo",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "290790"
+		},
+		"292030" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 292030
+			},
+			"isInstalled" : "false",
+			"name" : "The Witcher 3: Wild Hunt",
+			"platform" : "steam",
+			"playedTime" : 112,
+			"tiid" : "292030"
 		},
 		"292910" : 
 		{
@@ -963,31 +1600,122 @@
 			"playedTime" : 0,
 			"tiid" : "292910"
 		},
-		"302670" : 
+		"294750" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 302670
+				"steamid" : 294750
 			},
 			"isInstalled" : "false",
-			"name" : "Call to Arms",
+			"name" : "Anomaly Defenders",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "302670"
+			"tiid" : "294750"
 		},
-		"303210" : 
+		"295790" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 303210
+				"steamid" : 295790
 			},
 			"isInstalled" : "false",
-			"name" : "The Beginner's Guide",
+			"name" : "Never Alone (Kisima Ingitchuna)",
 			"platform" : "steam",
-			"playedTime" : 103,
-			"tiid" : "303210"
+			"playedTime" : 0,
+			"tiid" : "295790"
+		},
+		"298110" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 298110
+			},
+			"isInstalled" : "false",
+			"name" : "Far Cry 4",
+			"platform" : "steam",
+			"playedTime" : 1607,
+			"tiid" : "298110"
+		},
+		"299950" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 299950
+			},
+			"isInstalled" : "false",
+			"name" : "GET EVEN",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "299950"
+		},
+		"30" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 30
+			},
+			"isInstalled" : "false",
+			"name" : "Day of Defeat",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "30"
+		},
+		"300" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 300
+			},
+			"isInstalled" : "false",
+			"name" : "Day of Defeat: Source",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "300"
+		},
+		"300380" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 300380
+			},
+			"isInstalled" : "false",
+			"name" : "Road Redemption",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "300380"
+		},
+		"301520" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 301520
+			},
+			"isInstalled" : "false",
+			"name" : "Robocraft",
+			"platform" : "steam",
+			"playedTime" : 3,
+			"tiid" : "301520"
+		},
+		"303470" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 303470
+			},
+			"isInstalled" : "false",
+			"name" : "Rush for Glory",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "303470"
 		},
 		"304390" : 
 		{
@@ -999,21 +1727,60 @@
 			"isInstalled" : "false",
 			"name" : "For Honor",
 			"platform" : "steam",
-			"playedTime" : 168,
+			"playedTime" : 1,
 			"tiid" : "304390"
 		},
-		"304930" : 
+		"307690" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 304930
+				"steamid" : 307690
 			},
 			"isInstalled" : "false",
-			"name" : "Unturned",
+			"name" : "Sleeping Dogs: Definitive Edition",
 			"platform" : "steam",
-			"playedTime" : 104,
-			"tiid" : "304930"
+			"playedTime" : 0,
+			"tiid" : "307690"
+		},
+		"307880" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 307880
+			},
+			"isInstalled" : "false",
+			"name" : "Savage Lands",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "307880"
+		},
+		"308060" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 308060
+			},
+			"isInstalled" : "false",
+			"name" : "Black The Fall",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "308060"
+		},
+		"308600" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 308600
+			},
+			"isInstalled" : "false",
+			"name" : "Geneshift Royale",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "308600"
 		},
 		"310370" : 
 		{
@@ -1025,8 +1792,151 @@
 			"isInstalled" : "false",
 			"name" : "The Way of Life Free Edition",
 			"platform" : "steam",
-			"playedTime" : 62,
+			"playedTime" : 20,
 			"tiid" : "310370"
+		},
+		"310470" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 310470
+			},
+			"isInstalled" : "false",
+			"name" : "Grand Ages: Medieval",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "310470"
+		},
+		"311340" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 311340
+			},
+			"isInstalled" : "false",
+			"name" : "METAL GEAR SOLID V: GROUND ZEROES",
+			"platform" : "steam",
+			"playedTime" : 126,
+			"tiid" : "311340"
+		},
+		"311480" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 311480
+			},
+			"isInstalled" : "false",
+			"name" : "Vertical Drop Heroes HD",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "311480"
+		},
+		"312230" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 312230
+			},
+			"isInstalled" : "false",
+			"name" : "Spirits of Xanadu",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "312230"
+		},
+		"312610" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 312610
+			},
+			"isInstalled" : "false",
+			"name" : "METAL SLUG X",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "312610"
+		},
+		"312660" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 312660
+			},
+			"isInstalled" : "false",
+			"name" : "Sniper Elite 4",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "312660"
+		},
+		"312840" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 312840
+			},
+			"isInstalled" : "false",
+			"name" : "Fahrenheit: Indigo Prophecy Remastered",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "312840"
+		},
+		"313020" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 313020
+			},
+			"isInstalled" : "false",
+			"name" : "Soul Gambler",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "313020"
+		},
+		"313340" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 313340
+			},
+			"isInstalled" : "false",
+			"name" : "Mountain",
+			"platform" : "steam",
+			"playedTime" : 10,
+			"tiid" : "313340"
+		},
+		"317040" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 317040
+			},
+			"isInstalled" : "false",
+			"name" : "Strife: Veteran Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "317040"
+		},
+		"317470" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 317470
+			},
+			"isInstalled" : "false",
+			"name" : "Cubic Castles",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "317470"
 		},
 		"318600" : 
 		{
@@ -1038,8 +1948,21 @@
 			"isInstalled" : "false",
 			"name" : "The Flame in the Flood",
 			"platform" : "steam",
-			"playedTime" : 28,
+			"playedTime" : 0,
 			"tiid" : "318600"
+		},
+		"319050" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 319050
+			},
+			"isInstalled" : "false",
+			"name" : "Chaos Reborn",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "319050"
 		},
 		"319630" : 
 		{
@@ -1051,47 +1974,60 @@
 			"isInstalled" : "false",
 			"name" : "Life is Strange\u2122",
 			"platform" : "steam",
-			"playedTime" : 43,
+			"playedTime" : 66,
 			"tiid" : "319630"
 		},
-		"319830" : 
+		"320" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 319830
+				"steamid" : 320
 			},
 			"isInstalled" : "false",
-			"name" : "AX:EL",
+			"name" : "Half-Life 2: Deathmatch",
 			"platform" : "steam",
-			"playedTime" : 5,
-			"tiid" : "319830"
+			"playedTime" : 0,
+			"tiid" : "320"
 		},
-		"322330" : 
+		"320040" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 322330
+				"steamid" : 320040
 			},
 			"isInstalled" : "false",
-			"name" : "Don't Starve Together",
+			"name" : "Moon Hunters",
 			"platform" : "steam",
-			"playedTime" : 1240,
-			"tiid" : "322330"
+			"playedTime" : 0,
+			"tiid" : "320040"
 		},
-		"323580" : 
+		"323060" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 323580
+				"steamid" : 323060
 			},
 			"isInstalled" : "false",
-			"name" : "Jotun: Valhalla Edition",
+			"name" : "Tharsis",
 			"platform" : "steam",
-			"playedTime" : 8,
-			"tiid" : "323580"
+			"playedTime" : 0,
+			"tiid" : "323060"
+		},
+		"32370" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 32370
+			},
+			"isInstalled" : "false",
+			"name" : "STAR WARS\u2122: Knights of the Old Republic\u2122",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "32370"
 		},
 		"325180" : 
 		{
@@ -1106,57 +2042,109 @@
 			"playedTime" : 0,
 			"tiid" : "325180"
 		},
-		"33230" : 
+		"329380" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 33230
+				"steamid" : 329380
 			},
 			"isInstalled" : "false",
-			"name" : "Assassin's Creed II",
-			"platform" : "steam",
-			"playedTime" : 1623,
-			"tiid" : "33230"
-		},
-		"333930" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 333930
-			},
-			"isInstalled" : "false",
-			"name" : "Dirty Bomb",
+			"name" : "Stealth Inc 2",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "333930"
+			"tiid" : "329380"
 		},
-		"334210" : 
+		"331870" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 334210
+				"steamid" : 331870
 			},
 			"isInstalled" : "false",
-			"name" : "Fortified",
+			"name" : "AER Memories of Old",
 			"platform" : "steam",
-			"playedTime" : 0,
-			"tiid" : "334210"
+			"playedTime" : 1,
+			"tiid" : "331870"
 		},
-		"336420" : 
+		"333250" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 336420
+				"steamid" : 333250
 			},
 			"isInstalled" : "false",
-			"name" : "Bloodsports.TV",
+			"name" : "Forward to the Sky",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "336420"
+			"tiid" : "333250"
+		},
+		"333490" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 333490
+			},
+			"isInstalled" : "false",
+			"name" : "Replay - VHS is not dead",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "333490"
+		},
+		"333510" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 333510
+			},
+			"isInstalled" : "false",
+			"name" : "Isbarah",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "333510"
+		},
+		"33520" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 33520
+			},
+			"isInstalled" : "false",
+			"name" : "Tropico",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "33520"
+		},
+		"33530" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 33530
+			},
+			"isInstalled" : "false",
+			"name" : "Tropico 2: Pirate Cove",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "33530"
+		},
+		"338540" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 338540
+			},
+			"isInstalled" : "false",
+			"name" : "Navy Field 2 : Conqueror of the Ocean",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "338540"
 		},
 		"340" : 
 		{
@@ -1168,34 +2156,34 @@
 			"isInstalled" : "false",
 			"name" : "Half-Life 2: Lost Coast",
 			"platform" : "steam",
-			"playedTime" : 14,
+			"playedTime" : 0,
 			"tiid" : "340"
 		},
-		"34010" : 
+		"340000" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 34010
+				"steamid" : 340000
 			},
 			"isInstalled" : "false",
-			"name" : "Alpha Protocol",
+			"name" : "Headlander",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "34010"
+			"tiid" : "340000"
 		},
-		"341720" : 
+		"342300" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 341720
+				"steamid" : 342300
 			},
 			"isInstalled" : "false",
-			"name" : "Among Ripples",
+			"name" : "Zombie Kill of the Week - Reborn",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "341720"
+			"tiid" : "342300"
 		},
 		"34270" : 
 		{
@@ -1223,31 +2211,109 @@
 			"playedTime" : 0,
 			"tiid" : "343710"
 		},
-		"346010" : 
+		"344910" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 346010
+				"steamid" : 344910
 			},
 			"isInstalled" : "false",
-			"name" : "Besiege",
+			"name" : "Sun Blast",
 			"platform" : "steam",
-			"playedTime" : 101,
-			"tiid" : "346010"
+			"playedTime" : 0,
+			"tiid" : "344910"
 		},
-		"346900" : 
+		"347000" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 346900
+				"steamid" : 347000
 			},
 			"isInstalled" : "false",
-			"name" : "AdVenture Capitalist",
+			"name" : "InnerSpace",
 			"platform" : "steam",
-			"playedTime" : 52,
-			"tiid" : "346900"
+			"playedTime" : 0,
+			"tiid" : "347000"
+		},
+		"347330" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 347330
+			},
+			"isInstalled" : "false",
+			"name" : "HeartZ: Co-Hope Puzzles",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "347330"
+		},
+		"347830" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 347830
+			},
+			"isInstalled" : "false",
+			"name" : "Fairy Fencer F",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "347830"
+		},
+		"34830" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 34830
+			},
+			"isInstalled" : "false",
+			"name" : "Sniper: Ghost Warrior",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "34830"
+		},
+		"34870" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 34870
+			},
+			"isInstalled" : "false",
+			"name" : "Sniper Ghost Warrior 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "34870"
+		},
+		"35000" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 35000
+			},
+			"isInstalled" : "false",
+			"name" : "Mini Ninjas",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "35000"
+		},
+		"351150" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 351150
+			},
+			"isInstalled" : "false",
+			"name" : "DRAGON: A Game About a Dragon",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "351150"
 		},
 		"351940" : 
 		{
@@ -1261,6 +2327,32 @@
 			"platform" : "steam",
 			"playedTime" : 0,
 			"tiid" : "351940"
+		},
+		"353560" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 353560
+			},
+			"isInstalled" : "false",
+			"name" : "Plug & Play",
+			"platform" : "steam",
+			"playedTime" : 21,
+			"tiid" : "353560"
+		},
+		"353640" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 353640
+			},
+			"isInstalled" : "false",
+			"name" : "Train Valley",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "353640"
 		},
 		"354500" : 
 		{
@@ -1340,6 +2432,71 @@
 			"playedTime" : 0,
 			"tiid" : "354550"
 		},
+		"355790" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 355790
+			},
+			"isInstalled" : "false",
+			"name" : "Styx: Shards of Darkness",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "355790"
+		},
+		"356450" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 356450
+			},
+			"isInstalled" : "false",
+			"name" : "Creature Romances: Kokonoe Kokoro",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "356450"
+		},
+		"356570" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 356570
+			},
+			"isInstalled" : "false",
+			"name" : "Party Hard",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "356570"
+		},
+		"356890" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 356890
+			},
+			"isInstalled" : "false",
+			"name" : "One More Line",
+			"platform" : "steam",
+			"playedTime" : 74,
+			"tiid" : "356890"
+		},
+		"358650" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 358650
+			},
+			"isInstalled" : "false",
+			"name" : "Gryphon Knight Epic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "358650"
+		},
 		"359550" : 
 		{
 			"addedTime" : 1530489600,
@@ -1350,60 +2507,86 @@
 			"isInstalled" : "false",
 			"name" : "Tom Clancy's Rainbow Six Siege",
 			"platform" : "steam",
-			"playedTime" : 29128,
+			"playedTime" : 695,
 			"tiid" : "359550"
 		},
-		"360620" : 
+		"360" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 360620
+				"steamid" : 360
 			},
 			"isInstalled" : "false",
-			"name" : "Spellsworn",
+			"name" : "Half-Life Deathmatch: Source",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "360620"
+			"tiid" : "360"
 		},
-		"360940" : 
+		"360380" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 360940
+				"steamid" : 360380
 			},
 			"isInstalled" : "false",
-			"name" : "The Mean Greens - Plastic Warfare",
-			"platform" : "steam",
-			"playedTime" : 23,
-			"tiid" : "360940"
-		},
-		"363970" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 363970
-			},
-			"isInstalled" : "false",
-			"name" : "Clicker Heroes",
-			"platform" : "steam",
-			"playedTime" : 87,
-			"tiid" : "363970"
-		},
-		"364470" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 364470
-			},
-			"isInstalled" : "false",
-			"name" : "The Elder Scrolls: Legends",
+			"name" : "Tiny Bridge: Ratventure",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "364470"
+			"tiid" : "360380"
+		},
+		"360430" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 360430
+			},
+			"isInstalled" : "false",
+			"name" : "Mafia III",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "360430"
+		},
+		"361280" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 361280
+			},
+			"isInstalled" : "false",
+			"name" : "Turmoil",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "361280"
+		},
+		"361420" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 361420
+			},
+			"isInstalled" : "false",
+			"name" : "ASTRONEER",
+			"platform" : "steam",
+			"playedTime" : 392,
+			"tiid" : "361420"
+		},
+		"364050" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 364050
+			},
+			"isInstalled" : "false",
+			"name" : "Face It - A game to fight inner demons",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "364050"
 		},
 		"365450" : 
 		{
@@ -1415,7 +2598,7 @@
 			"isInstalled" : "false",
 			"name" : "Hacknet",
 			"platform" : "steam",
-			"playedTime" : 404,
+			"playedTime" : 0,
 			"tiid" : "365450"
 		},
 		"365590" : 
@@ -1428,60 +2611,216 @@
 			"isInstalled" : "false",
 			"name" : "Tom Clancy's The Division",
 			"platform" : "steam",
-			"playedTime" : 1156,
+			"playedTime" : 4732,
 			"tiid" : "365590"
 		},
-		"368230" : 
+		"365670" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 368230
+				"steamid" : 365670
 			},
 			"isInstalled" : "false",
-			"name" : "Kingdom: Classic",
+			"name" : "Blender",
 			"platform" : "steam",
 			"playedTime" : 3,
-			"tiid" : "368230"
+			"tiid" : "365670"
 		},
-		"375230" : 
+		"366530" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 375230
+				"steamid" : 366530
 			},
 			"isInstalled" : "false",
-			"name" : "Warhammer 40,000: Eternal Crusade",
+			"name" : "Esenthel Engine",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "375230"
+			"tiid" : "366530"
 		},
-		"377160" : 
+		"368070" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 377160
+				"steamid" : 368070
 			},
 			"isInstalled" : "false",
-			"name" : "Fallout 4",
-			"platform" : "steam",
-			"playedTime" : 6410,
-			"tiid" : "377160"
-		},
-		"3910" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 3910
-			},
-			"isInstalled" : "false",
-			"name" : "Sid Meier's Civilization III: Complete",
+			"name" : "Sniper Ghost Warrior 3",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "3910"
+			"tiid" : "368070"
+		},
+		"369070" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 369070
+			},
+			"isInstalled" : "false",
+			"name" : "Slain: Back from Hell",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "369070"
+		},
+		"370360" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 370360
+			},
+			"isInstalled" : "false",
+			"name" : "TIS-100",
+			"platform" : "steam",
+			"playedTime" : 3,
+			"tiid" : "370360"
+		},
+		"370910" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 370910
+			},
+			"isInstalled" : "false",
+			"name" : "Kathy Rain",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "370910"
+		},
+		"375750" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 375750
+			},
+			"isInstalled" : "false",
+			"name" : "Invisigun Heroes",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "375750"
+		},
+		"380" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 380
+			},
+			"isInstalled" : "false",
+			"name" : "Half-Life 2: Episode One",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "380"
+		},
+		"380020" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 380020
+			},
+			"isInstalled" : "false",
+			"name" : "Three Heroes",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "380020"
+		},
+		"383750" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 383750
+			},
+			"isInstalled" : "false",
+			"name" : "Funk of Titans",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "383750"
+		},
+		"387290" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 387290
+			},
+			"isInstalled" : "false",
+			"name" : "Ori and the Blind Forest: Definitive Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "387290"
+		},
+		"388410" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 388410
+			},
+			"isInstalled" : "false",
+			"name" : "Darksiders II Deathinitive Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "388410"
+		},
+		"390730" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 390730
+			},
+			"isInstalled" : "false",
+			"name" : "Sora",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "390730"
+		},
+		"391220" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 391220
+			},
+			"isInstalled" : "false",
+			"name" : "Rise of the Tomb Raider",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "391220"
+		},
+		"391260" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 391260
+			},
+			"isInstalled" : "false",
+			"name" : "Labyronia RPG",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "391260"
+		},
+		"391420" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 391420
+			},
+			"isInstalled" : "false",
+			"name" : "Gun Rocket",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "391420"
 		},
 		"391720" : 
 		{
@@ -1496,18 +2835,122 @@
 			"playedTime" : 0,
 			"tiid" : "391720"
 		},
-		"397060" : 
+		"393360" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 397060
+				"steamid" : 393360
 			},
 			"isInstalled" : "false",
-			"name" : "Faeria",
+			"name" : "Metal Gear Solid Legacy",
 			"platform" : "steam",
-			"playedTime" : 316,
-			"tiid" : "397060"
+			"playedTime" : 1,
+			"tiid" : "393360"
+		},
+		"394310" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 394310
+			},
+			"isInstalled" : "false",
+			"name" : "Punch Club",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "394310"
+		},
+		"396360" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 396360
+			},
+			"isInstalled" : "false",
+			"name" : "LocoSoccer",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "396360"
+		},
+		"397080" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 397080
+			},
+			"isInstalled" : "false",
+			"name" : "Magicka 2: Spell Balance Beta",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "397080"
+		},
+		"397500" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 397500
+			},
+			"isInstalled" : "false",
+			"name" : "Labyronia RPG 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "397500"
+		},
+		"397950" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 397950
+			},
+			"isInstalled" : "false",
+			"name" : "Clustertruck",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "397950"
+		},
+		"398850" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 398850
+			},
+			"isInstalled" : "false",
+			"name" : "Epistory - Typing Chronicles",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "398850"
+		},
+		"399790" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 399790
+			},
+			"isInstalled" : "false",
+			"name" : "Destiny Warriors",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "399790"
+		},
+		"40" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 40
+			},
+			"isInstalled" : "false",
+			"name" : "Deathmatch Classic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "40"
 		},
 		"400" : 
 		{
@@ -1519,21 +2962,21 @@
 			"isInstalled" : "false",
 			"name" : "Portal",
 			"platform" : "steam",
-			"playedTime" : 193,
+			"playedTime" : 71,
 			"tiid" : "400"
 		},
-		"4000" : 
+		"400660" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 4000
+				"steamid" : 400660
 			},
 			"isInstalled" : "false",
-			"name" : "Garry's Mod",
+			"name" : "Reverse Crawl",
 			"platform" : "steam",
-			"playedTime" : 4296,
-			"tiid" : "4000"
+			"playedTime" : 0,
+			"tiid" : "400660"
 		},
 		"402390" : 
 		{
@@ -1548,6 +2991,32 @@
 			"playedTime" : 0,
 			"tiid" : "402390"
 		},
+		"404590" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 404590
+			},
+			"isInstalled" : "false",
+			"name" : "Vikings - Wolves of Midgard",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "404590"
+		},
+		"405640" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 405640
+			},
+			"isInstalled" : "false",
+			"name" : "Pony Island",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "405640"
+		},
 		"406150" : 
 		{
 			"addedTime" : 1530489600,
@@ -1558,47 +3027,177 @@
 			"isInstalled" : "false",
 			"name" : "Refunct",
 			"platform" : "steam",
-			"playedTime" : 21,
+			"playedTime" : 33,
 			"tiid" : "406150"
 		},
-		"413150" : 
+		"407560" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 413150
+				"steamid" : 407560
 			},
 			"isInstalled" : "false",
-			"name" : "Stardew Valley",
-			"platform" : "steam",
-			"playedTime" : 782,
-			"tiid" : "413150"
-		},
-		"423580" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 423580
-			},
-			"isInstalled" : "false",
-			"name" : "Project Highrise",
-			"platform" : "steam",
-			"playedTime" : 116,
-			"tiid" : "423580"
-		},
-		"427460" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 427460
-			},
-			"isInstalled" : "false",
-			"name" : "Battlerite Public Test",
+			"name" : "Killing Room",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "427460"
+			"tiid" : "407560"
+		},
+		"410110" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 410110
+			},
+			"isInstalled" : "false",
+			"name" : "12 is Better Than 6",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "410110"
+		},
+		"410700" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 410700
+			},
+			"isInstalled" : "false",
+			"name" : "System Shock: Classic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "410700"
+		},
+		"410710" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 410710
+			},
+			"isInstalled" : "false",
+			"name" : "System Shock: Enhanced Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "410710"
+		},
+		"414340" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 414340
+			},
+			"isInstalled" : "false",
+			"name" : "Hellblade: Senua's Sacrifice",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "414340"
+		},
+		"416080" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 416080
+			},
+			"isInstalled" : "false",
+			"name" : "God Game : The Odyssey",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "416080"
+		},
+		"416790" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 416790
+			},
+			"isInstalled" : "false",
+			"name" : "The Metronomicon: Slay The Dance Floor",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "416790"
+		},
+		"418300" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 418300
+			},
+			"isInstalled" : "false",
+			"name" : "Wick",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "418300"
+		},
+		"420" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 420
+			},
+			"isInstalled" : "false",
+			"name" : "Half-Life 2: Episode Two",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "420"
+		},
+		"421740" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 421740
+			},
+			"isInstalled" : "false",
+			"name" : "Goetia",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "421740"
+		},
+		"422250" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 422250
+			},
+			"isInstalled" : "false",
+			"name" : "ShipLord",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "422250"
+		},
+		"423590" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 423590
+			},
+			"isInstalled" : "false",
+			"name" : "The Little Acre",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "423590"
+		},
+		"424840" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 424840
+			},
+			"isInstalled" : "false",
+			"name" : "Little Nightmares",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "424840"
 		},
 		"427820" : 
 		{
@@ -1610,8 +3209,21 @@
 			"isInstalled" : "false",
 			"name" : "Hitman GO: Definitive Edition",
 			"platform" : "steam",
-			"playedTime" : 65,
+			"playedTime" : 0,
 			"tiid" : "427820"
+		},
+		"428750" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 428750
+			},
+			"isInstalled" : "false",
+			"name" : "Neon Chrome",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "428750"
 		},
 		"43110" : 
 		{
@@ -1626,6 +3238,19 @@
 			"playedTime" : 0,
 			"tiid" : "43110"
 		},
+		"431930" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 431930
+			},
+			"isInstalled" : "false",
+			"name" : "Kabounce",
+			"platform" : "steam",
+			"playedTime" : 7,
+			"tiid" : "431930"
+		},
 		"431960" : 
 		{
 			"addedTime" : 1530489600,
@@ -1636,47 +3261,99 @@
 			"isInstalled" : "false",
 			"name" : "Wallpaper Engine",
 			"platform" : "steam",
-			"playedTime" : 651,
+			"playedTime" : 12567,
 			"tiid" : "431960"
 		},
-		"433340" : 
+		"433100" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 433340
+				"steamid" : 433100
 			},
 			"isInstalled" : "false",
-			"name" : "Slime Rancher",
-			"platform" : "steam",
-			"playedTime" : 401,
-			"tiid" : "433340"
-		},
-		"433850" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 433850
-			},
-			"isInstalled" : "false",
-			"name" : "Z1 Battle Royale",
-			"platform" : "steam",
-			"playedTime" : 20,
-			"tiid" : "433850"
-		},
-		"436180" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 436180
-			},
-			"isInstalled" : "false",
-			"name" : "Spacelords",
+			"name" : "The Town of Light",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "436180"
+			"tiid" : "433100"
+		},
+		"433530" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 433530
+			},
+			"isInstalled" : "false",
+			"name" : "Heliborne",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "433530"
+		},
+		"434660" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 434660
+			},
+			"isInstalled" : "false",
+			"name" : "Octahedron: Transfixed Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "434660"
+		},
+		"435530" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 435530
+			},
+			"isInstalled" : "false",
+			"name" : "The Final Station",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "435530"
+		},
+		"436500" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 436500
+			},
+			"isInstalled" : "false",
+			"name" : "Diaries of a Spaceport Janitor",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "436500"
+		},
+		"437390" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 437390
+			},
+			"isInstalled" : "false",
+			"name" : "HoPiKo",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "437390"
+		},
+		"437570" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 437570
+			},
+			"isInstalled" : "false",
+			"name" : "GoNNER",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "437570"
 		},
 		"438100" : 
 		{
@@ -1688,34 +3365,21 @@
 			"isInstalled" : "false",
 			"name" : "VRChat",
 			"platform" : "steam",
-			"playedTime" : 23,
+			"playedTime" : 0,
 			"tiid" : "438100"
 		},
-		"439190" : 
+		"438490" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 439190
+				"steamid" : 438490
 			},
 			"isInstalled" : "false",
-			"name" : "Stories: The Path of Destinies",
+			"name" : "GOD EATER 2 Rage Burst",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "439190"
-		},
-		"439700" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 439700
-			},
-			"isInstalled" : "false",
-			"name" : "H1Z1: Test Server",
-			"platform" : "steam",
-			"playedTime" : 0,
-			"tiid" : "439700"
+			"tiid" : "438490"
 		},
 		"440430" : 
 		{
@@ -1740,7 +3404,7 @@
 			"isInstalled" : "false",
 			"name" : "Life Is Strange\u2122 - Directors' Commentary - 2. Let's play Life is Strange",
 			"platform" : "steam",
-			"playedTime" : 1,
+			"playedTime" : 0,
 			"tiid" : "440431"
 		},
 		"440432" : 
@@ -1834,6 +3498,32 @@
 			"playedTime" : 0,
 			"tiid" : "440438"
 		},
+		"440650" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 440650
+			},
+			"isInstalled" : "false",
+			"name" : "Niche - a genetics survival game",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "440650"
+		},
+		"441870" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 441870
+			},
+			"isInstalled" : "false",
+			"name" : "OutDrive",
+			"platform" : "steam",
+			"playedTime" : 5,
+			"tiid" : "441870"
+		},
 		"44350" : 
 		{
 			"addedTime" : 1530489600,
@@ -1847,44 +3537,44 @@
 			"playedTime" : 0,
 			"tiid" : "44350"
 		},
-		"444090" : 
+		"443810" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 444090
+				"steamid" : 443810
 			},
 			"isInstalled" : "false",
-			"name" : "Paladins",
+			"name" : "This Is the Police",
 			"platform" : "steam",
-			"playedTime" : 43,
-			"tiid" : "444090"
+			"playedTime" : 8,
+			"tiid" : "443810"
 		},
-		"444200" : 
+		"444220" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 444200
+				"steamid" : 444220
 			},
 			"isInstalled" : "false",
-			"name" : "World of Tanks Blitz",
+			"name" : "Asteroid Bounty Hunter",
 			"platform" : "steam",
-			"playedTime" : 29,
-			"tiid" : "444200"
+			"playedTime" : 0,
+			"tiid" : "444220"
 		},
-		"447020" : 
+		"444940" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 447020
+				"steamid" : 444940
 			},
 			"isInstalled" : "false",
-			"name" : "Farming Simulator 17",
+			"name" : "UBERMOSH:BLACK",
 			"platform" : "steam",
-			"playedTime" : 181,
-			"tiid" : "447020"
+			"playedTime" : 0,
+			"tiid" : "444940"
 		},
 		"447040" : 
 		{
@@ -1896,8 +3586,47 @@
 			"isInstalled" : "false",
 			"name" : "Watch_Dogs 2",
 			"platform" : "steam",
-			"playedTime" : 534,
+			"playedTime" : 3894,
 			"tiid" : "447040"
+		},
+		"450390" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 450390
+			},
+			"isInstalled" : "false",
+			"name" : "The Lab",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "450390"
+		},
+		"451760" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 451760
+			},
+			"isInstalled" : "false",
+			"name" : "Highway Blossoms",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "451760"
+		},
+		"453910" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 453910
+			},
+			"isInstalled" : "false",
+			"name" : "Love is Dead",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "453910"
 		},
 		"4560" : 
 		{
@@ -1912,18 +3641,200 @@
 			"playedTime" : 0,
 			"tiid" : "4560"
 		},
-		"48190" : 
+		"458000" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 48190
+				"steamid" : 458000
 			},
 			"isInstalled" : "false",
-			"name" : "Assassin's Creed Brotherhood",
+			"name" : "March of the Living",
 			"platform" : "steam",
-			"playedTime" : 418,
-			"tiid" : "48190"
+			"playedTime" : 0,
+			"tiid" : "458000"
+		},
+		"460870" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 460870
+			},
+			"isInstalled" : "false",
+			"name" : "GOD EATER RESURRECTION",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "460870"
+		},
+		"460920" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 460920
+			},
+			"isInstalled" : "false",
+			"name" : "Steep",
+			"platform" : "steam",
+			"playedTime" : 62,
+			"tiid" : "460920"
+		},
+		"460930" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 460930
+			},
+			"isInstalled" : "false",
+			"name" : "Tom Clancy's Ghost Recon\u00ae Wildlands",
+			"platform" : "steam",
+			"playedTime" : 7981,
+			"tiid" : "460930"
+		},
+		"463350" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 463350
+			},
+			"isInstalled" : "false",
+			"name" : "Storm of Spears",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "463350"
+		},
+		"464920" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 464920
+			},
+			"isInstalled" : "false",
+			"name" : "Surviving Mars",
+			"platform" : "steam",
+			"playedTime" : 1,
+			"tiid" : "464920"
+		},
+		"466500" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 466500
+			},
+			"isInstalled" : "false",
+			"name" : "35MM",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "466500"
+		},
+		"467950" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 467950
+			},
+			"isInstalled" : "false",
+			"name" : "Survive in Space",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "467950"
+		},
+		"468000" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 468000
+			},
+			"isInstalled" : "false",
+			"name" : "Impact Winter",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "468000"
+		},
+		"468490" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 468490
+			},
+			"isInstalled" : "false",
+			"name" : "Neon Space",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "468490"
+		},
+		"474750" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 474750
+			},
+			"isInstalled" : "false",
+			"name" : "Reigns",
+			"platform" : "steam",
+			"playedTime" : 161,
+			"tiid" : "474750"
+		},
+		"474960" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 474960
+			},
+			"isInstalled" : "false",
+			"name" : "Quantum Break",
+			"platform" : "steam",
+			"playedTime" : 610,
+			"tiid" : "474960"
+		},
+		"477160" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 477160
+			},
+			"isInstalled" : "false",
+			"name" : "Human: Fall Flat",
+			"platform" : "steam",
+			"playedTime" : 554,
+			"tiid" : "477160"
+		},
+		"488660" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 488660
+			},
+			"isInstalled" : "false",
+			"name" : "Just Deserts",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "488660"
+		},
+		"489460" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 489460
+			},
+			"isInstalled" : "false",
+			"name" : "The Last Leviathan",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "489460"
 		},
 		"489520" : 
 		{
@@ -1938,45 +3849,6 @@
 			"playedTime" : 0,
 			"tiid" : "489520"
 		},
-		"489830" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 489830
-			},
-			"isInstalled" : "false",
-			"name" : "The Elder Scrolls V: Skyrim Special Edition",
-			"platform" : "steam",
-			"playedTime" : 14328,
-			"tiid" : "489830"
-		},
-		"490220" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 490220
-			},
-			"isInstalled" : "false",
-			"name" : "Prismata",
-			"platform" : "steam",
-			"playedTime" : 0,
-			"tiid" : "490220"
-		},
-		"491130" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 491130
-			},
-			"isInstalled" : "false",
-			"name" : "Red Trigger",
-			"platform" : "steam",
-			"playedTime" : 27,
-			"tiid" : "491130"
-		},
 		"491950" : 
 		{
 			"addedTime" : 1530489600,
@@ -1987,8 +3859,34 @@
 			"isInstalled" : "false",
 			"name" : "Orwell",
 			"platform" : "steam",
-			"playedTime" : 8,
+			"playedTime" : 0,
 			"tiid" : "491950"
+		},
+		"493200" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 493200
+			},
+			"isInstalled" : "false",
+			"name" : "RiME",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "493200"
+		},
+		"493900" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 493900
+			},
+			"isInstalled" : "false",
+			"name" : "Dungeons 3",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "493900"
 		},
 		"494710" : 
 		{
@@ -2013,8 +3911,60 @@
 			"isInstalled" : "false",
 			"name" : "Borderlands 2",
 			"platform" : "steam",
-			"playedTime" : 4648,
+			"playedTime" : 2,
 			"tiid" : "49520"
+		},
+		"496890" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 496890
+			},
+			"isInstalled" : "false",
+			"name" : "Replica",
+			"platform" : "steam",
+			"playedTime" : 26,
+			"tiid" : "496890"
+		},
+		"499520" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 499520
+			},
+			"isInstalled" : "false",
+			"name" : "The Turing Test",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "499520"
+		},
+		"50" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 50
+			},
+			"isInstalled" : "false",
+			"name" : "Half-Life: Opposing Force",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "50"
+		},
+		"500" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 500
+			},
+			"isInstalled" : "false",
+			"name" : "Left 4 Dead",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "500"
 		},
 		"50300" : 
 		{
@@ -2026,21 +3976,164 @@
 			"isInstalled" : "false",
 			"name" : "Spec Ops: The Line",
 			"platform" : "steam",
-			"playedTime" : 52,
+			"playedTime" : 0,
 			"tiid" : "50300"
 		},
-		"504370" : 
+		"503560" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 504370
+				"steamid" : 503560
 			},
 			"isInstalled" : "false",
-			"name" : "Battlerite",
+			"name" : "911 Operator",
 			"platform" : "steam",
-			"playedTime" : 111,
-			"tiid" : "504370"
+			"playedTime" : 0,
+			"tiid" : "503560"
+		},
+		"505210" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 505210
+			},
+			"isInstalled" : "false",
+			"name" : "Neon Space 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "505210"
+		},
+		"507490" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 507490
+			},
+			"isInstalled" : "false",
+			"name" : "Ashes of the Singularity: Escalation",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "507490"
+		},
+		"508180" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 508180
+			},
+			"isInstalled" : "false",
+			"name" : "Fly and Destroy",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "508180"
+		},
+		"510620" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 510620
+			},
+			"isInstalled" : "false",
+			"name" : "THOTH",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "510620"
+		},
+		"512900" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 512900
+			},
+			"isInstalled" : "false",
+			"name" : "Streets of Rogue",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "512900"
+		},
+		"513510" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 513510
+			},
+			"isInstalled" : "false",
+			"name" : "Intralism",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "513510"
+		},
+		"521590" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 521590
+			},
+			"isInstalled" : "false",
+			"name" : "Subterra",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "521590"
+		},
+		"521890" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 521890
+			},
+			"isInstalled" : "false",
+			"name" : "Hello Neighbor",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "521890"
+		},
+		"522210" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 522210
+			},
+			"isInstalled" : "false",
+			"name" : "Serial Cleaner",
+			"platform" : "steam",
+			"playedTime" : 592,
+			"tiid" : "522210"
+		},
+		"522240" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 522240
+			},
+			"isInstalled" : "false",
+			"name" : "Pool Panic",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "522240"
+		},
+		"524220" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 524220
+			},
+			"isInstalled" : "false",
+			"name" : "NieR:Automata\u2122",
+			"platform" : "steam",
+			"playedTime" : 186,
+			"tiid" : "524220"
 		},
 		"524440" : 
 		{
@@ -2055,18 +4148,44 @@
 			"playedTime" : 0,
 			"tiid" : "524440"
 		},
-		"530890" : 
+		"528660" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 530890
+				"steamid" : 528660
 			},
 			"isInstalled" : "false",
-			"name" : "Haydee",
+			"name" : "Spin Rush",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "530890"
+			"tiid" : "528660"
+		},
+		"530700" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 530700
+			},
+			"isInstalled" : "false",
+			"name" : "Argo",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "530700"
+		},
+		"532210" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 532210
+			},
+			"isInstalled" : "false",
+			"name" : "Life is Strange 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "532210"
 		},
 		"533300" : 
 		{
@@ -2078,21 +4197,47 @@
 			"isInstalled" : "false",
 			"name" : "Zup!",
 			"platform" : "steam",
-			"playedTime" : 44,
+			"playedTime" : 20,
 			"tiid" : "533300"
 		},
-		"545100" : 
+		"542050" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 545100
+				"steamid" : 542050
 			},
 			"isInstalled" : "false",
-			"name" : "PAYDAY 2: John Wick Weapon Pack",
+			"name" : "Forgotton Anne",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "545100"
+			"tiid" : "542050"
+		},
+		"546090" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 546090
+			},
+			"isInstalled" : "false",
+			"name" : "Trip to Vinelands",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "546090"
+		},
+		"550" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 550
+			},
+			"isInstalled" : "false",
+			"name" : "Left 4 Dead 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "550"
 		},
 		"550210" : 
 		{
@@ -2107,44 +4252,57 @@
 			"playedTime" : 0,
 			"tiid" : "550210"
 		},
-		"550650" : 
+		"55110" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 550650
+				"steamid" : 55110
 			},
 			"isInstalled" : "false",
-			"name" : "Black Squad",
+			"name" : "Red Faction: Armageddon",
 			"platform" : "steam",
-			"playedTime" : 11,
-			"tiid" : "550650"
+			"playedTime" : 0,
+			"tiid" : "55110"
 		},
-		"55100" : 
+		"551110" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 55100
+				"steamid" : 551110
 			},
 			"isInstalled" : "false",
-			"name" : "Homefront",
+			"name" : "WayOut",
 			"platform" : "steam",
-			"playedTime" : 170,
-			"tiid" : "55100"
+			"playedTime" : 8,
+			"tiid" : "551110"
 		},
-		"55230" : 
+		"55150" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 55230
+				"steamid" : 55150
 			},
 			"isInstalled" : "false",
-			"name" : "Saints Row: The Third",
+			"name" : "Warhammer 40,000: Space Marine",
 			"platform" : "steam",
-			"playedTime" : 621,
-			"tiid" : "55230"
+			"playedTime" : 0,
+			"tiid" : "55150"
+		},
+		"552520" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 552520
+			},
+			"isInstalled" : "false",
+			"name" : "Far Cry 5",
+			"platform" : "steam",
+			"playedTime" : 803,
+			"tiid" : "552520"
 		},
 		"552990" : 
 		{
@@ -2156,73 +4314,294 @@
 			"isInstalled" : "false",
 			"name" : "World of Warships",
 			"platform" : "steam",
-			"playedTime" : 804,
+			"playedTime" : 40,
 			"tiid" : "552990"
 		},
-		"563560" : 
+		"554600" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 563560
+				"steamid" : 554600
 			},
 			"isInstalled" : "false",
-			"name" : "Alien Swarm: Reactive Drop",
+			"name" : "Learn Japanese To Survive! Katakana War",
 			"platform" : "steam",
-			"playedTime" : 23,
-			"tiid" : "563560"
+			"playedTime" : 0,
+			"tiid" : "554600"
 		},
-		"564710" : 
+		"555150" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 564710
+				"steamid" : 555150
 			},
 			"isInstalled" : "false",
-			"name" : "Soda Dungeon",
+			"name" : "The First Tree",
 			"platform" : "steam",
-			"playedTime" : 225,
-			"tiid" : "564710"
+			"playedTime" : 0,
+			"tiid" : "555150"
 		},
-		"566160" : 
+		"556870" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 566160
+				"steamid" : 556870
 			},
 			"isInstalled" : "false",
-			"name" : "Zup! 6",
+			"name" : "Charlie's Adventure",
 			"platform" : "steam",
-			"playedTime" : 111,
-			"tiid" : "566160"
+			"playedTime" : 0,
+			"tiid" : "556870"
 		},
-		"578080" : 
+		"557340" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 578080
+				"steamid" : 557340
 			},
 			"isInstalled" : "false",
-			"name" : "PLAYERUNKNOWN'S BATTLEGROUNDS",
+			"name" : "My Friend Pedro",
 			"platform" : "steam",
-			"playedTime" : 4428,
-			"tiid" : "578080"
+			"playedTime" : 376,
+			"tiid" : "557340"
 		},
-		"584980" : 
+		"560380" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 584980
+				"steamid" : 560380
 			},
 			"isInstalled" : "false",
-			"name" : "Late Shift",
+			"name" : "MapleStory 2",
 			"platform" : "steam",
-			"playedTime" : 146,
-			"tiid" : "584980"
+			"playedTime" : 0,
+			"tiid" : "560380"
+		},
+		"562220" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 562220
+			},
+			"isInstalled" : "false",
+			"name" : "Zup! 2",
+			"platform" : "steam",
+			"playedTime" : 35,
+			"tiid" : "562220"
+		},
+		"567280" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 567280
+			},
+			"isInstalled" : "false",
+			"name" : "Cube Runner",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "567280"
+		},
+		"567290" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 567290
+			},
+			"isInstalled" : "false",
+			"name" : "Slash It",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "567290"
+		},
+		"567580" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 567580
+			},
+			"isInstalled" : "false",
+			"name" : "Duke of Alpha Centauri",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "567580"
+		},
+		"568220" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 568220
+			},
+			"isInstalled" : "false",
+			"name" : "Lobotomy Corporation",
+			"platform" : "steam",
+			"playedTime" : 227,
+			"tiid" : "568220"
+		},
+		"57300" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 57300
+			},
+			"isInstalled" : "false",
+			"name" : "Amnesia: The Dark Descent",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "57300"
+		},
+		"575640" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 575640
+			},
+			"isInstalled" : "false",
+			"name" : "Zup! 3",
+			"platform" : "steam",
+			"playedTime" : 41,
+			"tiid" : "575640"
+		},
+		"57600" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 57600
+			},
+			"isInstalled" : "false",
+			"name" : "Tropico 3: Absolute Power",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "57600"
+		},
+		"57690" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 57690
+			},
+			"isInstalled" : "false",
+			"name" : "Tropico 4",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "57690"
+		},
+		"582160" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 582160
+			},
+			"isInstalled" : "false",
+			"name" : "Assassin's Creed Origins",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "582160"
+		},
+		"582560" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 582560
+			},
+			"isInstalled" : "false",
+			"name" : "The Invisible Hours",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "582560"
+		},
+		"582890" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 582890
+			},
+			"isInstalled" : "false",
+			"name" : "Estranged: Act II",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "582890"
+		},
+		"583760" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 583760
+			},
+			"isInstalled" : "false",
+			"name" : "Slash It 2",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "583760"
+		},
+		"585950" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 585950
+			},
+			"isInstalled" : "false",
+			"name" : "WayOut 2: Hex",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "585950"
+		},
+		"586350" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 586350
+			},
+			"isInstalled" : "false",
+			"name" : "UBERMOSH:WRAITH",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "586350"
+		},
+		"586960" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 586960
+			},
+			"isInstalled" : "false",
+			"name" : "Upside Down",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "586960"
+		},
+		"586970" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 586970
+			},
+			"isInstalled" : "false",
+			"name" : "Hungry Flame",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "586970"
 		},
 		"588430" : 
 		{
@@ -2234,34 +4613,112 @@
 			"isInstalled" : "false",
 			"name" : "Fallout Shelter",
 			"platform" : "steam",
-			"playedTime" : 205,
+			"playedTime" : 257,
 			"tiid" : "588430"
 		},
-		"596350" : 
+		"589760" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 596350
+				"steamid" : 589760
 			},
 			"isInstalled" : "false",
-			"name" : "Paladins - Public Test",
+			"name" : "Revhead",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "596350"
+			"tiid" : "589760"
 		},
-		"608800" : 
+		"590380" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 608800
+				"steamid" : 590380
 			},
 			"isInstalled" : "false",
-			"name" : "Guns of Icarus Alliance",
+			"name" : "Into the Breach",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "608800"
+			"tiid" : "590380"
+		},
+		"591420" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 591420
+			},
+			"isInstalled" : "false",
+			"name" : "Zup! 4",
+			"platform" : "steam",
+			"playedTime" : 37,
+			"tiid" : "591420"
+		},
+		"595280" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 595280
+			},
+			"isInstalled" : "false",
+			"name" : "Throne of Lies",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "595280"
+		},
+		"60" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 60
+			},
+			"isInstalled" : "false",
+			"name" : "Ricochet",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "60"
+		},
+		"600090" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 600090
+			},
+			"isInstalled" : "false",
+			"name" : "The Coma: Recut",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "600090"
+		},
+		"606140" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 606140
+			},
+			"isInstalled" : "false",
+			"name" : "Survived By",
+			"platform" : "steam",
+			"playedTime" : 11,
+			"tiid" : "606140"
+		},
+		"606150" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 606150
+			},
+			"isInstalled" : "false",
+			"name" : "Moonlighter",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "606150"
 		},
 		"611500" : 
 		{
@@ -2273,8 +4730,86 @@
 			"isInstalled" : "false",
 			"name" : "Quake Champions",
 			"platform" : "steam",
-			"playedTime" : 23,
+			"playedTime" : 0,
 			"tiid" : "611500"
+		},
+		"612540" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 612540
+			},
+			"isInstalled" : "false",
+			"name" : "Sudden Strike 3",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "612540"
+		},
+		"614090" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 614090
+			},
+			"isInstalled" : "false",
+			"name" : "Deadbeat Heroes",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "614090"
+		},
+		"61510" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 61510
+			},
+			"isInstalled" : "false",
+			"name" : "Age of Wonders 2: The Wizard's Throne",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "61510"
+		},
+		"615610" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 615610
+			},
+			"isInstalled" : "false",
+			"name" : "Orbt XL",
+			"platform" : "steam",
+			"playedTime" : 88,
+			"tiid" : "615610"
+		},
+		"618510" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 618510
+			},
+			"isInstalled" : "false",
+			"name" : "Battle Bruise",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "618510"
+		},
+		"618720" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 618720
+			},
+			"isInstalled" : "false",
+			"name" : "1bitHeart",
+			"platform" : "steam",
+			"playedTime" : 64,
+			"tiid" : "618720"
 		},
 		"620" : 
 		{
@@ -2286,7 +4821,7 @@
 			"isInstalled" : "false",
 			"name" : "Portal 2",
 			"platform" : "steam",
-			"playedTime" : 482,
+			"playedTime" : 0,
 			"tiid" : "620"
 		},
 		"621060" : 
@@ -2299,21 +4834,21 @@
 			"isInstalled" : "false",
 			"name" : "PC Building Simulator",
 			"platform" : "steam",
-			"playedTime" : 923,
+			"playedTime" : 0,
 			"tiid" : "621060"
 		},
-		"622650" : 
+		"623940" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 622650
+				"steamid" : 623940
 			},
 			"isInstalled" : "false",
-			"name" : "Bendy and the Ink Machine",
+			"name" : "HIVESWAP: ACT 1",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "622650"
+			"tiid" : "623940"
 		},
 		"623990" : 
 		{
@@ -2325,60 +4860,86 @@
 			"isInstalled" : "false",
 			"name" : "Tom Clancy's Rainbow Six Siege - Test Server",
 			"platform" : "steam",
-			"playedTime" : 92,
+			"playedTime" : 0,
 			"tiid" : "623990"
 		},
-		"63500" : 
+		"628770" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 63500
+				"steamid" : 628770
 			},
 			"isInstalled" : "false",
-			"name" : "Swords and Soldiers HD",
+			"name" : "Tangledeep",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "63500"
+			"tiid" : "628770"
 		},
-		"638110" : 
+		"635200" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 638110
+				"steamid" : 635200
 			},
 			"isInstalled" : "false",
-			"name" : "Desert Bus VR",
+			"name" : "Distrust",
 			"platform" : "steam",
-			"playedTime" : 56,
-			"tiid" : "638110"
+			"playedTime" : 0,
+			"tiid" : "635200"
 		},
-		"638970" : 
+		"638070" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 638970
+				"steamid" : 638070
 			},
 			"isInstalled" : "false",
-			"name" : "Yakuza 0",
+			"name" : "Murderous Pursuits",
 			"platform" : "steam",
-			"playedTime" : 1118,
-			"tiid" : "638970"
+			"playedTime" : 0,
+			"tiid" : "638070"
 		},
-		"644560" : 
+		"643270" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 644560
+				"steamid" : 643270
 			},
 			"isInstalled" : "false",
-			"name" : "Mirror",
+			"name" : "OLDTV",
 			"platform" : "steam",
 			"playedTime" : 1,
-			"tiid" : "644560"
+			"tiid" : "643270"
+		},
+		"644640" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 644640
+			},
+			"isInstalled" : "false",
+			"name" : "Band of Defenders",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "644640"
+		},
+		"646270" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 646270
+			},
+			"isInstalled" : "false",
+			"name" : "60 Parsecs!",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "646270"
 		},
 		"654310" : 
 		{
@@ -2393,6 +4954,45 @@
 			"playedTime" : 0,
 			"tiid" : "654310"
 		},
+		"654880" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 654880
+			},
+			"isInstalled" : "false",
+			"name" : "Dream Daddy: A Dad Dating Simulator",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "654880"
+		},
+		"654900" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 654900
+			},
+			"isInstalled" : "false",
+			"name" : "qop",
+			"platform" : "steam",
+			"playedTime" : 59,
+			"tiid" : "654900"
+		},
+		"655730" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 655730
+			},
+			"isInstalled" : "false",
+			"name" : "This Strange Realm Of Mine",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "655730"
+		},
 		"657200" : 
 		{
 			"addedTime" : 1530489600,
@@ -2403,8 +5003,21 @@
 			"isInstalled" : "false",
 			"name" : "Hand Simulator",
 			"platform" : "steam",
-			"playedTime" : 333,
+			"playedTime" : 0,
 			"tiid" : "657200"
+		},
+		"658980" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 658980
+			},
+			"isInstalled" : "false",
+			"name" : "Valnir Rok",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "658980"
 		},
 		"65930" : 
 		{
@@ -2416,21 +5029,99 @@
 			"isInstalled" : "false",
 			"name" : "The Bureau: XCOM Declassified",
 			"platform" : "steam",
-			"playedTime" : 176,
+			"playedTime" : 0,
 			"tiid" : "65930"
 		},
-		"695360" : 
+		"667720" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 695360
+				"steamid" : 667720
 			},
 			"isInstalled" : "false",
-			"name" : "Veritex",
+			"name" : "Red Faction Guerrilla Re-Mars-tered",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "695360"
+			"tiid" : "667720"
+		},
+		"667810" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 667810
+			},
+			"isInstalled" : "false",
+			"name" : "Next Up Hero",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "667810"
+		},
+		"673880" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 673880
+			},
+			"isInstalled" : "false",
+			"name" : "Warhammer 40,000: Mechanicus",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "673880"
+		},
+		"674940" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 674940
+			},
+			"isInstalled" : "false",
+			"name" : "Stick Fight: The Game",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "674940"
+		},
+		"684680" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 684680
+			},
+			"isInstalled" : "false",
+			"name" : "Polygoneer",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "684680"
+		},
+		"691690" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 691690
+			},
+			"isInstalled" : "false",
+			"name" : "Ash of Gods: Redemption",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "691690"
+		},
+		"695970" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 695970
+			},
+			"isInstalled" : "false",
+			"name" : "Treadnauts",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "695970"
 		},
 		"696370" : 
 		{
@@ -2442,7 +5133,7 @@
 			"isInstalled" : "false",
 			"name" : "BROKE PROTOCOL: Online City RPG",
 			"platform" : "steam",
-			"playedTime" : 13,
+			"playedTime" : 0,
 			"tiid" : "696370"
 		},
 		"698780" : 
@@ -2455,34 +5146,47 @@
 			"isInstalled" : "false",
 			"name" : "Doki Doki Literature Club",
 			"platform" : "steam",
-			"playedTime" : 0,
+			"playedTime" : 2,
 			"tiid" : "698780"
 		},
-		"700330" : 
+		"70" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 700330
+				"steamid" : 70
 			},
 			"isInstalled" : "false",
-			"name" : "SCP: Secret Laboratory",
+			"name" : "Half-Life",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "700330"
+			"tiid" : "70"
 		},
-		"702810" : 
+		"702670" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 702810
+				"steamid" : 702670
 			},
 			"isInstalled" : "false",
-			"name" : "Shooty Skies",
+			"name" : "Donut County",
 			"platform" : "steam",
-			"playedTime" : 12,
-			"tiid" : "702810"
+			"playedTime" : 154,
+			"tiid" : "702670"
+		},
+		"714240" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 714240
+			},
+			"isInstalled" : "false",
+			"name" : "SWARMRIDER OMEGA",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "714240"
 		},
 		"730" : 
 		{
@@ -2494,21 +5198,73 @@
 			"isInstalled" : "false",
 			"name" : "Counter-Strike: Global Offensive",
 			"platform" : "steam",
-			"playedTime" : 3035,
+			"playedTime" : 1,
 			"tiid" : "730"
 		},
-		"755790" : 
+		"73170" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 755790
+				"steamid" : 73170
 			},
 			"isInstalled" : "false",
-			"name" : "Ring of Elysium",
+			"name" : "Darkest Hour: A Hearts of Iron Game",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "755790"
+			"tiid" : "73170"
+		},
+		"733070" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 733070
+			},
+			"isInstalled" : "false",
+			"name" : "Sudoku Universe",
+			"platform" : "steam",
+			"playedTime" : 1067,
+			"tiid" : "733070"
+		},
+		"735580" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 735580
+			},
+			"isInstalled" : "false",
+			"name" : "11-11 Memories Retold",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "735580"
+		},
+		"736260" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 736260
+			},
+			"isInstalled" : "false",
+			"name" : "Baba Is You",
+			"platform" : "steam",
+			"playedTime" : 493,
+			"tiid" : "736260"
+		},
+		"747350" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 747350
+			},
+			"isInstalled" : "false",
+			"name" : "Hellblade: Senua's Sacrifice VR Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "747350"
 		},
 		"769920" : 
 		{
@@ -2523,18 +5279,18 @@
 			"playedTime" : 0,
 			"tiid" : "769920"
 		},
-		"773920" : 
+		"777880" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 773920
+				"steamid" : 777880
 			},
 			"isInstalled" : "false",
-			"name" : "scram",
+			"name" : "Fluffy Horde",
 			"platform" : "steam",
-			"playedTime" : 85,
-			"tiid" : "773920"
+			"playedTime" : 0,
+			"tiid" : "777880"
 		},
 		"780800" : 
 		{
@@ -2549,18 +5305,83 @@
 			"playedTime" : 0,
 			"tiid" : "780800"
 		},
-		"823130" : 
+		"788770" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 823130
+				"steamid" : 788770
 			},
 			"isInstalled" : "false",
-			"name" : "Totally Accurate Battlegrounds",
+			"name" : "Meteor 60 Seconds!",
 			"platform" : "steam",
-			"playedTime" : 140,
-			"tiid" : "823130"
+			"playedTime" : 24,
+			"tiid" : "788770"
+		},
+		"793370" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 793370
+			},
+			"isInstalled" : "false",
+			"name" : "KIDS",
+			"platform" : "steam",
+			"playedTime" : 21,
+			"tiid" : "793370"
+		},
+		"80" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 80
+			},
+			"isInstalled" : "false",
+			"name" : "Counter-Strike: Condition Zero",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "80"
+		},
+		"8080" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 8080
+			},
+			"isInstalled" : "false",
+			"name" : "Kane & Lynch: Dead Men",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "8080"
+		},
+		"838380" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 838380
+			},
+			"isInstalled" : "false",
+			"name" : "DEAD OR ALIVE 6",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "838380"
+		},
+		"844870" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 844870
+			},
+			"isInstalled" : "false",
+			"name" : "KurtzPel",
+			"platform" : "steam",
+			"playedTime" : 5,
+			"tiid" : "844870"
 		},
 		"845070" : 
 		{
@@ -2572,7 +5393,7 @@
 			"isInstalled" : "false",
 			"name" : "The Awesome Adventures of Captain Spirit",
 			"platform" : "steam",
-			"playedTime" : 0,
+			"playedTime" : 140,
 			"tiid" : "845070"
 		},
 		"8500" : 
@@ -2585,7 +5406,7 @@
 			"isInstalled" : "false",
 			"name" : "EVE Online",
 			"platform" : "steam",
-			"playedTime" : 33,
+			"playedTime" : 0,
 			"tiid" : "8500"
 		},
 		"863550" : 
@@ -2598,86 +5419,112 @@
 			"isInstalled" : "false",
 			"name" : "HITMAN\u2122 2",
 			"platform" : "steam",
-			"playedTime" : 0,
+			"playedTime" : 11432,
 			"tiid" : "863550"
 		},
-		"866150" : 
+		"8650" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 866150
+				"steamid" : 8650
 			},
 			"isInstalled" : "false",
-			"name" : "Treasures of the Ancients: Egypt",
+			"name" : "RACE 07: Andy Priaulx Crowne Plaza Raceway",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "866150"
+			"tiid" : "8650"
 		},
-		"878750" : 
+		"8870" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 878750
+				"steamid" : 8870
 			},
 			"isInstalled" : "false",
-			"name" : "Hentai Girl",
+			"name" : "BioShock Infinite",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "878750"
+			"tiid" : "8870"
 		},
-		"884660" : 
+		"888040" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 884660
+				"steamid" : 888040
 			},
 			"isInstalled" : "false",
-			"name" : "Cuisine Royale",
-			"platform" : "steam",
-			"playedTime" : 44,
-			"tiid" : "884660"
-		},
-		"941650" : 
-		{
-			"addedTime" : 1530489600,
-			"additional" : 
-			{
-				"steamid" : 941650
-			},
-			"isInstalled" : "false",
-			"name" : "The Island: Into The Mist",
+			"name" : "Metal Fatigue",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "941650"
+			"tiid" : "888040"
 		},
-		"9480" : 
+		"8930" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 9480
+				"steamid" : 8930
 			},
 			"isInstalled" : "false",
-			"name" : "Saints Row 2",
+			"name" : "Sid Meier's Civilization V",
 			"platform" : "steam",
-			"playedTime" : 230,
-			"tiid" : "9480"
+			"playedTime" : 208,
+			"tiid" : "8930"
 		},
-		"958260" : 
+		"897030" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 958260
+				"steamid" : 897030
 			},
 			"isInstalled" : "false",
-			"name" : "DEAD OR ALIVE Xtreme Venus Vacation",
+			"name" : "Paratopic",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "958260"
+			"tiid" : "897030"
+		},
+		"897820" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 897820
+			},
+			"isInstalled" : "false",
+			"name" : "Reigns: Game of Thrones",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "897820"
+		},
+		"91200" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 91200
+			},
+			"isInstalled" : "false",
+			"name" : "Anomaly Warzone Earth",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "91200"
+		},
+		"921590" : 
+		{
+			"addedTime" : 1530489600,
+			"additional" : 
+			{
+				"steamid" : 921590
+			},
+			"isInstalled" : "false",
+			"name" : "DISSIDIA FINAL FANTASY NT Free Edition",
+			"platform" : "steam",
+			"playedTime" : 0,
+			"tiid" : "921590"
 		},
 		"96000" : 
 		{
@@ -2692,18 +5539,18 @@
 			"playedTime" : 0,
 			"tiid" : "96000"
 		},
-		"99300" : 
+		"961440" : 
 		{
 			"addedTime" : 1530489600,
 			"additional" : 
 			{
-				"steamid" : 99300
+				"steamid" : 961440
 			},
 			"isInstalled" : "false",
-			"name" : "Renegade Ops",
+			"name" : "RESIDENT EVIL 2 / BIOHAZARD RE:2 \"1-Shot Demo\"",
 			"platform" : "steam",
 			"playedTime" : 0,
-			"tiid" : "99300"
+			"tiid" : "961440"
 		}
 	}
 }

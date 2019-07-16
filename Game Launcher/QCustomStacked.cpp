@@ -146,7 +146,9 @@ void QCustomStacked::setSteamID64() { // 스팀 연동 계정을 바꿉니다.
 	{
 		LoadJson* lj = new LoadJson;
 		Json::Value userdata = lj->LoadUserData(); // 유저 데이터를 로드합니다.
-		//userdata["steamid64"] = this->widget(4)->findChild<QLineEdit*>("steamidEnter")->text().toStdString();
+
+		//OutputDebugStringA(this->widget(4)->findChild<QLineEdit*>("steamidEnter")->text().toUtf8().constData());
+		userdata["steamid64"] = this->widget(4)->findChild<QLineEdit*>("steamidEnter")->text().toUtf8().constData();
 		lj->Save("data/user.json", userdata); // SteamID64를 다시 로드해 파일에 넣습니다.
 		this->loadGameLibrary(); // 게임 라이브러리를 다시 로드합니다.
 	}
