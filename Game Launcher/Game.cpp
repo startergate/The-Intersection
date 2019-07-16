@@ -24,7 +24,9 @@ Json::Value Game::GameListGenerate() {
 	Json::Value& s_games = steamgames["response"]["games"];
 	std::list<std::string> toRemove;
 
-	for (Json::ValueIterator it = games.begin(); it != games.end(); it++) if (!(*it)["platform"].asString().compare("steam")) toRemove.push_back((*it)["tiid"].asCString()); // 플랫폼이 스팀인 게임들을 찾습니다.
+	for (Json::ValueIterator it = games.begin(); it != games.end(); it++)
+		if (!(*it)["platform"].asString().compare("steam"))
+			toRemove.push_back((*it)["tiid"].asCString()); // 플랫폼이 스팀인 게임들을 찾습니다.
 	for (auto const& it : toRemove) games_doc["games"].removeMember(it.c_str()); // 플랫폼이 스팀인 게임들을 삭제합니다.
 
 	for (Json::ValueIterator it = s_games.begin(); it != s_games.end(); it++)

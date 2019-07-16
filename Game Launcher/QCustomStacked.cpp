@@ -80,10 +80,16 @@ void QCustomStacked::setGameLibrary() { // loadGameLibrary()를 실행하는 슬
 void QCustomStacked::loadGameLibrary() { // 게임 라이브러리를 로드하고 표시합니다.
     LoadJson lj;
     QList<GameButton*> buttons = library->findChildren<GameButton*>();
-    for (size_t i = 0; i < buttons.length(); i++) // 현재 창에 있는 모든 게임 버튼을 지웁니다.
+    /*for (size_t i = 0; i < buttons.length(); i++) // 현재 창에 있는 모든 게임 버튼을 지웁니다.
     {
         library->removeWidget(buttons[i]);
-    }
+		//delete buttons[i];
+    }*/
+
+	QLayoutItem* child;
+	while ((child = library->takeAt(0)) != 0) {
+		delete child;
+	}
 
     game->GameListGenerate(); // 게임 리스트를 다시 만듭니다.
 
@@ -98,7 +104,7 @@ void QCustomStacked::loadGameLibrary() { // 게임 라이브러리를 로드하�
         button->setGeometry(QRect(0, 0, 171, 101));
         button->setFont(font);
         std::string tempButtonStyleSheet = buttonStyleSheet;
-        tempButtonStyleSheet += "background-image: url(\"GameThumbnail/";
+        tempButtonStyleSheet.append("background-image: url(\"GameThumbnail/");
         tempButtonStyleSheet.append((*it)["tiid"].asCString());
         tempButtonStyleSheet.append(".jpg\");\n");
         button->setStyleSheet(QString::fromUtf8(tempButtonStyleSheet.c_str()));
@@ -136,11 +142,18 @@ void QCustomStacked::changeToUserTab() {
 }
 
 void QCustomStacked::setSteamID64() { // 스팀 연동 계정을 바꿉니다.
-    LoadJson* lj = new LoadJson;
-    Json::Value userdata = lj->LoadUserData(); // 유저 데이터를 로드합니다.
-    userdata["steamid64"] = this->widget(4)->findChild<QLineEdit *>("steamidEnter")->text().toStdString();
-    lj->Save("data/user.json", userdata); // SteamID64를 다시 로드해 파일에 넣습니다.
-    this->loadGameLibrary(); // 게임 라이브러리를 다시 로드합니다.
+	try
+	{
+		LoadJson* lj = new LoadJson;
+		Json::Value userdata = lj->LoadUserData(); // 유저 데이터를 로드합니다.
+		//userdata["steamid64"] = this->widget(4)->findChild<QLineEdit*>("steamidEnter")->text().toStdString();
+		lj->Save("data/user.json", userdata); // SteamID64를 다시 로드해 파일에 넣습니다.
+		this->loadGameLibrary(); // 게임 라이브러리를 다시 로드합니다.
+	}
+	catch (const std::exception& ex)
+	{
+		OutputDebugStringA(ex.what());
+	}
 }
 
 void QCustomStacked::logout() {
