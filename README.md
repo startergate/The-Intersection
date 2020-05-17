@@ -13,5 +13,5 @@ Required
 
 Related Repository
 ----------
- * [The Intersection Server](https://github.com/startergate/ti-server)
+ * [The Intersection Server](https://github.com/startergate/The-Intersection-Server)
  * [SID.Client](https://github.com/startergate/SID.Client)
